@@ -1,0 +1,1342 @@
+ @import url(https://fonts.googleapis.com/css?family=Poppins);
+  
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+.powered-by-discourse {
+    display: none;
+}
+.categories-list .category .category-description {
+    overflow:visible;
+}
+
+/** START PRODUCT CATALOG LINK STYLES  */
+.custom-header-links .headerLink a:hover{
+    color : var(--primary-high);
+    background-color: var(--primary-low);
+    border-radius : 5px;
+    
+
+}
+
+html.mobile-device .custom-header-links .headerLink a{
+    color : var(--primary-high);
+    background-color: var(--primary-low);
+    border-radius : 5px;
+    border: 1px solid white;
+    
+
+}
+ /** END PRODUCT CATALOG LINK STYLES  */
+
+ 
+.category-web3-bootcamp .list-controls .combo-box .combo-box-header {
+    background: #5959D8;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-web3-bootcamp .d-header{
+    box-shadow : 0 2px 4px -1px #5959D8; ;
+}
+
+.category-web3-bootcamp .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #F36E1F;
+
+}
+.category-web3-bootcamp .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-web3-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #F36E1F;
+    background-color: #F36E1F;
+}
+.category-web3-bootcamp  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #F36E1F;
+    background-color: #F36E1F;
+}
+
+.category-web3-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-web3-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-web3-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-web3-bootcamp .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-web3-bootcamp .btn.edit-category{
+    background:#5959D8;
+    color:white;
+    border-radius: 5px;
+}
+.category-web3-bootcamp .btn.edit-category:hover{
+    background-color: #F36E1F;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-web3-bootcamp .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-web3-bootcamp .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-web3-bootcamp .footer-message h3 span {
+    color: #f7901d;
+}
+.category-web3-bootcamp .footer-message h3 span a,
+.category-web3-bootcamp .footer-message h3 a{
+    color: #f7901d;
+}
+
+.category-web3-bootcamp .category-notifications-button .btn,
+.category-web3-bootcamp .btn#create-topic{
+    background-color: #5959D8;
+    color:white;
+    border-radius: 5px;
+}
+.category-web3-bootcamp .category-notifications-button .btn:hover,
+.category-web3-bootcamp .btn#create-topic:hover{
+    background-color: #F36E1F;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-web3-bootcamp .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-web3-bootcamp .d-icon.d-icon-d-regular,
+.category-web3-bootcamp .d-icon.d-icon-d-muted, 
+.category-web3-bootcamp .d-icon.d-icon-d-watching-first,
+.category-web3-bootcamp .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-web3-bootcamp .discourse-no-touch .btn .d-icon{
+    color: black;
+}
+
+.category-web3-bootcamp .discourse-no-touch .btn{
+    background: #f7901d;
+}
+
+
+.category-web3-bootcamp .nav-item_latest.active.latest a.active,
+.category-web3-bootcamp .nav-item_top.top a.active
+{
+    background-color: #F7901D;
+    border-radius :5px;
+    
+}
+
+.category-web3-bootcamp .nav-item_top.top a:hover,
+.category-web3-bootcamp .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #F7901D;
+     border-radius :5px;
+}
+
+
+.category-web3-bootcamp .topic-footer-main-buttons .btn,
+.category-web3-bootcamp .topic-admin-menu-button .btn,
+.category-web3-bootcamp .pinned-button .pinned-options .btn,
+.category-web3-bootcamp .topic-notifications-button .btn
+{
+     background-color: #5959D8;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-web3-bootcamp .topic-footer-main-buttons .btn:hover,
+.category-web3-bootcamp .pinned-button .pinned-options .btn:hover,
+.category-web3-bootcamp .topic-admin-menu-button .btn:hover,
+.category-web3-bootcamp .topic-notifications-button .btn:hover,
+.category-web3-bootcamp .pinned-button .pinned-options .btn:focus,
+.category-web3-bootcamp .topic-notifications-button .btn:focus{
+     background-color: #F7901D;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-web3-bootcamp .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-web3-bootcamp .pinned-button .pinned-options .btn {
+    
+}
+
+
+
+
+
+
+/*STARGING AI EDGE GROUP BRANDING*/
+.category-ai-edge-bootcamp .list-controls .combo-box .combo-box-header {
+    background: #B413A9;
+    border-radius :5px;
+    color : white;
+    
+}
+
+body.category-ai-edge-bootcamp .category-heading > p{
+    display: none;
+}
+
+
+body.category-ai-edge-bootcamp .d-header{
+    box-shadow : 0 2px 4px -1px #B413A9; ;
+}
+
+.category-ai-edge-bootcamp .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #951300;
+
+}
+.category-ai-edge-bootcamp .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-ai-edge-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #951300;
+    background-color: #951300;
+}
+.category-ai-edge-bootcamp  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #951300;
+    background-color: #951300;
+}
+
+.category-ai-edge-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-ai-edge-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-ai-edge-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-ai-edge-bootcamp .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-ai-edge-bootcamp .btn.edit-category{
+    background:#B413A9;
+    color:white;
+    border-radius: 5px;
+}
+.category-ai-edge-bootcamp .btn.edit-category:hover{
+    background-color: #951300;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-ai-edge-bootcamp .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-ai-edge-bootcamp .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-ai-edge-bootcamp .footer-message h3 span {
+    color: #951300;
+}
+.category-ai-edge-bootcamp .footer-message h3 span a,
+.category-ai-edge-bootcamp .footer-message h3 a{
+    color: #951300;
+}
+
+.category-ai-edge-bootcamp .category-notifications-button .btn,
+.category-ai-edge-bootcamp .btn#create-topic{
+    background-color: #B413A9;
+    color:white;
+    border-radius: 5px;
+}
+.category-ai-edge-bootcamp .category-notifications-button .btn:hover,
+.category-ai-edge-bootcamp .btn#create-topic:hover{
+    background-color: #951300;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-ai-edge-bootcamp .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-ai-edge-bootcamp .d-icon.d-icon-d-regular,
+.category-ai-edge-bootcamp .d-icon.d-icon-d-muted, 
+.category-ai-edge-bootcamp .d-icon.d-icon-d-watching-first,
+.category-ai-edge-bootcamp .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-ai-edge-bootcamp .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-ai-edge-bootcamp .discourse-no-touch .btn{
+    background: #951300;
+}
+
+
+.category-ai-edge-bootcamp .nav-item_latest.active.latest a.active,
+.category-ai-edge-bootcamp .nav-item_top.top a.active
+{
+    background-color: #951300;
+    border-radius :5px;
+    
+}
+
+.category-ai-edge-bootcamp .nav-item_top.top a:hover,
+.category-ai-edge-bootcamp .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #951300;
+     border-radius :5px;
+}
+
+
+.category-ai-edge-bootcamp .topic-footer-main-buttons .btn,
+.category-ai-edge-bootcamp .topic-admin-menu-button .btn,
+.category-ai-edge-bootcamp .pinned-button .pinned-options .btn,
+.category-ai-edge-bootcamp .topic-notifications-button .btn
+{
+     background-color: #B413A9;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-ai-edge-bootcamp .topic-footer-main-buttons .btn:hover,
+.category-ai-edge-bootcamp .pinned-button .pinned-options .btn:hover,
+.category-ai-edge-bootcamp .topic-admin-menu-button .btn:hover,
+.category-ai-edge-bootcamp .topic-notifications-button .btn:hover,
+.category-ai-edge-bootcamp .pinned-button .pinned-options .btn:focus,
+.category-ai-edge-bootcamp .topic-notifications-button .btn:focus{
+     background-color: #951300;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-ai-edge-bootcamp .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-ai-edge-bootcamp .pinned-button .pinned-options .btn {
+    
+}
+
+
+
+/* END AI EDGE GROUP BRANDING*/
+
+
+/* START 8 Cmpassionate Forclosure basics GROUP BRANDING */
+
+.category-8-compassionate-foreclosure-basics .list-controls .combo-box .combo-box-header {
+    background: #F7901D;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-8-compassionate-foreclosure-basics .d-header{
+    box-shadow : 0 2px 4px -1px #F7901D; 
+}
+
+.category-8-compassionate-foreclosure-basics .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #266CC3;
+
+}
+.category-8-compassionate-foreclosure-basics .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-8-compassionate-foreclosure-basics .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #266CC3;
+    background-color: #266CC3;
+}
+.category-8-compassionate-foreclosure-basics  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #266CC3;
+    background-color: #266CC3;
+}
+
+.category-8-compassionate-foreclosure-basics .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-8-compassionate-foreclosure-basics .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-8-compassionate-foreclosure-basics .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-8-compassionate-foreclosure-basics .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-8-compassionate-foreclosure-basics .btn.edit-category{
+    background:#F7901D;
+    color:white;
+    border-radius: 5px;
+}
+.category-8-compassionate-foreclosure-basics .btn.edit-category:hover{
+    background-color: #266CC3;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-8-compassionate-foreclosure-basics .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-8-compassionate-foreclosure-basics .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-8-compassionate-foreclosure-basics .footer-message h3 span {
+    color: #266CC3;
+}
+.category-8-compassionate-foreclosure-basics .footer-message h3 span a,
+.category-8-compassionate-foreclosure-basics .footer-message h3 a{
+    color: #266CC3;
+}
+
+.category-8-compassionate-foreclosure-basics .category-notifications-button .btn,
+.category-8-compassionate-foreclosure-basics .btn#create-topic{
+    background-color: #F7901D;
+    color:white;
+    border-radius: 5px;
+}
+.category-8-compassionate-foreclosure-basics .category-notifications-button .btn:hover,
+.category-8-compassionate-foreclosure-basics .btn#create-topic:hover{
+    background-color: #266CC3;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-8-compassionate-foreclosure-basics .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-8-compassionate-foreclosure-basics .d-icon.d-icon-d-regular,
+.category-8-compassionate-foreclosure-basics .d-icon.d-icon-d-muted, 
+.category-8-compassionate-foreclosure-basics .d-icon.d-icon-d-watching-first,
+.category-8-compassionate-foreclosure-basics .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-8-compassionate-foreclosure-basics .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-8-compassionate-foreclosure-basics .discourse-no-touch .btn{
+    background: #266CC3;
+}
+
+
+.category-8-compassionate-foreclosure-basics .nav-item_latest.active.latest a.active,
+.category-8-compassionate-foreclosure-basics .nav-item_top.top a.active
+{
+    background-color: #266CC3;
+    border-radius :5px;
+    
+}
+
+.category-8-compassionate-foreclosure-basics .nav-item_top.top a:hover,
+.category-8-compassionate-foreclosure-basics .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #266CC3;
+     border-radius :5px;
+}
+
+
+.category-8-compassionate-foreclosure-basics .topic-footer-main-buttons .btn,
+.category-8-compassionate-foreclosure-basics .topic-admin-menu-button .btn,
+.category-8-compassionate-foreclosure-basics .pinned-button .pinned-options .btn,
+.category-8-compassionate-foreclosure-basics .topic-notifications-button .btn
+{
+     background-color: #F7901D;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-8-compassionate-foreclosure-basics .topic-footer-main-buttons .btn:hover,
+.category-8-compassionate-foreclosure-basics .pinned-button .pinned-options .btn:hover,
+.category-8-compassionate-foreclosure-basics .topic-admin-menu-button .btn:hover,
+.category-8-compassionate-foreclosure-basics .topic-notifications-button .btn:hover,
+.category-8-compassionate-foreclosure-basics .pinned-button .pinned-options .btn:focus,
+.category-8-compassionate-foreclosure-basics .topic-notifications-button .btn:focus{
+     background-color: #266CC3;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-8-compassionate-foreclosure-basics .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-8-compassionate-foreclosure-basics .pinned-button .pinned-options .btn {
+    
+}
+
+
+/* END 8 Cmpassionate Forclosure basics GROUP BRANDING */
+
+/* START About the 4 Weeks to a Six Figure Pipeline Bootcamp BRANDING */
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .list-controls .combo-box .combo-box-header {
+    background: #3ABF14;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-4-weeks-to-a-six-figure-pipeline-bootcamp .d-header{
+    box-shadow : 0 2px 4px -1px #3ABF14; 
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #B61C1B;
+
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #B61C1B;
+    background-color: #B61C1B;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #B61C1B;
+    background-color: #B61C1B;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn.edit-category{
+    background:#3ABF14;
+    color:white;
+    border-radius: 5px;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn.edit-category:hover{
+    background-color: #B61C1B;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .footer-message h3 span {
+    color: #B61C1B;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .footer-message h3 span a,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .footer-message h3 a{
+    color: #B61C1B;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-notifications-button .btn,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn#create-topic{
+    background-color: #3ABF14;
+    color:white;
+    border-radius: 5px;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .category-notifications-button .btn:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn#create-topic:hover{
+    background-color: #B61C1B;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .d-icon.d-icon-d-regular,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .d-icon.d-icon-d-muted, 
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .d-icon.d-icon-d-watching-first,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .discourse-no-touch .btn{
+    background: #B61C1B;
+}
+
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .nav-item_latest.active.latest a.active,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .nav-item_top.top a.active
+{
+    background-color: #B61C1B;
+    border-radius :5px;
+    
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .nav-item_top.top a:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #B61C1B;
+     border-radius :5px;
+}
+
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-footer-main-buttons .btn,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-admin-menu-button .btn,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .pinned-button .pinned-options .btn,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-notifications-button .btn
+{
+     background-color: #3ABF14;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-footer-main-buttons .btn:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .pinned-button .pinned-options .btn:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-admin-menu-button .btn:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-notifications-button .btn:hover,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .pinned-button .pinned-options .btn:focus,
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-notifications-button .btn:focus{
+     background-color: #B61C1B;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-4-weeks-to-a-six-figure-pipeline-bootcamp .pinned-button .pinned-options .btn {
+    
+}
+
+/* END About the 4 Weeks to a Six Figure Pipeline Bootcamp BRANDING */
+
+/* START Short term rental specialist BRANDING */
+.category-short-term-rental-specialist .list-controls .combo-box .combo-box-header {
+    background: #3088F4;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-short-term-rental-specialist .d-header{
+    box-shadow : 0 2px 4px -1px #3088F4; 
+}
+
+.category-short-term-rental-specialist .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #FFCD00;
+
+}
+.category-short-term-rental-specialist .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-short-term-rental-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #FFCD00;
+    background-color: #FFCD00;
+}
+.category-short-term-rental-specialist  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #FFCD00;
+    background-color: #FFCD00;
+}
+
+.category-short-term-rental-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-short-term-rental-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-short-term-rental-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-short-term-rental-specialist .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-short-term-rental-specialist .btn.edit-category{
+    background:#3088F4;
+    color:white;
+    border-radius: 5px;
+}
+.category-short-term-rental-specialist .btn.edit-category:hover{
+    background-color: #FFCD00;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-short-term-rental-specialist .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-short-term-rental-specialist .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-short-term-rental-specialist .footer-message h3 span {
+    color: #FFCD00;
+}
+.category-short-term-rental-specialist .footer-message h3 span a,
+.category-short-term-rental-specialist .footer-message h3 a{
+    color: #FFCD00;
+}
+
+.category-short-term-rental-specialist .category-notifications-button .btn,
+.category-short-term-rental-specialist .btn#create-topic{
+    background-color: #3088F4;
+    color:white;
+    border-radius: 5px;
+}
+.category-short-term-rental-specialist .category-notifications-button .btn:hover,
+.category-short-term-rental-specialist .btn#create-topic:hover{
+    background-color: #FFCD00;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-short-term-rental-specialist .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-short-term-rental-specialist .d-icon.d-icon-d-regular,
+.category-short-term-rental-specialist .d-icon.d-icon-d-muted, 
+.category-short-term-rental-specialist .d-icon.d-icon-d-watching-first,
+.category-short-term-rental-specialist .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-short-term-rental-specialist .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-short-term-rental-specialist .discourse-no-touch .btn{
+    background: #FFCD00;
+}
+
+
+.category-short-term-rental-specialist .nav-item_latest.active.latest a.active,
+.category-short-term-rental-specialist .nav-item_top.top a.active
+{
+    background-color: #FFCD00;
+    border-radius :5px;
+    
+}
+
+.category-short-term-rental-specialist .nav-item_top.top a:hover,
+.category-short-term-rental-specialist .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #FFCD00;
+     border-radius :5px;
+}
+
+
+.category-short-term-rental-specialist .topic-footer-main-buttons .btn,
+.category-short-term-rental-specialist .topic-admin-menu-button .btn,
+.category-short-term-rental-specialist .pinned-button .pinned-options .btn,
+.category-short-term-rental-specialist .topic-notifications-button .btn
+{
+     background-color: #3088F4;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-short-term-rental-specialist .topic-footer-main-buttons .btn:hover,
+.category-short-term-rental-specialist .pinned-button .pinned-options .btn:hover,
+.category-short-term-rental-specialist .topic-admin-menu-button .btn:hover,
+.category-short-term-rental-specialist .topic-notifications-button .btn:hover,
+.category-short-term-rental-specialist .pinned-button .pinned-options .btn:focus,
+.category-short-term-rental-specialist .topic-notifications-button .btn:focus{
+     background-color: #FFCD00;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-short-term-rental-specialist .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-short-term-rental-specialist .pinned-button .pinned-options .btn {
+    
+}
+
+
+
+/* END Short term rental specialist BRANDING */  
+
+
+/* START Social media lead generation specialist BNADING */
+.category-social-media-lead-generation-specialist .list-controls .combo-box .combo-box-header {
+    background: #B61C1B;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-social-media-lead-generation-specialist .d-header{
+    box-shadow : 0 2px 4px -1px #B61C1B; 
+}
+
+.category-social-media-lead-generation-specialist .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #FFCD00;
+
+}
+.category-social-media-lead-generation-specialist .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-social-media-lead-generation-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #FFCD00;
+    background-color: #FFCD00;
+}
+.category-social-media-lead-generation-specialist  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #FFCD00;
+    background-color: #FFCD00;
+}
+
+.category-social-media-lead-generation-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-social-media-lead-generation-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-social-media-lead-generation-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-social-media-lead-generation-specialist .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-social-media-lead-generation-specialist .btn.edit-category{
+    background:#B61C1B;
+    color:white;
+    border-radius: 5px;
+}
+.category-social-media-lead-generation-specialist .btn.edit-category:hover{
+    background-color: #FFCD00;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-social-media-lead-generation-specialist .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-social-media-lead-generation-specialist .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-social-media-lead-generation-specialist .footer-message h3 span {
+    color: #FFCD00;
+}
+.category-social-media-lead-generation-specialist .footer-message h3 span a,
+.category-social-media-lead-generation-specialist .footer-message h3 a{
+    color: #FFCD00;
+}
+
+.category-social-media-lead-generation-specialist .category-notifications-button .btn,
+.category-social-media-lead-generation-specialist .btn#create-topic{
+    background-color: #B61C1B;
+    color:white;
+    border-radius: 5px;
+}
+.category-social-media-lead-generation-specialist .category-notifications-button .btn:hover,
+.category-social-media-lead-generation-specialist .btn#create-topic:hover{
+    background-color: #FFCD00;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-social-media-lead-generation-specialist .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-social-media-lead-generation-specialist .d-icon.d-icon-d-regular,
+.category-social-media-lead-generation-specialist .d-icon.d-icon-d-muted, 
+.category-social-media-lead-generation-specialist .d-icon.d-icon-d-watching-first,
+.category-social-media-lead-generation-specialist .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-social-media-lead-generation-specialist .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-social-media-lead-generation-specialist .discourse-no-touch .btn{
+    background: #FFCD00;
+}
+
+
+.category-social-media-lead-generation-specialist .nav-item_latest.active.latest a.active,
+.category-social-media-lead-generation-specialist .nav-item_top.top a.active
+{
+    background-color: #FFCD00;
+    border-radius :5px;
+    
+}
+
+.category-social-media-lead-generation-specialist .nav-item_top.top a:hover,
+.category-social-media-lead-generation-specialist .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #FFCD00;
+     border-radius :5px;
+}
+
+
+.category-social-media-lead-generation-specialist .topic-footer-main-buttons .btn,
+.category-social-media-lead-generation-specialist .topic-admin-menu-button .btn,
+.category-social-media-lead-generation-specialist .pinned-button .pinned-options .btn,
+.category-social-media-lead-generation-specialist .topic-notifications-button .btn
+{
+     background-color: #B61C1B;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-social-media-lead-generation-specialist .topic-footer-main-buttons .btn:hover,
+.category-social-media-lead-generation-specialist .pinned-button .pinned-options .btn:hover,
+.category-social-media-lead-generation-specialist .topic-admin-menu-button .btn:hover,
+.category-social-media-lead-generation-specialist .topic-notifications-button .btn:hover,
+.category-social-media-lead-generation-specialist .pinned-button .pinned-options .btn:focus,
+.category-social-media-lead-generation-specialist .topic-notifications-button .btn:focus{
+     background-color: #FFCD00;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-social-media-lead-generation-specialist .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-social-media-lead-generation-specialist .pinned-button .pinned-options .btn {
+    
+}
+
+/* END Social media lead generation specialist BRANDING */
+
+/* START Distresses property specialist BRANDING */
+.category-distressed-property-specialist .list-controls .combo-box .combo-box-header {
+    background: #F7901D;
+    border-radius :5px;
+    color : white;
+    
+}
+body.category-distressed-property-specialist .d-header{
+    box-shadow : 0 2px 4px -1px #F7901D; 
+}
+
+.category-distressed-property-specialist .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #266CC3;
+
+}
+.category-distressed-property-specialist .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-distressed-property-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #266CC3;
+    background-color: #266CC3;
+}
+.category-distressed-property-specialist  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #266CC3;
+    background-color: #266CC3;
+}
+
+.category-distressed-property-specialist .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-distressed-property-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-distressed-property-specialist .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-distressed-property-specialist .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-distressed-property-specialist .btn.edit-category{
+    background:#F7901D;
+    color:white;
+    border-radius: 5px;
+}
+.category-distressed-property-specialist .btn.edit-category:hover{
+    background-color: #266CC3;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-distressed-property-specialist .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-distressed-property-specialist .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-distressed-property-specialist .footer-message h3 span {
+    color: #266CC3;
+}
+.category-distressed-property-specialist .footer-message h3 span a,
+.category-distressed-property-specialist .footer-message h3 a{
+    color: #266CC3;
+}
+
+.category-distressed-property-specialist .category-notifications-button .btn,
+.category-distressed-property-specialist .btn#create-topic{
+    background-color: #F7901D;
+    color:white;
+    border-radius: 5px;
+}
+.category-distressed-property-specialist .category-notifications-button .btn:hover,
+.category-distressed-property-specialist .btn#create-topic:hover{
+    background-color: #266CC3;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-distressed-property-specialist .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-distressed-property-specialist .d-icon.d-icon-d-regular,
+.category-distressed-property-specialist .d-icon.d-icon-d-muted, 
+.category-distressed-property-specialist .d-icon.d-icon-d-watching-first,
+.category-distressed-property-specialist .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-distressed-property-specialist .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-distressed-property-specialist .discourse-no-touch .btn{
+    background: #266CC3;
+}
+
+
+.category-distressed-property-specialist .nav-item_latest.active.latest a.active,
+.category-distressed-property-specialist .nav-item_top.top a.active
+{
+    background-color: #266CC3;
+    border-radius :5px;
+    
+}
+
+.category-distressed-property-specialist .nav-item_top.top a:hover,
+.category-distressed-property-specialist .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #266CC3;
+     border-radius :5px;
+}
+
+
+.category-distressed-property-specialist .topic-footer-main-buttons .btn,
+.category-distressed-property-specialist .topic-admin-menu-button .btn,
+.category-distressed-property-specialist .pinned-button .pinned-options .btn,
+.category-distressed-property-specialist .topic-notifications-button .btn
+{
+     background-color: #F7901D;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-distressed-property-specialist .topic-footer-main-buttons .btn:hover,
+.category-distressed-property-specialist .pinned-button .pinned-options .btn:hover,
+.category-distressed-property-specialist .topic-admin-menu-button .btn:hover,
+.category-distressed-property-specialist .topic-notifications-button .btn:hover,
+.category-distressed-property-specialist .pinned-button .pinned-options .btn:focus,
+.category-distressed-property-specialist .topic-notifications-button .btn:focus{
+     background-color: #266CC3;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-distressed-property-specialist .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-distressed-property-specialist .pinned-button .pinned-options .btn {
+    
+}
+
+
+    
+/* END Distressed property specialist BRANDING */
+
+/*STARGING VALUE PROP BRANDING*/
+.category-value-prop .list-controls .combo-box .combo-box-header {
+    background: #266CC3;
+    border-radius :5px;
+    color : white;
+    
+}
+
+body.category-value-prop .category-heading > p{
+    display: none;
+}
+
+
+body.category-value-prop .d-header{
+    box-shadow : 0 2px 4px -1px #266CC3; ;
+}
+
+.category-value-prop .list-controls .combo-box .combo-box-header:hover{
+    color: white;
+    background-color: #f7901d;
+
+}
+.category-value-prop .category-breadcrumb  .name .badge-wrapper .badge-category .category-name{
+    color: white;
+
+}
+
+
+
+.category-value-prop .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #f7901d;
+    background-color: #f7901d;
+}
+.category-value-prop  .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn){
+    border-color: #f7901d;
+    background-color: #f7901d;
+}
+
+.category-value-prop .category-breadcrumb .select-kit.single-select.is-expanded .select-kit-header:not(.btn), 
+.category-value-prop .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):focus,
+.category-value-prop .category-breadcrumb .select-kit.single-select .select-kit-header:not(.btn):active {
+    
+    outline: none;
+   
+}
+
+.category-value-prop .topic-list-item.visited .topic-list-data a.title:not(.badge-notification){
+    
+}
+.category-value-prop .btn.edit-category{
+    background:#266CC3;
+    color:white;
+    border-radius: 5px;
+}
+.category-value-prop .btn.edit-category:hover{
+    background-color: #f7901d;
+
+    color:black;
+    transition : all .2s ease-in-out;
+}
+.category-value-prop .btn.edit-category .svg-icon{
+    color:white;
+}
+.category-value-prop .btn.edit-category:hover .svg-icon{
+    color:black;
+}
+
+.category-value-prop .footer-message h3 span {
+    color: #f7901d;
+}
+.category-value-prop .footer-message h3 span a,
+.category-value-prop .footer-message h3 a{
+    color: #f7901d;
+}
+
+.category-value-prop .category-notifications-button .btn,
+.category-value-prop .btn#create-topic{
+    background-color: #266CC3;
+    color:white;
+    border-radius: 5px;
+}
+.category-value-prop .category-notifications-button .btn:hover,
+.category-value-prop .btn#create-topic:hover{
+    background-color: #f7901d;
+    color:white;
+    transition : all .2s ease-in-out;
+}
+.category-value-prop .btn#create-topic .d-icon{
+    color:white;
+}
+
+.category-value-prop .d-icon.d-icon-d-regular,
+.category-value-prop .d-icon.d-icon-d-muted, 
+.category-value-prop .d-icon.d-icon-d-watching-first,
+.category-value-prop .d-icon.d-icon-d-watching-first-post {
+    color: white;
+}
+
+.category-value-prop .discourse-no-touch .btn .d-icon{
+    color: white;
+}
+
+.category-value-prop .discourse-no-touch .btn{
+    background: #f7901d;
+}
+
+
+.category-value-prop .nav-item_latest.active.latest a.active,
+.category-value-prop .nav-item_top.top a.active
+{
+    background-color: #f7901d;
+    border-radius :5px;
+    
+}
+
+.category-value-prop .nav-item_top.top a:hover,
+.category-value-prop .nav-item_latest.latest a:hover{
+     color: white;
+     background-color: #f7901d;
+     border-radius :5px;
+}
+
+
+.category-value-prop .topic-footer-main-buttons .btn,
+.category-value-prop .topic-admin-menu-button .btn,
+.category-value-prop .pinned-button .pinned-options .btn,
+.category-value-prop .topic-notifications-button .btn
+{
+     background-color: #266CC3;
+     border-radius: 5px;
+     color:white;
+     .d-icon{
+         color:white;
+     }
+    
+}
+
+.category-value-prop .topic-footer-main-buttons .btn:hover,
+.category-value-prop .pinned-button .pinned-options .btn:hover,
+.category-value-prop .topic-admin-menu-button .btn:hover,
+.category-value-prop .topic-notifications-button .btn:hover,
+.category-value-prop .pinned-button .pinned-options .btn:focus,
+.category-value-prop .topic-notifications-button .btn:focus{
+     background-color: #f7901d;
+     border-radius: 5px;
+     .d-icon{
+         color:white;
+     }
+    
+    transition: all .2s ease-in-out;
+}
+.category-value-prop .topic-footer-main-button .d-button-label{
+    color:white;
+}
+
+.category-value-prop .pinned-button .pinned-options .btn {
+    
+}
+
+
+
+/* END VALUE PROP GROUP BRANDING*/
+
+
+
+/* START Badge override for every closed group */
+.badge-category__wrapper .badge-category__name {
+    color: white;
+}
+
+/* END Badge override for every closed group */
+
+
+@supports (--custom: property){
+.category-logo.aspect-image {
+    --max-height: 200px;
+    max-height: var(--max-height);
+    max-width: 100%;
+    height: auto;
+    width : 100%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@supports (--custom: property){
+.category-logo.aspect-image img {
+    width:100%; 
+    max-width: 100%;
+    height: inherit;
+    max-height: var(--max-height);
+    border-radius : 10px;
+}
+}
+
+.category-logo.aspect-image {
+    margin : 0px;
+    padding-bottom: 8px;
+}
+    
