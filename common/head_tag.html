@@ -5,6 +5,12 @@ if(user) {
 }
 </script>
 
+
+<script type="text/discourse-plugin" version="0.8.13">
+ 
+  console.log(settings.category_banners);
+</script>
+
 <script type="text/x-handlebars" data-template-name="components/navigation-bar">
     {{#each navItems as |navItem|}}
       {{navigation-item content=navItem filterMode=filterMode category=category}}
