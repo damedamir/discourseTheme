@@ -1,6 +1,6 @@
 {
-  "name": "Default",
-  "component": false,
+  "name": "CustomCategoryBanners",
+  "component": true,
   "license_url": null,
   "about_url": null,
   "authors": null,
