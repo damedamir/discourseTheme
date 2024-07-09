@@ -5,7 +5,7 @@ export default class CustomBannersComponent extends Component {
     @service currentUser;
     
     get currentUserGroups(){
-       console.log(this.args); 
+       
        return  this.currentUser?.groups.map( i => i.id);
     }
 
