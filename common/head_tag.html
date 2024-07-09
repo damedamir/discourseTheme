@@ -6,17 +6,6 @@ if(user) {
 </script>
 
 
-<script type="text/discourse-plugin" version="0.8.13">
- 
-  import Component from "@glimmer/component";
-
-  export default class CategoryBanners extends Component {
-    get categoryBanners() {
-      return JSON.parse(settings.category_banners);
-    }
-  }
-</script>
-
 <script type="text/x-handlebars" data-template-name="components/navigation-bar">
     {{#each navItems as |navItem|}}
       {{navigation-item content=navItem filterMode=filterMode category=category}}
@@ -34,10 +23,10 @@ if(user) {
   {{log @outletArgs}}
   {{#each categoryBanners as |banner|}}
     <a href={{banner.url}}>
-        <img width=300 height=300 src={{banner.image}} alt="">
+        <img width=300 height=300 src={{banner.image_url}} alt="">
     </a>
   {{/each}}
-  <div style="background: red; padding: 10px; float: left;"> <h1>{{theme-setting 'category_banners'}}</h1></div>
+  <div style="background: red; padding: 10px; float: left;"></div>
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/before-list-area/custom-category-section">
