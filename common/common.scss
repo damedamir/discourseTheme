@@ -30,6 +30,7 @@ html.mobile-device .custom-header-links .headerLink a{
  /** END PRODUCT CATALOG LINK STYLES  */
 
  
+ 
 .category-web3-bootcamp .list-controls .combo-box .combo-box-header {
     background: #5959D8;
     border-radius :5px;
@@ -1299,9 +1300,12 @@ body.category-value-prop .d-header{
 
 
 /* START Badge override for every closed group */
-.badge-category__wrapper .badge-category__name {
-    color: white;
+@media (prefers-color-scheme: dark) {
+    .badge-category__wrapper .badge-category__name {
+        color: white;
+    }
 }
+
 
 /* END Badge override for every closed group */
 
