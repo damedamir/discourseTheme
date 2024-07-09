@@ -8,6 +8,8 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "banner_1" : "assets/banner0709_1.png",
+    "banner_2" : "assets/banner0709_2.png"
   },
   "color_schemes": {
     "Dark": {
