@@ -23,7 +23,7 @@ if(user) {
   {{log relevantCategoryBanners}}
   {{log @outletArgs}}
   {{#if @outletArgs.category }}
-    {{#each categoryBanners as |banner|}}
+    {{#each relevantCategoryBanners as |banner|}}
     
       <a href={{banner.url}}>
           <img width=300 height=300 src={{banner.image_url}} alt="">
