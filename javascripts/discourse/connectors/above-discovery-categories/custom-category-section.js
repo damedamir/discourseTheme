@@ -1,7 +1,10 @@
 import Component from "@glimmer/component";
+import { service } from "@ember/service";
 
 export default class CustomBannersComponent extends Component {
-  get categoryBanners() {
-    return settings.category_banners;
-  }
+    @service currentUser;
+  
+    get categoryBanners() {
+        return settings.category_banners;
+    }
 }
