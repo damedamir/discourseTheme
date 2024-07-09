@@ -22,13 +22,13 @@ if(user) {
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/custom-category-section">
   {{log relevantCategoryBanners}}
   {{log @outletArgs}}
-  <div style="display: flex; flex-wrap : wrap;">
+  <div style="display: flex; flex-wrap : wrap; column-gap: 30px;">
     {{#if @outletArgs.category }}
 
     {{#each relevantCategoryBanners as |banner|}}
       <div style="flex-basis:50%;">
-        <a href={{banner.url}} >
-          <img style="width:100%; height:auto;" src={{banner.image_url}} alt="">
+        <a href={{banner.url}} target="_blank">
+          <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
       </a>
       </div>
       
