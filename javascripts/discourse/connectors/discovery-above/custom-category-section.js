@@ -9,6 +9,10 @@ export default class CustomBannersComponent extends Component {
        
        return  this.currentUser?.groups.map( i => i.id);
     }
+
+    get templateUploads(){
+        return settings.template_uploads;
+    }
     
     get relevantCategoryBanners(){
         const category = this.args.outletArgs?.category;
