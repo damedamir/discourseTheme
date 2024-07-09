@@ -10,24 +10,6 @@ if(user) {
   <a href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access/" style="background: transparent; padding: 10px; float: left; width:100%;">ACCESS ALL RESOURCES</a>
 </script>
 
-<!--
-  <script type="text/x-handlebars" data-template-name="components/navigation-bar">
-    {{#each navItems as |navItem|}}
-      {{navigation-item content=navItem filterMode=filterMode category=category}}
-    {{/each}}
-    <a href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access/" style="background: transparent; padding: 10px; float: left; width:100%;">ACCESS ALL RESOURCES</a>
-    {{custom-html name="extraNavItem" tagName="li"}}
-    {{!- this is done to avoid DIV in the UL, originally {{plugin-outlet name="extra-nav-item"}}
-    {{#each connectors as |c|}}
-      {{plugin-connector connector=c class=c.classNames tagName="li" args=(hash category=category filterMode=filterMode)}}
-    {{/each}}
-</script>
-
--->
- 
-
-
-
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section">
   {{log relevantCategoryBanners}}
   {{log @outletArgs}}
