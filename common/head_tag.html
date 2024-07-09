@@ -20,14 +20,15 @@ if(user) {
 
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/custom-category-section">
+  {{log relevantCategoryBanners}}
   {{log @outletArgs}}
   {{#if @outletArgs.category }}
     {{#each categoryBanners as |banner|}}
-      {{#if banner.group == @outletArgs.category.id }}
+    
       <a href={{banner.url}}>
           <img width=300 height=300 src={{banner.image_url}} alt="">
       </a>
-      {{/if}}
+  
   {{/each}}
 {{/if}}
 
