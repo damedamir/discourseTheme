@@ -20,9 +20,12 @@ export default class CustomBannersComponent extends Component {
         
         const userMemberships = this.currentUser?.groups.map( i => i.id);
         const allBanners = settings.category_banners;
-        if(subcategories){
+        /**
+         *   if(subcategories.length){
             return [];
         }
+         */
+      
         const relevantBanners = allBanners.filter( banner => banner.group.includes(category.id));
 
         return relevantBanners;
