@@ -21,11 +21,13 @@ if(user) {
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-list-container-top/custom-category-section">
   {{log @outletArgs}}
-  {{#each categoryBanners as |banner|}}
-  <a href={{banner.url}}>
-      <img width=300 height=300 src={{banner.image_url}} alt="">
-  </a>
-{{/each}}
+  {{#if @outletArgs.category }}
+    {{#each categoryBanners as |banner|}}
+      <a href={{banner.url}}>
+          <img width=300 height=300 src={{banner.image_url}} alt="">
+      </a>
+  {{/each}}
+{{/if}}
 <div style="background: red; padding: 10px; float: left;"></div>
 </script>
 
