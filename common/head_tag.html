@@ -15,7 +15,7 @@ if(user) {
     {{#each navItems as |navItem|}}
       {{navigation-item content=navItem filterMode=filterMode category=category}}
     {{/each}}
-    <div style="background: red; padding: 10px; float: left;">I added this block in the navigation bar template</div>
+    <div style="background: red; padding: 10px; float: left; width:100%;">I added this block in the navigation bar template</div>
     {{custom-html name="extraNavItem" tagName="li"}}
     {{!- this is done to avoid DIV in the UL, originally {{plugin-outlet name="extra-nav-item"}}
     {{#each connectors as |c|}}
@@ -26,10 +26,10 @@ if(user) {
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-discovery-categories/custom-category-section">
   {{log @outletArgs}}
-  <div style="background: red; padding: 10px; float: left;">I added this block in the navigation bar template</div>
+  <div style="background: red; padding: 10px; float: left;"> <h1>{{theme-setting 'category_banners}}</h1></div>
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/before-list-area/custom-category-section">
   {{log @outletArgs}}
-  
+ 
 </script>
