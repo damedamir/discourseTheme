@@ -22,7 +22,7 @@ export default class CustomBannersComponent extends Component {
         console.log(allResourceButtons);
 
         allResourceButtons.forEach(button => {
-            console.log(button);
+            console.log(button.category);
             if(button.category.includes(currentCategoryId)){
                 return button;
             }
