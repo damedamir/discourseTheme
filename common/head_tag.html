@@ -23,21 +23,20 @@ if(user) {
     {{#if @outletArgs.category }}
 
       {{#each relevantCategoryBanners as |banner|}}
-        <div style="flex-basis:50%; flex-shrink: 1;">
-
-          <a href={{banner.url}} target="_blank">
-            
+        <div style="flex-basis:50%; flex-shrink: 1; position:relative;">
+          
+          <a href={{banner.url}} target="_blank" >
+            {{#if banner.use_overlay}}
+              <div style="display:flex; position:absolute; top:0;left;0; height:100%;width:100%;background: rgba(0,0,0,0.4);">
+                <p>{{banner.overlay_text}}</p>
+                <a href="#">{{ banner.overlay_button_text }}</a>
+              </div>
+            {{/if}}
             <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
           </a>
         </div>
       {{/each}}
     {{/if}}
   </div>
- 
-</script>
-
-<script type="text/x-handlebars" data-template-name="/connectors/before-list-area/custom-category-section">
-  {{log @outletArgs}}
-
  
 </script>
