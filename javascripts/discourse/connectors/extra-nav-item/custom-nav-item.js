@@ -20,7 +20,7 @@ export default class CustomBannersComponent extends Component {
 
         const currentCategoryId = this.args.outletArgs.category.id;
 
-        const buttonData = allResourceButtons.filter(button => button.group.includes(currentCategoryId));
+        const buttonData = allResourceButtons.filter(button => button.category.includes(currentCategoryId));
         
         return buttonData || false;
 
