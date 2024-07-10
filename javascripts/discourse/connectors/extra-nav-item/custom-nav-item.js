@@ -19,8 +19,10 @@ export default class CustomBannersComponent extends Component {
         const user = this.currentUser;
 
         const currentCategoryId = this.args.outletArgs.category.id;
+        console.log(currentCategoryId);
 
         allResourceButtons.forEach(button => {
+            console.log(button);
             if(button.category.includes(currentCategoryId)){
                 return button;
             }
