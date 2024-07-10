@@ -1344,6 +1344,7 @@ body.category-value-prop .d-header{
     padding-bottom: 8px;
 }
     
+/* START CATEGORY BANNER OVERLAYS */
 
 .category.category-box{
     height: 200px;
@@ -1359,3 +1360,29 @@ body.category-value-prop .d-header{
 .category-box-web3-accelerator{
     background: url($banner-1);
 }
+
+.n-category-banner-overlay{
+    display:flex;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: rgba(0,0,0,0);
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+}
+.n-category-banner-wrapper{
+    flex-basis:50%;
+    flex-shrink: 1;
+    position:relative;
+    border-radius: 30px;
+}
+
+
+.n-category-banner-wrapper:hover .n-category-banner-overlay{
+    opacity: 1;
+}
+
+
+
