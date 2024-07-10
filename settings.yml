@@ -11,3 +11,18 @@ category_banners:
       url:
         type: string
   description: "This text will be displayed under this setting and it explains what the setting does!"
+
+all_resources_access:
+  type: objects
+  default: []
+  schema:
+    name: resources_button
+    properties:
+      category:
+        type: categories
+      resources_url: 
+        type: string
+      button_text:
+        type: string
+
+      
