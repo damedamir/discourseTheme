@@ -11,7 +11,9 @@ if(user) {
   {{log 'logging outletargs' }}
   {{log @outletArgs}}
   {{log accessResourcesButton}}
-  <a href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access/" > ACCESS ALL RESOURCES</a>
+  {{#if accessResourcesButton }}
+    <a href={{accessResourcesButton.resources_url}} >{{accessResourcesButton.button_text}}</a>
+  {{/if}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section">
