@@ -1376,6 +1376,7 @@ body.category-value-prop .d-header{
     background: rgba(0,0,0,0);
     transition: all 0.4s ease-in-out;
     opacity: 0;
+    border-radius: 30px;
 }
 .n-category-banner-wrapper{
     flex-basis:50%;
@@ -1389,7 +1390,10 @@ body.category-value-prop .d-header{
 }
 
 .n-overlay-text{
-
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
 }
 
 
