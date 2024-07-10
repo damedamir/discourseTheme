@@ -1363,6 +1363,11 @@ body.category-value-prop .d-header{
 
 .n-category-banner-overlay{
     display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding:10px;
     position:absolute;
     top:0;
     left:0;
@@ -1379,8 +1384,18 @@ body.category-value-prop .d-header{
     border-radius: 30px;
 }
 
+.n-overlay-button{
+
+}
+
+.n-overlay-text{
+
+}
+
+
 
 .n-category-banner-wrapper:hover .n-category-banner-overlay{
+    background: rgba(0,0,0,0.4);
     opacity: 1;
 }
 

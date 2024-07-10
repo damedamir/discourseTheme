@@ -28,8 +28,8 @@ if(user) {
           <a href={{banner.url}} target="_blank" >
             {{#if banner.use_overlay}}
               <div class="n-category-banner-overlay">
-                <p>{{banner.overlay_text}}</p>
-                <a href="#">{{ banner.overlay_button_text }}</a>
+                <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+                <a class="n-overlay-button btn btn-default" href="#">{{ banner.overlay_button_text }}</a>
               </div>
             {{/if}}
             <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
