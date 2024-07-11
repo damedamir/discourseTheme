@@ -19,7 +19,7 @@ export default class CustomBannersComponent extends Component {
         if(!category){
             return [];
         }
-
+        console.log("pre parent category check")
         if(!category?.parent_category_id){
             return [];
         }
