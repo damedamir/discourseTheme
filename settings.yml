@@ -16,6 +16,12 @@ category_banners:
         type: string
       overlay_button_text:
         type: string
+      banner_replaces_subcategory:
+        type: bool
+        description: "Banner replaces a subcategory if this option is checked."
+      subcategory_to_replace: 
+        type: categories
+        description: "Sub category that the benner replaces."
   description: "This text will be displayed under this setting and it explains what the setting does!"
 
 all_resources_access:
