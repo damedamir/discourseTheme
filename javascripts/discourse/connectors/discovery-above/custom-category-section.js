@@ -20,6 +20,10 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
 
+        if(!category?.parent_category_id){
+            return [];
+        }
+
         const subcategories = category.subcategories;
         const subcategoryIds = subcategories.map(subCat => subCat.id);
         
