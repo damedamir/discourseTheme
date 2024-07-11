@@ -17,7 +17,7 @@ category_banners:
       overlay_button_text:
         type: string
       banner_replaces_subcategory:
-        type: bool
+        type: boolean
         description: "Banner replaces a subcategory if this option is checked."
       subcategory_to_replace: 
         type: categories
