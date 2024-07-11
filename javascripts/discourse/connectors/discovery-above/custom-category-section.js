@@ -13,6 +13,35 @@ export default class CustomBannersComponent extends Component {
     get templateUploads(){
         return settings.template_uploads;
     }
+
+    get subcategoryPlaceholderBanners(){
+        const category = this.args.outletArgs?.category;
+        if(!category){
+            return [];
+        }
+
+        const subcategories = category.subcategories;
+        const subcategoryIds = subcategories.map(subCat => subCat.id);
+        
+        const allBanners = settings.category_banners;
+        
+        const mockSubgroupBanners = allBanners.filter( banner => {
+            if(!banner.banner_replaces_subcategory){
+                return false;
+            }
+            return !subcategoryIds.includes(banner?.subcategory_to_replace[0]);
+        } );
+        console.log('subgroups');
+        console.log(mockSubgroupBanners);
+       /* if(subcategories.length > 0){
+            return [];
+        }
+         */
+      
+        return mockSubgroupBanners;
+
+
+    }
     
     get relevantCategoryBanners(){
         const category = this.args.outletArgs?.category;
