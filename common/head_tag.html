@@ -38,6 +38,7 @@ if(user) {
   </div>
   <!-- Locked Subcategory Placeholder Banners -->
   <div style="display: flex; column-gap: 30px;">
+    {{log subcategoryPlaceholderBanners}}
     {{#each subcategoryPlaceholderBanners as |banner|}}
     <div class="n-category-banner-wrapper">
       <a href={{banner.url}} target="_blank" >
