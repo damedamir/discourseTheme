@@ -23,7 +23,8 @@ export default class CustomBannersComponent extends Component {
         if(!category?.parent_category_id){
             return [];
         }
-
+        
+        console.log("post parent category check")
         const subcategories = category.subcategories;
         const subcategoryIds = subcategories.map(subCat => subCat.id);
         
