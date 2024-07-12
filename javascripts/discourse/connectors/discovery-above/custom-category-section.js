@@ -35,8 +35,11 @@ export default class CustomBannersComponent extends Component {
             if(!banner.banner_replaces_subcategory){
                 return false;
             }
-            console.log(banner?.subcategory_to_replace[0]);
-            return !subcategoryIds.includes(banner?.subcategory_to_replace[0]);
+            
+            return (
+                !subcategoryIds.includes(banner?.subcategory_to_replace[0]) &&
+                banner.group.includes(category.id)
+                 );
         } );
         console.log('subgroups');
         console.log(mockSubgroupBanners);
