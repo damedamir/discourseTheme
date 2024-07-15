@@ -1,11 +1,36 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
+import { tracked } from "@glimmer/tracking";
+import { action } from "@ember/object";
 
 import {ajax} from "discourse/lib/ajax";
 
 export default class CustomBannersComponent extends Component {
     @service currentUser;
     @service siteSettings;
+
+    subcategories_with_positions = null;
+
+
+
+
+    @action 
+    async getSubcategoriesPositionData(){
+        try{
+            const resposne = await fetch('/categories.json?include_subcategories=true', {
+                headers : {
+                    'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
+                    'Api-Username' : 'System'
+                }
+            });
+            const data = await resposne.json();
+            this.subcategories_with_positions = data.category_list;
+            return thid.subcategories_with_positions;
+        }catch (error) {
+            console.log('Failed:' , error);
+        }
+
+    }
     
     get currentUserGroups(){
        
@@ -22,17 +47,14 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory.id;
-        fetch('/categories.json?include_subcategories=true', {
-            headers :{
-                'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
-                'Api-Username' : 'System'
-            }
-        }
-        ).then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
+        console.log("logging this");
+        console.log(this);
+
+       /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
             ?.subcategory_list.map( subCat => ({
                 id : subCat.id,
                 position : subCat.position
-            })).sort((a,b) => {return a.position > b.position } )} );
+            })).sort((a,b) => {return a.position > b.position } )} );*/
         
 
        /* return allCategories.find(cat => cat.id == currentCategoryId)
