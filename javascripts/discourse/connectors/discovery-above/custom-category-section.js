@@ -22,7 +22,6 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory.id;
-        let allCategories = await
         fetch('/categories.json?include_subcategories=true', {
             headers :{
                 'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
