@@ -22,7 +22,7 @@ export default class CustomBannersComponent extends Component {
                     'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
                     'Api-Username' : 'System'
                 }
-            }).then(res.json().then(data =>{console.log(data);this.subcategories_with_positions = data.category_list;}));
+            }).then( res =>  res.json().then(data =>{console.log(data);this.subcategories_with_positions = data.category_list;}));
             return this.subcategories_with_positions;
         }catch (error) {
             console.log('Failed:' , error);
