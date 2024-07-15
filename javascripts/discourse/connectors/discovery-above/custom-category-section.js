@@ -30,7 +30,9 @@ export default class CustomBannersComponent extends Component {
             
             console.log(subCat);
             return subCat;
-        })
+        });
+
+        return bannerData;
 
     }
 
