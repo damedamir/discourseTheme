@@ -15,18 +15,14 @@ export default class CustomBannersComponent extends Component {
     }
 
     get subcategoryBanners(){
-        console.log("Logging subcategory");
         const category = this.args.outletArgs?.category;
         if(!category){
             return [];
         }
 
         const placeholders = this.allCustomBanners;
-        console.log(placeholders);
         const {subcategories} = category;
 
-
-        
         if(!subcategories.length > 0){
             return [];
         }
@@ -48,6 +44,11 @@ export default class CustomBannersComponent extends Component {
 
         return bannerData;
 
+    }
+
+    get orderedSubcategoryBanners(){
+       const orderedBanners =  [...this.subcategoryBanners, ...this.subcategoryPlaceholderBanners];
+       console.log(orderedBanners);
     }
 
     get allCustomBanners(){
