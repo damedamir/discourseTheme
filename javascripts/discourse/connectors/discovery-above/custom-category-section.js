@@ -80,8 +80,8 @@ export default class CustomBannersComponent extends Component {
         if(!subcategories.length > 0){
             return [];
         }
-        const positions = this.getSubategoryPositions.then(function(data){  cat = data.category_list.categories}  );
-        console.log(positions);
+        const positions = this.getSubategoryPositions.then(function(data){  cat = data}  );
+        console.log(cat);
         const bannerData = subcategories.map(subCat => {
             if(!subCat?.path){
                 throw new Error("Discourse didn't return a subcategory path. Please contact website admin");
