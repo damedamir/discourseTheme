@@ -30,7 +30,7 @@ export default class CustomBannersComponent extends Component {
             }
         }
         ).then(r => r.json()).then(e => { console.log(e); allCategories = e?.category_list?.categories} );
-        console.log(allCategories)
+        
 
         return allCategories.find(cat => cat.id == currentCategoryId)
                             ?.subcategory_list.map( subCat => ({
@@ -53,7 +53,7 @@ export default class CustomBannersComponent extends Component {
         if(!subcategories.length > 0){
             return [];
         }
-        
+        console.log(this.getSubategoryPositions());
         const bannerData = subcategories.map(subCat => {
             if(!subCat?.path){
                 throw new Error("Discourse didn't return a subcategory path. Please contact website admin");
