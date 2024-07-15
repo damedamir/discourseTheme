@@ -30,8 +30,18 @@ export default class CustomBannersComponent extends Component {
         }
         
         const bannerData = subcategories.map(subCat => {
+            if(!subCat?.path){
+                throw new Error("Discourse didn't return a subcategory path. Please contact website admin");
+            }
+            if(!subcategories?.name){
+                throw new Error("Discourse did't return a subcategory name. Please contact the website admin.")
+            }
             
-            return subCat;
+            return {
+                path: subCat.path,
+                name : subCat.name,
+                position : subCat.position
+            };
         });
 
         return bannerData;
