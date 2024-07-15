@@ -73,14 +73,14 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
 
-
+        let cat = null;
         const placeholders = this.allCustomBanners;
         const {subcategories} = category;
 
         if(!subcategories.length > 0){
             return [];
         }
-        const positions = this.getSubategoryPositions.then(function(data){   data.category_list.categories}  );
+        const positions = this.getSubategoryPositions.then(function(data){  cat = data.category_list.categories}  );
         console.log(positions);
         const bannerData = subcategories.map(subCat => {
             if(!subCat?.path){
