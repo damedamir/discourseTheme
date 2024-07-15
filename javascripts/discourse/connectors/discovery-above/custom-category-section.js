@@ -22,21 +22,21 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory.id;
-        const allCategories = ajax('/categories.json?include_subcategories=true',{
+        const allCategories = ajax('/categories.json?include_subcategories=true', {
             headers :{
                 'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
                 'Api-Username' : 'System'
             }
         }
-           
-        ).then(e => e?.categorylist?.categories );
+        ).then(e => e?.category_list?.categories);
+        console.log(allCategories)
 
-        return allCategories.find(cat => cat.id == currentCategoryId)
+       /* return allCategories.find(cat => cat.id == currentCategoryId)
                             ?.subcategory_list.map( subCat => ({
                                 id : subCat.id,
                                 position : subCat.position
                             })).sort((a,b) => {a.position > b.position } );
-
+                            */
     }
 
     get subcategoryBanners(){
