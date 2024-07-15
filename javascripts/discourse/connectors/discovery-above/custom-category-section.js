@@ -80,7 +80,7 @@ export default class CustomBannersComponent extends Component {
         if(!subcategories.length > 0){
             return [];
         }
-        const positions = this.getSubategoryPositions.then(data =>  data.category_list.categories );
+        const positions = this.getSubategoryPositions.then(function(data){   data.category_list.categories}  );
         console.log(positions);
         const bannerData = subcategories.map(subCat => {
             if(!subCat?.path){
