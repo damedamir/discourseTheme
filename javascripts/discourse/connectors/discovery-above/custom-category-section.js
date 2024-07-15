@@ -1,6 +1,8 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
 
+import {ajax} from "discourse/lib/ajax";
+
 export default class CustomBannersComponent extends Component {
     @service currentUser;
     @service siteSettings;
@@ -34,6 +36,13 @@ export default class CustomBannersComponent extends Component {
             if(!subCat?.name){
                 throw new Error("Discourse did't return a subcategory name. Please contact the website admin.")
             }
+
+            const ajaxData = ajax('/categories.json?include_subcategories=true',
+                headers={
+                    'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
+                    'Api-User' : 'System'
+                }
+            ).then(e => {console.log(e)})
             
             return {
                 path: subCat.path,
@@ -47,7 +56,12 @@ export default class CustomBannersComponent extends Component {
     }
 
     get orderedSubcategoryBanners(){
-       const orderedBanners =  [...this.subcategoryBanners, ...this.subcategoryPlaceholderBanners];
+       const orderedBanners =  [
+        ...this.subcategoryBanners,
+        ...this.subcategoryPlaceholderBanners
+    ];
+
+       
        console.log("logging ordered banners");
        return orderedBanners;
     }
