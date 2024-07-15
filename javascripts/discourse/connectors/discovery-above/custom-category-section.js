@@ -27,6 +27,7 @@ export default class CustomBannersComponent extends Component {
         }
 
         const bannerData = subcategories.map(subCat => {
+            console.log("Logging subcategory");
             console.log(subCat);
             return subCat;
         })
