@@ -24,6 +24,8 @@ export default class CustomBannersComponent extends Component {
                 }
             });
             const data = await resposne.json();
+            console.log("positions")
+            console.log(data);
             this.subcategories_with_positions = data.category_list;
             return this.subcategories_with_positions;
         }catch (error) {
