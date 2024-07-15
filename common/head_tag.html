@@ -8,9 +8,6 @@ if(user) {
 
 
 <script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/custom-nav-item">
-  {{log 'logging outletargs' }}
-  {{log @outletArgs}}
-  {{log accessResourcesButton}}
   {{#if accessResourcesButton }}
     <li title="topics with recent posts" id="ember154" class="latest ember-view nav-item">
       <a href={{accessResourcesButton.resources_url}} >{{accessResourcesButton.button_text}}</a>
