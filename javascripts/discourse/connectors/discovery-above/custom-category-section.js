@@ -22,14 +22,14 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory.id;
-        let allCategories = [];
+        let allCategories = await
         fetch('/categories.json?include_subcategories=true', {
             headers :{
                 'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
                 'Api-Username' : 'System'
             }
         }
-        ).then(r => r.json()).then(e => { console.log(e); allCategories = e.category_list.categories} );
+        ).then(r => r.json()).then(e => { e.category_list.categories} );
         
 
         return allCategories.find(cat => cat.id == currentCategoryId)
