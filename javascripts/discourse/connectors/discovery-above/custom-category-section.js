@@ -32,7 +32,7 @@ export default class CustomBannersComponent extends Component {
             ?.subcategory_list.map( subCat => ({
                 id : subCat.id,
                 position : subCat.position
-            })).sort((a,b) => {a.position > b.position } )} );
+            })).sort((a,b) => {return a.position > b.position } )} );
         
 
        /* return allCategories.find(cat => cat.id == currentCategoryId)
