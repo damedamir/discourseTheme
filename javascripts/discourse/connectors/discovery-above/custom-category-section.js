@@ -14,18 +14,33 @@ export default class CustomBannersComponent extends Component {
         return settings.template_uploads;
     }
 
+    get subcategoryBanners(){
+        const category = this.args.outletArgs?.category;
+        if(!category){
+            return [];
+        }
+
+        const {subcategories} = category;
+
+        if(!subcategories.length > 0){
+            return [];
+        }
+
+        const bannerData = subcategories.map(subCat => {
+            console.log(subCat);
+            return subCat;
+        })
+
+    }
+
     get subcategoryPlaceholderBanners(){
         const category = this.args.outletArgs?.category;
         if(!category){
             return [];
         }
-        console.log("pre parent category check");
-        console.log(category?.parent_category_id);
         if(category?.parent_category_id){
             return [];
         }
-        
-        console.log("post parent category check")
         const subcategories = category.subcategories;
         const subcategoryIds = subcategories.map(subCat => subCat.id);
         
@@ -41,16 +56,11 @@ export default class CustomBannersComponent extends Component {
                 banner.group.includes(category.id)
                  );
         } );
-        console.log('subgroups');
-        console.log(mockSubgroupBanners);
        /* if(subcategories.length > 0){
             return [];
         }
          */
-      
         return mockSubgroupBanners;
-
-
     }
     
     get relevantCategoryBanners(){
