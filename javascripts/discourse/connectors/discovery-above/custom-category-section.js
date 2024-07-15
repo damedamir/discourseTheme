@@ -29,14 +29,18 @@ export default class CustomBannersComponent extends Component {
                 'Api-Username' : 'System'
             }
         }
-        ).then(r => r.json()).then(e => { e.category_list.categories} );
+        ).then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
+            ?.subcategory_list.map( subCat => ({
+                id : subCat.id,
+                position : subCat.position
+            })).sort((a,b) => {a.position > b.position } )} );
         
 
-        return allCategories.find(cat => cat.id == currentCategoryId)
+       /* return allCategories.find(cat => cat.id == currentCategoryId)
                             ?.subcategory_list.map( subCat => ({
                                 id : subCat.id,
                                 position : subCat.position
-                            })).sort((a,b) => {a.position > b.position } );
+                            })).sort((a,b) => {a.position > b.position } );*/
                             
     }
 
