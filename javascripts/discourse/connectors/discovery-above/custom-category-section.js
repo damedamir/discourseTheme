@@ -31,7 +31,7 @@ export default class CustomBannersComponent extends Component {
         ).then(r => r.json()).then(e => e?.category_list?.categories);
         console.log(allCategories)
 
-        return allCategories._result.find(cat => cat.id == currentCategoryId)
+        return allCategories.find(cat => cat.id == currentCategoryId)
                             ?.subcategory_list.map( subCat => ({
                                 id : subCat.id,
                                 position : subCat.position
