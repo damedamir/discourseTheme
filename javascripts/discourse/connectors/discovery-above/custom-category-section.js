@@ -28,7 +28,7 @@ export default class CustomBannersComponent extends Component {
                 'Api-Username' : 'System'
             }
         }
-        ).then(e => e?.category_list?.categories);
+        ).then(e => e);
         console.log(allCategories)
 
        /* return allCategories.find(cat => cat.id == currentCategoryId)
