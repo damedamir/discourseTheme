@@ -28,15 +28,15 @@ export default class CustomBannersComponent extends Component {
                 'Api-Username' : 'System'
             }
         }
-        ).then(e => e);
+        ).then(e => e?.category_list?.categories);
         console.log(allCategories)
 
-       /* return allCategories.find(cat => cat.id == currentCategoryId)
+        return allCategories.find(cat => cat.id == currentCategoryId)
                             ?.subcategory_list.map( subCat => ({
                                 id : subCat.id,
                                 position : subCat.position
                             })).sort((a,b) => {a.position > b.position } );
-                            */
+                            
     }
 
     get subcategoryBanners(){
