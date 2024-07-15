@@ -16,11 +16,35 @@ export default class CustomBannersComponent extends Component {
         return settings.template_uploads;
     }
 
+    get getCategory(){
+        return this.args.outletArgs?.category
+    }
+
+    get getSubategoryPositions(){
+        const currentCategoryId = this.getCategory.id;
+        const allCategories = ajax('/categories.json?include_subcategories=true',{
+            headers :{
+                'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
+                'Api-Username' : 'System'
+            }
+        }
+           
+        ).then(e => e?.categorylist?.categories );
+
+        return allCategories.find(cat => cat.id == currentCategoryId)
+                            ?.subcategory_list.map( subCat => ({
+                                id : subCat.id,
+                                position : subCat.position
+                            })).sort((a,b) => {a.position > b.position } );
+
+    }
+
     get subcategoryBanners(){
-        const category = this.args.outletArgs?.category;
+        const category = this.getCategory;
         if(!category){
             return [];
         }
+
 
         const placeholders = this.allCustomBanners;
         const {subcategories} = category;
@@ -37,14 +61,7 @@ export default class CustomBannersComponent extends Component {
                 throw new Error("Discourse did't return a subcategory name. Please contact the website admin.")
             }
 
-            ajax('/categories.json?include_subcategories=true',{
-                headers :{
-                    'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
-                    'Api-Username' : 'System'
-                }
-            }
-               
-            ).then(e => {console.log(e)})
+           
             
             return {
                 path: subCat.path,
@@ -65,6 +82,7 @@ export default class CustomBannersComponent extends Component {
 
        
        console.log("logging ordered banners");
+       console.log(this.getSubategoryPositions);
        return orderedBanners;
     }
 
