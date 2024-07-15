@@ -6,6 +6,8 @@ category_banners:
     properties:
       group:
         type: categories
+      upload:
+        type: upload
       image_url:
         type: string
       url:
