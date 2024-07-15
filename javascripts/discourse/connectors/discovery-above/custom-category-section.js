@@ -22,10 +22,12 @@ export default class CustomBannersComponent extends Component {
 
         const {subcategories} = category;
 
+
+        console.log("Logging subcategory");
         if(!subcategories.length > 0){
             return [];
         }
-        console.log("Logging subcategory");
+        
         const bannerData = subcategories.map(subCat => {
             
             console.log(subCat);
