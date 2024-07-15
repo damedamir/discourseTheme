@@ -21,6 +21,10 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
 
+        const placeholders = this.subcategoryPlaceholderBanners;
+
+        console.log(placeholders);
+
         const {subcategories} = category;
 
 
