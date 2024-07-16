@@ -21,7 +21,7 @@ export default class CustomBannersComponent extends Component {
                 'Api-Username' : 'System'
             }
         }).then(res => res.json())
-            .then(data => {  this.subcategories_with_positions = data.category_list; this.categories_fetched=true;})
+            .then(data => {  this.subcategories_with_positions = data?.category_list?.categories; this.categories_fetched=true;})
                 .catch(e => {console.log(e); this.categories_fetched=false;});
       }
 
