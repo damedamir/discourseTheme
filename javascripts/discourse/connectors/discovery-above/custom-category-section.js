@@ -152,7 +152,7 @@ export default class CustomBannersComponent extends Component {
         }
          */
         return mockSubgroupBanners.map(banner => {
-            if(positions[banner?.subcategory_to_replace]){
+            if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace]
             }
         });
