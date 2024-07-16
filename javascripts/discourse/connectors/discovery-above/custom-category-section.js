@@ -10,6 +10,7 @@ export default class CustomBannersComponent extends Component {
     @service siteSettings;
 
     @tracked subcategories_with_positions = null;
+    @tracked categories_fetched = false;
 
     constructor() {
         super(...arguments);
@@ -20,8 +21,8 @@ export default class CustomBannersComponent extends Component {
                 'Api-Username' : 'System'
             }
         }).then(res => res.json())
-            .then(data => { console.log(this); this.subcategories_with_positions = data})
-                .catch(e => {console.log(e)});
+            .then(data => {  this.subcategories_with_positions = data; this.categories_fetched=true;})
+                .catch(e => {console.log(e); this.categories_fetched=false;});
       }
 
     
@@ -40,7 +41,15 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory?.id;
-        return this.subcategories_with_positions;
+
+        if(this.categories_fetched){
+            return this.subcategories_with_positions.find(category => category.id = currentCategoryId)
+                                                ?.subcategory_list.map( subCat => {return { id: subCat.id, position: subCat.position }})
+                                                .sort((a,b) => a.position > b.position);
+
+        }
+
+        return [];
 
         
        /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
