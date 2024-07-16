@@ -25,9 +25,7 @@ export default class CustomBannersComponent extends Component {
             })
         const data = await response.json();
         this.subcategories_with_positions = data;
-        console.log(this);
-        
-        return data;    
+          
     }
     
     get currentUserGroups(){
