@@ -153,12 +153,13 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
          */
-        console.log(mockSubgroupBanners);
-        return mockSubgroupBanners.map(banner => {
+            console.log(mockSubgroupBanners);
+            mockSubgroupBanners = mockSubgroupBanners.map(banner => {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace].position;
             }
         });
+        return mockSubgroupBanners;
     }
     
     get relevantCategoryBanners(){
