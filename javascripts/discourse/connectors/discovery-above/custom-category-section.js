@@ -26,7 +26,7 @@ export default class CustomBannersComponent extends Component {
         const data = await response.json();
 
         
-
+        return data;    
     }
     
     get currentUserGroups(){
