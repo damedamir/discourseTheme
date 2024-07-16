@@ -47,9 +47,11 @@ export default class CustomBannersComponent extends Component {
                                                 ?.subcategory_list.map( subCat => {return { id: subCat.id, position: subCat.position }})
                                                 .sort((a,b) => a.position > b.position);
 
-        }
+        }else{
+            return [];
+        }   
 
-        return [];
+        
 
         
        /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
