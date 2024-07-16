@@ -21,7 +21,7 @@ if(user) {
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section">
-  {{log orderedSubcategoryBanners }}
+  {{log getSubategoryPositions }}
   {{#if @outletArgs.category }}
    <!-- Decorative Banners -->
   <div style="display: flex; column-gap: 30px;">
