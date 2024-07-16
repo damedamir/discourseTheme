@@ -26,7 +26,7 @@ if(user) {
   {{#if @outletArgs.category }}
   {{log orderedSubcategoryBanners }}
    <!-- Decorative Banners -->
-  <div style="display: flex; column-gap: 30px;">
+  <div class="n-category-banner-container" >
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           <a href={{banner.url}} >
