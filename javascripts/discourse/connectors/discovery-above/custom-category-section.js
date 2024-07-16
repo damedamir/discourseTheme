@@ -44,8 +44,14 @@ export default class CustomBannersComponent extends Component {
 
         if(this.categories_fetched){
             return this.subcategories_with_positions.find(category => category.id == currentCategoryId)
-                                                ?.subcategory_list.map( subCat => {return { id: subCat.id, position: subCat.position }})
-                                                .sort((a,b) => a.position > b.position);
+                                                ?.subcategory_list.reduce( (item, acc)  => {  
+                                                    if(!acc[item.id]){
+                                                        acc[item.id] = {
+                                                            position: item.position
+                                                        }
+                                                    }  
+                                                }, {});
+                                               
 
         }else{
             return [];
@@ -126,6 +132,8 @@ export default class CustomBannersComponent extends Component {
         }
         const subcategories = category.subcategories;
         const subcategoryIds = subcategories.map(subCat => subCat.id);
+        const positions = this.getSubategoryPositions;
+
         
         const allBanners = this.allCustomBanners ;
         
