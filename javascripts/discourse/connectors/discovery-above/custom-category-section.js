@@ -24,7 +24,7 @@ export default class CustomBannersComponent extends Component {
                 }
             })
         const data = await response.json();
-        
+        this.subcategories_with_positions = data;
         console.log(this);
         
         return data;    
@@ -45,7 +45,8 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory?.id;
-        return this.getSubcategoriesPositionData();
+        this.getSubcategoriesPositionData();
+        return this.subcategories_with_positions;
 
         
        /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
