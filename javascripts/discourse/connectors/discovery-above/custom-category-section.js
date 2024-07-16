@@ -112,7 +112,7 @@ export default class CustomBannersComponent extends Component {
 
     get orderedSubcategoryBanners(){
         console.log("logging from getter")
-        console.log(this.subcategoryBanners);
+        console.log(this.subcategoryPlaceholderBanners);
        const orderedBanners =  [
         ...this.subcategoryBanners,
         ...this.subcategoryPlaceholderBanners
@@ -153,6 +153,7 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
          */
+        console.log(mockSubgroupBanners);
         return mockSubgroupBanners.map(banner => {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace]
