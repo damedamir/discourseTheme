@@ -11,23 +11,19 @@ export default class CustomBannersComponent extends Component {
 
     @tracked subcategories_with_positions = null;
 
+    constructor() {
+        super(...arguments);
     
-
-
-     
-    getSubcategoriesPositionData(){
-        
         fetch('/categories.json?include_subcategories=true', {
-                headers : {
-                    'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
-                    'Api-Username' : 'System'
-                }
-            }).then(res => res.json())
-                .then(data => { console.log(this); this.subcategories_with_positions = data})
-                    .catch(e => {console.log(e)})
-       
+            headers : {
+                'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
+                'Api-Username' : 'System'
+            }
+        }).then(res => res.json())
+            .then(data => { console.log(this); this.subcategories_with_positions = data})
+                .catch(e => {console.log(e)});
+      }
 
-    }
     
     get currentUserGroups(){
        
@@ -44,7 +40,6 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory?.id;
-        this.getSubcategoriesPositionData();
         return this.subcategories_with_positions;
 
         
