@@ -14,18 +14,18 @@ export default class CustomBannersComponent extends Component {
 
 
 
-    @action 
-    getSubcategoriesPositionData(){
-        try{
-            fetch('/categories.json?include_subcategories=true', {
+     
+    async getSubcategoriesPositionData(){
+        
+        const response = await  fetch('/categories.json?include_subcategories=true', {
                 headers : {
                     'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
                     'Api-Username' : 'System'
                 }
-            }).then( res => res.json()).then(data => { this.subcategories_with_positions = data.category_list;});
-        }catch (error) {
-            console.log('Failed:' , error);
-        }
+            })
+        const data = await response.json();
+
+        console.log(data);
 
     }
     
@@ -44,12 +44,7 @@ export default class CustomBannersComponent extends Component {
 
     get getSubategoryPositions(){
         const currentCategoryId = this.getCategory?.id;
-        let positionData =  fetch('/categories.json?include_subcategories=true', {
-            headers : {
-                'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
-                'Api-Username' : 'System'
-            }
-        }).then( res => res.json()).then( data =>  data.category_list );
+        return this.getSubcategoriesPositionData();
 
         
        /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
