@@ -114,7 +114,7 @@ export default class CustomBannersComponent extends Component {
        const orderedBanners =  [
         ...this.subcategoryBanners,
         ...this.subcategoryPlaceholderBanners
-    ].sort((a,b) => a.position < b.position);;
+    ].sort((a,b) => a.position - b.position);
 
        return orderedBanners;
     }
