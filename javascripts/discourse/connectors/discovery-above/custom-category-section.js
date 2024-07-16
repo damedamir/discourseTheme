@@ -35,6 +35,11 @@ export default class CustomBannersComponent extends Component {
         return settings.template_uploads;
     }
 
+    get decorativeBanners(){
+        const category = this.getCategory;
+        return this.allCustomBanners.filter(banner => ( banner.group.includes(category?.id) && banner.banner_replaces_subcategory == false ) );
+    }
+
     get getCategory(){
         return this.args.outletArgs?.category
     }
