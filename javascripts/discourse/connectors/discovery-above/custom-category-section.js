@@ -67,7 +67,7 @@ export default class CustomBannersComponent extends Component {
 
         let cat = null;
         const placeholders = this.allCustomBanners;
-        const {subcategories} = category;
+        let {subcategories} = category;
 
         subcategories = subcategories.map(item => {
             const placeholder = placeholders.find(placehoder => placehoder?.subcategory_to_replace.includes(item.id))
