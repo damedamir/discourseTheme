@@ -11,21 +11,20 @@ export default class CustomBannersComponent extends Component {
 
     @tracked subcategories_with_positions = null;
 
-
+    
 
 
      
-    async getSubcategoriesPositionData(){
+    getSubcategoriesPositionData(){
         
-        const response = await  fetch('/categories.json?include_subcategories=true', {
+        fetch('/categories.json?include_subcategories=true', {
                 headers : {
                     'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
                     'Api-Username' : 'System'
                 }
-            })
-        const data = await response.json();
-        this.subcategories_with_positions = data;
-          
+            }).then(res => res.json()).then(data => { donsole.log(this); this.subcategories_with_positions = data})
+       
+
     }
     
     get currentUserGroups(){
