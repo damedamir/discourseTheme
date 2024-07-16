@@ -69,7 +69,7 @@ export default class CustomBannersComponent extends Component {
         const placeholders = this.allCustomBanners;
         const {subcategories} = category;
 
-        subcategories.map(item => {
+        subcategories = subcategories.map(item => {
             const placeholder = placeholders.find(placehoder => placehoder?.subcategory_to_replace.includes(item.id))
             if(placeholder){
                 item.image_url = placeholder.image_url;
