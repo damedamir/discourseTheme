@@ -51,28 +51,11 @@ export default class CustomBannersComponent extends Component {
                                                         }
                                                     }  
                                                     return acc;
-                                                }, {});
-                                               
+                                                }, {});                                  
 
         }else{
             return {};
-        }   
-
-        
-
-        
-       /*.then(r => r.json()).then(e => { return e?.category_list?.categories?.find(cat => cat.id == currentCategoryId)
-            ?.subcategory_list.map( subCat => ({
-                id : subCat.id,
-                position : subCat.position
-            })).sort((a,b) => {return a.position > b.position } )} );*/
-        
-
-       /* return allCategories.find(cat => cat.id == currentCategoryId)
-                            ?.subcategory_list.map( subCat => ({
-                                id : subCat.id,
-                                position : subCat.position
-                            })).sort((a,b) => {a.position > b.position } );*/
+        }
                             
     }
 
@@ -86,6 +69,14 @@ export default class CustomBannersComponent extends Component {
         const placeholders = this.allCustomBanners;
         const {subcategories} = category;
 
+        subcategories.map(item => {
+            const placeholder = placeholders.find(placehoder => placehoder?.subcategory_to_replace.includes(item.id))
+            if(placeholder){
+                item.image_url = placeholder.image_url;
+            }
+            return item;
+        })
+
         if(!subcategories.length > 0){
             return [];
         }
@@ -97,12 +88,12 @@ export default class CustomBannersComponent extends Component {
                 throw new Error("Discourse did't return a subcategory name. Please contact the website admin.")
             }
 
-           
-            
             return {
-                path: subCat.path,
-                name : subCat.name,
-                position : subCat.position
+                use_overlay: true,
+                url: subCat.path,
+                overlay_button_text : subCat.name,
+                position : subCat.position,
+                image_url : subCat.image_url
             };
         });
 
