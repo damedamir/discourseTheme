@@ -116,7 +116,7 @@ export default class CustomBannersComponent extends Component {
         ...this.subcategoryPlaceholderBanners
     ];
 
-       return orderedBanners;
+       return orderedBanners.sort((a,b) => a.position > b.position);
     }
 
     get allCustomBanners(){
@@ -125,6 +125,7 @@ export default class CustomBannersComponent extends Component {
 
     get subcategoryPlaceholderBanners(){
         const category = this.args.outletArgs?.category;
+        const positions = this.getSubategoryPositions;
         if(!category){
             return [];
         }
@@ -133,10 +134,8 @@ export default class CustomBannersComponent extends Component {
         }
         const subcategories = category.subcategories;
         const subcategoryIds = subcategories.map(subCat => subCat.id);
-        const positions = this.getSubategoryPositions;
-
-        
-        const allBanners = this.allCustomBanners ;
+       
+ 
         
         const mockSubgroupBanners = allBanners.filter( banner => {
             if(!banner.banner_replaces_subcategory){
@@ -152,7 +151,11 @@ export default class CustomBannersComponent extends Component {
             return [];
         }
          */
-        return mockSubgroupBanners;
+        return mockSubgroupBanners.map(banner => {
+            if(positions[banner?.subcategory_to_replace]){
+                banner.position = positions[banner?.subcategory_to_replace]
+            }
+        });
     }
     
     get relevantCategoryBanners(){
