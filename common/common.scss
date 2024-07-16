@@ -1381,7 +1381,13 @@ body.category-value-prop .d-header{
     flex: 1 1 33%;
     position:relative;
     border-radius: 30px;
-    max-width: 45%;
+    max-width: 50%;
+}
+
+.n-category-banner-container{
+    display: flex; 
+    column-gap: 20px;
+    justify-content: center;
 }
 
 .n-overlay-button{
