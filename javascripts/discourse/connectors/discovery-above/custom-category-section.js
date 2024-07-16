@@ -111,14 +111,12 @@ export default class CustomBannersComponent extends Component {
     }
 
     get orderedSubcategoryBanners(){
-        console.log("logging from getter")
-        console.log(this.subcategoryPlaceholderBanners);
        const orderedBanners =  [
         ...this.subcategoryBanners,
         ...this.subcategoryPlaceholderBanners
-    ];
+    ].sort((a,b) => a.position < b.position);;
 
-       return orderedBanners.sort((a,b) => a.position < b.position);
+       return orderedBanners;
     }
 
     get allCustomBanners(){
