@@ -24,7 +24,8 @@ export default class CustomBannersComponent extends Component {
                 }
             })
         const data = await response.json();
-
+        
+        console.log(this);
         
         return data;    
     }
