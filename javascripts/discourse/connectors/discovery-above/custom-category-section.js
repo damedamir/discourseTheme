@@ -139,7 +139,7 @@ export default class CustomBannersComponent extends Component {
        
  
         
-        const mockSubgroupBanners = this.allCustomBanners.filter( banner => {
+        let mockSubgroupBanners = this.allCustomBanners.filter( banner => {
             if(!banner.banner_replaces_subcategory){
                 return false;
             }
