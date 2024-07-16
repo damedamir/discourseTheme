@@ -55,7 +55,7 @@ export default class CustomBannersComponent extends Component {
                                                
 
         }else{
-            return [];
+            return {};
         }   
 
         
