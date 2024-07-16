@@ -44,7 +44,7 @@ export default class CustomBannersComponent extends Component {
 
         if(this.categories_fetched){
             return this.subcategories_with_positions.find(category => category.id == currentCategoryId)
-                                                ?.subcategory_list.reduce( (item, acc)  => {  
+                                                ?.subcategory_list.reduce( ( acc,item)  => {  
                                                     if(!acc[item.id]){
                                                         acc[item.id] = {
                                                             position: item.position
