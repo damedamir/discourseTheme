@@ -43,7 +43,7 @@ export default class CustomBannersComponent extends Component {
         const currentCategoryId = this.getCategory?.id;
 
         if(this.categories_fetched){
-            return this.subcategories_with_positions.find(category => category.id = currentCategoryId)
+            return this.subcategories_with_positions.find(category => category.id == currentCategoryId)
                                                 ?.subcategory_list.map( subCat => {return { id: subCat.id, position: subCat.position }})
                                                 .sort((a,b) => a.position > b.position);
 
@@ -82,7 +82,6 @@ export default class CustomBannersComponent extends Component {
         if(!subcategories.length > 0){
             return [];
         }
-        console.log(cat);
         const bannerData = subcategories.map(subCat => {
             if(!subCat?.path){
                 throw new Error("Discourse didn't return a subcategory path. Please contact website admin");
