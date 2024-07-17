@@ -3,6 +3,7 @@ category_banners:
   default: []
   schema:
     name: banner
+    identifier: group
     properties:
       group:
         type: categories
