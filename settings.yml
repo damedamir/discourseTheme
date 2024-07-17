@@ -38,12 +38,22 @@ all_resources_access:
   default: []
   schema:
     name: resources_button
+    identifier: category
     properties:
       category:
         type: categories
+        required: true
+        validations:
+          max: 1
       resources_url: 
         type: string
+        validations:
+          url: true
+        required: true
       button_text:
         type: string
+        validations:
+          min: 4
+        required: true
 
       
