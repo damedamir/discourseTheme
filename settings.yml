@@ -8,12 +8,12 @@ category_banners:
       group:
         type: categories
         required: true
-        validators: 
+        validations: 
           max: 1
       image_url:
         type: string
         required: true
-        validators:
+        validations:
           url: true
       url:
         type: string
@@ -29,7 +29,7 @@ category_banners:
         type: boolean
       subcategory_to_replace: 
         type: categories
-        validators: 
+        validations: 
           max: 1
 
 
