@@ -7,10 +7,18 @@ category_banners:
     properties:
       group:
         type: categories
+        required: true
+        validators: 
+          max: 1
       image_url:
         type: string
+        required: true
+        validators:
+          url: true
       url:
         type: string
+        validators:
+          url: true
       use_overlay: 
         type: boolean
       overlay_text:
@@ -21,6 +29,8 @@ category_banners:
         type: boolean
       subcategory_to_replace: 
         type: categories
+        validators: 
+          max: 1
 
 
 all_resources_access:
