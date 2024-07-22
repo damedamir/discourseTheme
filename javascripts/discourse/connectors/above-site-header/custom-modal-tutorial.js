@@ -8,6 +8,9 @@ export default class IntroModal extends Component {
 
     modalIsVisible = true;
 
+    get username(){
+        return this?.currentUser?.username || "there";
+    }
     get userIsNew(){
         return this?.currentUser.admin;
     }
