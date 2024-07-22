@@ -6,6 +6,8 @@ export default class IntroModal extends Component {
     @service currentUser;
     @service modal;
 
+    modalIsVisible = true;
+
     get userIsNew(){
         return this?.currentUser.admin;
     }
