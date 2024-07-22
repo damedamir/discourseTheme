@@ -14,10 +14,16 @@ if(user) {
       <a href={{accessResourcesButton.resources_url}} >{{accessResourcesButton.button_text}}</a>
     </li>
   {{/if}}
-</script>
+  <DButton
+  @translatedLabel="Show Modal"
+  @action={{fn (mut this.modalIsVisible) true}}
+/>
 
-<script type="text/x-handlebars" data-tempate-name="/components/edit-category-tabs">
-  <h2>{{this.title}}</h2>
+{{#if this.modalIsVisible}}
+  <DModal @title="My Modal" @closeModal={{fn (mut this.modalIsVisible) false}}>
+    Hello world, this is some content in a modal
+  </DModal>
+{{/if}}
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section">
