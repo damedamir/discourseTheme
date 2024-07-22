@@ -1,5 +1,6 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
+import {CustomModalTutorial} from "./custom-modal-tutorial";
 
 export default class IntroModal extends Component {
     @service currentUser;
@@ -7,6 +8,12 @@ export default class IntroModal extends Component {
 
     get userIsNew(){
         return this?.currentUser.admin;
+    }
+    constructor(){
+        super(...args);
+        
+        this.modal.show(CustomModalTutorial);
+        console.log(this.modal);
     }
 
 
