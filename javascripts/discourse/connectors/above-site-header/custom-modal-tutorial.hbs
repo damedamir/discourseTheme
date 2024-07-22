@@ -1,10 +1,6 @@
 
 {{#if userIsNew }}
- <DButton
-  @translatedLabel="Show Modal"
-  @action={{fn (mut this.modalIsVisible) true}}
-/>
-
+  {{fn (mut this.modalIsVisible) true}}
 {{#if this.modalIsVisible}}
   <DModal @title="My Modal" @closeModal={{fn (mut this.modalIsVisible) false}}>
     Hello world, this is some content in a modal
