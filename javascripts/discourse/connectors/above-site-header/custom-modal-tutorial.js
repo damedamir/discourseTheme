@@ -12,7 +12,7 @@ export default class IntroModal extends Component {
     constructor(){
         super(...arguments);
         
-        this.modal.show(CustomModalTutorial);
+        console.log(this.modalIsVisible);
         
     }
 
