@@ -10,7 +10,7 @@ export default class IntroModal extends Component {
         return this?.currentUser.admin;
     }
     constructor(){
-        super(...args);
+        super(...arguments);
         
         this.modal.show(CustomModalTutorial);
         console.log(this.modal);
