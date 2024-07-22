@@ -3,8 +3,8 @@
 
   {{log this}}
 {{#if this.modalIsVisible}}
-  <DModal @title="Intro Tutorial" @closeModal={{fn (mut this.modalIsVisible) false}}>
-    Hello world, this is some content in a modal
+  <DModal @title="Intro Tutorial" @closeModal={{fn (mut this.modalIsVisible) false}} class="n-intro-guide-modal">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X_9mTe0KsEc?si=esJxHQKc4tnZBv6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </DModal>
 {{/if}}
 {{/if }}  
