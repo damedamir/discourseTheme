@@ -1,0 +1,11 @@
+{{#if userIsNew }}
+ <DModal @title="My Modal" @closeModal={{@closeModal}}>
+  <:body>
+    Hello world, this is some content in a modal
+  </:body>
+  <:footer>
+
+    <DModalCancel @close={{@closeModal}} />
+  </:footer>
+</DModal>
+{{/if }}  
