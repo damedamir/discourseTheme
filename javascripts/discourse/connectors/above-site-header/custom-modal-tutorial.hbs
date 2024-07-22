@@ -1,7 +1,7 @@
 {{log this.modal}}
 {{#if userIsNew }}
 
-  <DModal @title="My Modal" @closeModal={{fn (mut this.modalIsVisible) false}}>
+  <DModal @title="My Modal" @closeModal={{@closeModal}}>
     Hello world, this is some content in a modal
   </DModal>
 

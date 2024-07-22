@@ -13,7 +13,7 @@ export default class IntroModal extends Component {
         super(...arguments);
         
         this.modal.show(CustomModalTutorial);
-        console.log(this.modal);
+        
     }
 
 
