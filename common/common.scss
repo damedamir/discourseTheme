@@ -19,6 +19,9 @@
 
 }
 
+
+
+
 html.mobile-device .custom-header-links .headerLink a{
     color : var(--primary-high);
     background-color: var(--primary-low);
@@ -1417,7 +1420,9 @@ body.category-value-prop .d-header{
 }
 
 
-.n-intro-guide-modal{
-    height: 90vh;
-    width: 90vh;
+
+.d-modal__container{
+    max-height: 100vh !important;
+    height: 100vh;
+    width: 100vh;
 }
