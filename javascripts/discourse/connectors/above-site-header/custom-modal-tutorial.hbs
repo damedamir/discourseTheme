@@ -1,5 +1,6 @@
 
 {{#if userIsNew }}
+  {{log this}}
   {{(mut this.modalIsVisible) true}}
 {{#if this.modalIsVisible}}
   <DModal @title="My Modal" @closeModal={{fn (mut this.modalIsVisible) false}}>
