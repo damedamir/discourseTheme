@@ -15,7 +15,7 @@ export default class IntroModal extends Component {
 
 
     closeTutorialModal(){
-        this.set(this.modalIsVisible,false);
+        this.modalIsVisible = !this.modalIsVisible;
         this.router.refresh();
     }
 
