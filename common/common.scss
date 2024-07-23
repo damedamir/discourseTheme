@@ -1420,6 +1420,13 @@ body.category-value-prop .d-header{
 }
 
 
+.n-intro-guide-modal .d-modal__body{
+    height: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 
 .d-modal__container{
     max-height: 100vh !important;
