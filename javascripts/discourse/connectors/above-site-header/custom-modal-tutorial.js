@@ -30,7 +30,7 @@ export default class IntroModal extends Component {
     }
     get userIsNew(){
      /*   return this?.currentUser?.admin; */ 
-        return (new Date().getFullYear() - this.currentUser.previousVisitAt.getFullYear() ) < 5 ;
+        return (new Date().getFullYear() - this.currentUser.previousVisitAt.getFullYear() ) > 5 ;
     }
     constructor(){
         super(...arguments);
