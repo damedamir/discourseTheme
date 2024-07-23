@@ -17,6 +17,6 @@ export default class IntroModal extends Component {
     }
     constructor(){
         super(...arguments);
-        console.log(`Getting Year from the Controller ${this.currentUser.previousVisitAt.getYear()}`);
+        console.log(`Getting Year from the Controller ${this.currentUser.previousVisitAt.getFullYear()}`);
     }
 }
