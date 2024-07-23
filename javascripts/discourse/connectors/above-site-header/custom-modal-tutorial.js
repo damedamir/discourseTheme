@@ -5,9 +5,16 @@ import {CustomModalTutorial} from "./custom-modal-tutorial";
 export default class IntroModal extends Component {
     @service currentUser;
     @service modal;
+    @service router;
 
     modalIsVisible = true;
     alreadyViewed = false;
+
+    @action
+    closeModal(){
+        this.modalIsVisible = false;
+        this.router.refresh();
+    }
 
     get username(){
         return this?.currentUser?.username || "there";
