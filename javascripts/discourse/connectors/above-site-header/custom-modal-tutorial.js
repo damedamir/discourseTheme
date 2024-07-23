@@ -14,7 +14,7 @@ export default class IntroModal extends Component {
     @tracked alreadyViewed = false;
 
 
-    closeTutotialModal(){
+    closeTutorialModal(){
         this.modalIsVisible = false;
         this.router.refresh();
     }
