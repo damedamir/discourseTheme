@@ -12,7 +12,7 @@ export default class IntroModal extends Component {
         return this?.currentUser?.username || "there";
     }
     get userIsNew(){
-        return this?.currentUser?.admin;
+        return this?.currentUser?.isNew;
     }
     constructor(){
         super(...arguments);
