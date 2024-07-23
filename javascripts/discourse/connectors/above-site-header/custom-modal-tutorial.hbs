@@ -1,7 +1,7 @@
 
 {{#if userIsNew }}
   {{#if this.modalIsVisible}}
-    <DModal @title="Hey {{username}}, ready to get to know our community?" @closeModal={{fn this.closeModal }} class="n-intro-guide-modal">
+    <DModal @title="Hey {{username}}, ready to get to know our community?" @closeModal={{ this.closeModal }} class="n-intro-guide-modal">
       <iframe width="900" height="600" src="https://www.youtube.com/embed/X_9mTe0KsEc?si=esJxHQKc4tnZBv6q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </DModal>
   {{/if}}

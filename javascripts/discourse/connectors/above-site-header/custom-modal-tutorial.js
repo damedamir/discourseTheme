@@ -11,7 +11,7 @@ export default class IntroModal extends Component {
     modalIsVisible = true;
     alreadyViewed = false;
 
-    @action
+
     closeModal(){
         this.modalIsVisible = false;
         this.router.refresh();
