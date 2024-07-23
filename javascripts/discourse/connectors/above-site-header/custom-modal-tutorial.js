@@ -17,6 +17,7 @@ export default class IntroModal extends Component {
     closeTutorialModal(){
         this.modalIsVisible = !this.modalIsVisible;
         this.router.refresh();
+        console.log(this.currentUser);
     }
 
     get username(){
