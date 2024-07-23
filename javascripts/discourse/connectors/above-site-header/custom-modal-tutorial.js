@@ -19,6 +19,7 @@ export default class IntroModal extends Component {
         this.modalIsVisible = !this.modalIsVisible;
         let refreshing  = await this.router.refresh();
         console.log(refreshing);
+        this.store.findRecord('user', 1, { reload: true }).then(e => {console.log(e)});
         console.log(this.store);
     }
 
