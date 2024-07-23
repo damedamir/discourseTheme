@@ -7,6 +7,7 @@ export default class IntroModal extends Component {
     @service modal;
 
     modalIsVisible = true;
+    alreadyViewed = false;
 
     get username(){
         return this?.currentUser?.username || "there";
@@ -16,5 +17,6 @@ export default class IntroModal extends Component {
     }
     constructor(){
         super(...arguments);
+        console.log(this.currentUser.previous_visit_at);
     }
 }
