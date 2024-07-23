@@ -8,6 +8,7 @@ export default class IntroModal extends Component {
     @service currentUser;
     @service modal;
     @service router;
+    @service store;
     
 
     @tracked modalIsVisible = true;
@@ -18,7 +19,7 @@ export default class IntroModal extends Component {
         this.modalIsVisible = !this.modalIsVisible;
         let refreshing  = await this.router.refresh();
         console.log(refreshing);
-        console.log(this.currentUser);
+        console.log(this.store);
     }
 
     get username(){
