@@ -19,5 +19,6 @@ export default class IntroModal extends Component {
     constructor(){
         super(...arguments);
         this.currentUser.previousVisitAt = new Date();
+        console.log(this.currentUser.previousVisitAt);
     }
 }
