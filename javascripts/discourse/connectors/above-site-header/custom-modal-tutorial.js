@@ -2,14 +2,16 @@ import Component from "@glimmer/component";
 import { service } from "@ember/service";
 import {CustomModalTutorial} from "./custom-modal-tutorial";
 import { action } from "@ember/object";
+import { tracked } from "@glimmer/tracking";
 
 export default class IntroModal extends Component {
     @service currentUser;
     @service modal;
     @service router;
+    
 
-    modalIsVisible = true;
-    alreadyViewed = false;
+    @tracked modalIsVisible = true;
+    @tracked alreadyViewed = false;
 
 
     closeModal(){
