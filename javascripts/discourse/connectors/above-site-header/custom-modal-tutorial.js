@@ -13,10 +13,11 @@ export default class IntroModal extends Component {
         return this?.currentUser?.username || "there";
     }
     get userIsNew(){
-        return this?.currentUser?.admin;
+     /*   return this?.currentUser?.admin; */ 
+        return (new Date().getFullYear() - this.currentUser.previousVisitAt.getFullYear() ) < 5 ;
     }
     constructor(){
         super(...arguments);
-        console.log(`Getting Year from the Controller ${this.currentUser.previousVisitAt.getFullYear()}`);
+        this.currentUser.previousVisitAt = new Date();
     }
 }
