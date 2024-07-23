@@ -13,7 +13,7 @@ export default class IntroModal extends Component {
     @tracked modalIsVisible = true;
     @tracked alreadyViewed = false;
 
-
+    @action
     closeTutorialModal(){
         this.modalIsVisible = !this.modalIsVisible;
         this.router.refresh();
