@@ -19,6 +19,7 @@ export default class IntroModal extends Component {
         this.modalIsVisible = !this.modalIsVisible;
         let refreshing  = await this.router.refresh();
         let store2 = await this.store.get('user');
+        await this.store.unloadAll('user');
         console.log(refreshing);
         console.log(store2);
     }
