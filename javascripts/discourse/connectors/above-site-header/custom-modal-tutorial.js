@@ -18,10 +18,10 @@ export default class IntroModal extends Component {
     async closeTutorialModal(){
         this.modalIsVisible = !this.modalIsVisible;
         let refreshing  = await this.router.refresh();
-        await this.store.destroy();
+        const storeresult = await this.store.destroy();
 
 
-        console.log(this.store);
+        console.log(storeresult);
     }
 
     get username(){
