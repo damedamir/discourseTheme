@@ -19,7 +19,7 @@ export default class IntroModal extends Component {
         this.modalIsVisible = !this.modalIsVisible;
         let refreshing  = await this.router.refresh();
         const storeresult = await this.store.destroy();
-        window.location.reload(true);
+        location.reload(true);
 
 
         console.log(storeresult);
