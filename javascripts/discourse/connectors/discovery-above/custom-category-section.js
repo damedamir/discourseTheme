@@ -37,6 +37,7 @@ export default class CustomBannersComponent extends Component {
 
     get decorativeBanners(){
         const category = this.getCategory;
+        console.log(category);
         return this.allCustomBanners.filter(banner =>  banner.group.includes(category?.id) && !banner.banner_replaces_subcategory   );
     }
 
