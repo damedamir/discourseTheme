@@ -20,9 +20,6 @@ export default class IntroModal extends Component {
         let refreshing  = await this.router.refresh();
         const storeresult = await this.store.destroy();
         location.reload(true);
-
-
-        console.log(storeresult);
     }
 
     get username(){
@@ -30,12 +27,12 @@ export default class IntroModal extends Component {
     }
     get userIsNew(){
      /*   return this?.currentUser?.admin; */ 
-        
-        return (new Date().getFullYear() - this.currentUser?.previousVisitAt.getFullYear() ) > 5 ;
+        return false;
+        /*return (new Date().getFullYear() - this.currentUser?.previousVisitAt.getFullYear() ) > 5 ;*/
     }
     constructor(){
         super(...arguments);
         
-        console.log(this.currentUser.previousVisitAt);
+        console.log(this?.currentUser?.previousVisitAt);
     }
 }
