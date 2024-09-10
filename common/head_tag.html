@@ -8,7 +8,23 @@ if(user) {
 </script>
 
 <script type="text/discourse-plugin" version="0.8">
-  api.changeWidgetSetting('home-logo', 'href', '/categories')
+  const { h } = require("virtual-dom");
+
+  api.changeWidgetSetting('home-logo', 'href', '/categories');
+
+  api.reopenWidget("home-logo", {
+     html() {
+       return h(
+         "a",
+         { attributes: { href: this.href(), "data-auto-route": true, } },
+         this.logo()
+       );
+     },
+
+     click(e) {
+       return;
+     },
+   });
 </script>
 
 
