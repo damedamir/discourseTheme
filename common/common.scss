@@ -1369,7 +1369,6 @@ body.category-value-prop .d-header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     column-gap: 10px;
     position:absolute;
     top:0;
@@ -1388,6 +1387,8 @@ body.category-value-prop .d-header{
     max-width: 50%;
     min-width:50%;
     max-height: 200px;
+    height: 200px;
+    background: black;
     overflow: hidden;
 }
 
@@ -1396,6 +1397,7 @@ body.category-value-prop .d-header{
     column-gap: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .n-overlay-button{
