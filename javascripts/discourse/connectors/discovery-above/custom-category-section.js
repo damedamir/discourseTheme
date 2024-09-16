@@ -22,27 +22,25 @@ export default class CustomBannersComponent extends Component {
             }
         }).then(res => res.json())
             .then(data => {  this.subcategories_with_positions = data?.category_list?.categories; this.categories_fetched=true;})
-                .catch(e => {console.log(e); this.categories_fetched=false;});
+                .catch(e => { this.categories_fetched=false;});
       }
 
     
     get currentUserGroups(){
-       
        return  this.currentUser?.groups.map( i => i.id);
-    }
-
-    get templateUploads(){
-        return settings.template_uploads;
     }
 
     get decorativeBanners(){
         const category = this.getCategory;
-        console.log(category);
         return this.allCustomBanners.filter(banner =>  banner.group.includes(category?.id) && !banner.banner_replaces_subcategory   );
     }
 
     get getCategory(){
         return this.args.outletArgs?.category
+    }
+
+    get allCustomBanners(){
+        return settings.category_banners;
     }
 
     get getSubategoryPositions(){
@@ -116,9 +114,7 @@ export default class CustomBannersComponent extends Component {
        return orderedBanners;
     }
 
-    get allCustomBanners(){
-        return settings.category_banners;
-    }
+    
 
     get subcategoryPlaceholderBanners(){
         const category = this.args.outletArgs?.category;

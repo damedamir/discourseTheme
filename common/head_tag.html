@@ -36,11 +36,8 @@ if(user) {
   {{/if}}
 </script>
 
-<script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section">
-  {{log "subcategory positions"}}
- 
+<script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section"> 
   {{#if @outletArgs.category }}
-  {{log decorativeBanners }}
   {{#if decorativeBanners}}
     <div class="n-category-banner-container">
       {{#each decorativeBanners as |banner| }}

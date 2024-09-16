@@ -1369,6 +1369,7 @@ body.category-value-prop .d-header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     column-gap: 10px;
     position:absolute;
     top:0;
@@ -1385,6 +1386,7 @@ body.category-value-prop .d-header{
     position:relative;
     border-radius: 30px;
     max-width: 50%;
+    min-width:50%;
     max-height: 200px;
     overflow: hidden;
 }
