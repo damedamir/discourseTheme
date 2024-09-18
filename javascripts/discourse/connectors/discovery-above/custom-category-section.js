@@ -151,6 +151,8 @@ export default class CustomBannersComponent extends Component {
             }
             return banner;
         });
+
+        console.log(mockSubgroupBanners);
         return mockSubgroupBanners;
     }
     
