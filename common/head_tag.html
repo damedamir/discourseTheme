@@ -46,11 +46,11 @@ if(user) {
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           <a href={{banner.url}} >
-            <div class="n-category-banner-overlay">
+            <div class="n-category-banner-overlay" style='opacity: 0;'>
               <p class="n-overlay-text" >{{banner.overlay_text}}</p>
             </div>
             {{#if banner.use_overlay}}
-              <div class="n-category-banner-overlay" style='opacity: 0;'>
+              <div class="n-category-banner-overlay" >
                 <p class="n-overlay-text" >{{banner.overlay_text}}</p>
                 {{#if banner.overlay_button_text}}
                   <a class="n-overlay-button btn btn-default" href={{banner.url}}>{{ banner.overlay_button_text }}</a>
