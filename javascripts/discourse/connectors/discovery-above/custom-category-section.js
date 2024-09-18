@@ -157,7 +157,16 @@ export default class CustomBannersComponent extends Component {
             }
             banner["full_name"] = this.getSubcategories?.find(subcat => banner?.subcategory_to_replace[0] === subcat.id)?.name;
             banner.has_access = false;
-            return banner;
+
+            return {
+                use_overlay: banner.use_overlay,
+                has_access: banner.has_access,
+                url: banner.url,
+                full_name: banner.full_name,
+                overlay_text : banner.overlay_text,
+                position : banner.position,
+                image_url : banner.image_url
+            };
         });
         return mockSubgroupBanners;
     }
