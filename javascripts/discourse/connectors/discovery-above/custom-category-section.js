@@ -155,7 +155,7 @@ export default class CustomBannersComponent extends Component {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace].position;
             }
-            banner.category_name = this.getSubcategories?.find(subcat => subcat.id)
+           
             console.log(this.getSubcategories)
             return banner;
         });
