@@ -150,7 +150,7 @@ export default class CustomBannersComponent extends Component {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace].position;
             }
-            banner.category_name = this.subcategories_with_positions.find(category => category.id == this.getCategory.id)
+            banner.category_name = this.subcategories_with_positions?.find(category => category.id == this.getCategory.id)
             ?.subcategory_list?.find(sub_cat => banner?.subcategory_to_replace[0] === sub_cat.id ).name;
             return banner;
         });
