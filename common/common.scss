@@ -1423,6 +1423,21 @@ body.category-value-prop .d-header{
 }
 
 
+.lock-icon{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+}
+
+.lock-icon.access{
+    color: #3ABF14;
+}
+
+.lock-icon.denied{
+    color: #B61C1B;
+}
+
 
 .n-category-banner-wrapper:hover .n-category-banner-overlay{
    
