@@ -164,6 +164,7 @@ export default class CustomBannersComponent extends Component {
                 url: banner.url,
                 full_name: banner.full_name,
                 overlay_text : banner.overlay_text,
+                overlay_button_text : banner.overlay_button_text,
                 position : banner.position,
                 image_url : banner.image_url
             };
