@@ -44,7 +44,8 @@ export default class CustomBannersComponent extends Component {
     }
 
     get getSubcategories(){
-        return this.subcategories_with_positions;
+        return this.subcategories_with_positions
+                    .find(subcat => subcat.id === this.getCategory.id);
     }
 
     get getSubategoryPositions(){
@@ -154,6 +155,7 @@ export default class CustomBannersComponent extends Component {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace].position;
             }
+            banner.category_name = this.getSubcategories?.find(subcat => subcat.id)
             console.log(this.getSubcategories)
             return banner;
         });
