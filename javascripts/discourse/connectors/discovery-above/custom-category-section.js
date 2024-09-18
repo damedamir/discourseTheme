@@ -149,16 +149,13 @@ export default class CustomBannersComponent extends Component {
                 banner.group.includes(category.id)
                  );
         } );
-       /* if(subcategories.length > 0){
-            return [];
-        }
-         */
-            
+       
             mockSubgroupBanners = mockSubgroupBanners.map(banner => {
             if(positions[banner?.subcategory_to_replace[0]]){
                 banner.position = positions[banner?.subcategory_to_replace].position;
             }
-            banner.full_name = this.getSubcategories?.find(subcat => banner?.subcategory_to_replace[0] === subcat.id  )
+            banner.full_name = this.getSubcategories?.find(subcat => banner?.subcategory_to_replace[0] === subcat.id)?.name;
+            banner.has_access = false;
             console.log(this.getSubcategories)
             return banner;
         });
