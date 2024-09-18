@@ -46,7 +46,7 @@ export default class CustomBannersComponent extends Component {
     get getSubcategories(){
         if(this.categories_fetched){
             return this.subcategories_with_positions
-            ?.find(subcat => subcat.id === this.getCategory.id);
+            ?.find(subcat => subcat.id === this.getCategory.id)?.subcategory_list;
         }
         return [];
     }
