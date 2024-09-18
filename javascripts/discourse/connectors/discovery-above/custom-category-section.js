@@ -159,8 +159,6 @@ export default class CustomBannersComponent extends Component {
             banner.has_access = false;
             return banner;
         });
-
-        console.log(mockSubgroupBanners);
         return mockSubgroupBanners;
     }
     
