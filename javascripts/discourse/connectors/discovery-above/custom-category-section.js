@@ -104,6 +104,7 @@ export default class CustomBannersComponent extends Component {
                 use_overlay: true,
                 has_access: true,
                 url: subCat.path,
+                full_name: subCat.path,
                 overlay_text : subCat.name,
                 position : subCat.position,
                 image_url : subCat.image_url
