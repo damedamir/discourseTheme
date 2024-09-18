@@ -43,11 +43,12 @@ if(user) {
   {{/if }}
    <!-- END Decorative Banners -->
   <div class="n-category-banner-container" >
+    {{log orderedSubcategoryBanners}}
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           <a href={{banner.url}} >
             <div class="n-category-banner-overlay" style='opacity: 1;'>
-              <p class="n-overlay-text" >{{banner.full_name}}</p>
+              <p class="n-overlay-text">{{banner.full_name}}</p>
             </div>
             {{#if banner.use_overlay}}
               <div class="n-category-banner-overlay" >
