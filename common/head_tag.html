@@ -8,23 +8,7 @@ if(user) {
 </script>
 
 <script type="text/discourse-plugin" version="0.8">
-  const { h } = require("virtual-dom");
 
-  api.changeWidgetSetting('home-logo', 'href', '/categories');
-
-  api.reopenWidget("home-logo", {
-     html() {
-       return h(
-         "a",
-         { attributes: { href: this.href(), "data-auto-route": true, } },
-         this.logo()
-       );
-     },
-
-     click(e) {
-       return;
-     },
-   });
 </script>
 
 
@@ -57,11 +41,12 @@ if(user) {
       {{/each}}
     </div>
   {{/if }}
-   <!-- Decorative Banners -->
+   <!-- END Decorative Banners -->
   <div class="n-category-banner-container" >
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           <a href={{banner.url}} >
+            <p class="n-overlay-text" >{{banner.overlay_text}}</p>
             {{#if banner.use_overlay}}
               <div class="n-category-banner-overlay">
                 <p class="n-overlay-text" >{{banner.overlay_text}}</p>
@@ -70,7 +55,8 @@ if(user) {
                 {{/if }}
               </div>
             {{/if}}
-            <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
+
+           <!-- <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt=""> -->
           </a>
         </div>
       {{/each}}
