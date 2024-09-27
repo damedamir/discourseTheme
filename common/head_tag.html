@@ -43,7 +43,7 @@ if(user) {
   {{/if }}
    <!-- END Decorative Banners -->
   <div class="n-category-banner-container" >
-   
+    {{#if}}
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           {{#if banner.has_access}}
@@ -75,6 +75,7 @@ if(user) {
           </a>
         </div>
       {{/each}}
+    {{/if}}
   </div>
   {{/if}}
  
