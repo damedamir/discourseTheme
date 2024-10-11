@@ -17,7 +17,7 @@ export default class CustomBannersComponent extends Component {
         
 
         if(this.args.outletArgs?.category){
-            console.log("category from constructor");
+
             fetch('/categories.json?include_subcategories=true', {
                 headers : {
                     'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
@@ -32,6 +32,10 @@ export default class CustomBannersComponent extends Component {
     
     get currentUserGroups(){
        return  this.currentUser?.groups.map( i => i.id);
+    }
+
+    get isAllAccessMember(){
+        return this.currentUser?.groups.any(i => i.name === "VIP003-members");
     }
 
     get decorativeBannersAbove(){
@@ -138,7 +142,7 @@ export default class CustomBannersComponent extends Component {
         ...this.subcategoryBanners,
         ...this.subcategoryPlaceholderBanners
     ].sort((a,b) => a.position - b.position);
-        console.log(orderedBanners);
+
        return orderedBanners;
     }
 
