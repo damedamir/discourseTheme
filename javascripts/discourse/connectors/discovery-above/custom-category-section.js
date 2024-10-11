@@ -14,16 +14,19 @@ export default class CustomBannersComponent extends Component {
 
     constructor() {
         super(...arguments);
-        console.log("category from constructor");
-        console.log(this.args.outletArgs?.category);
-        fetch('/categories.json?include_subcategories=true', {
-            headers : {
-                'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
-                'Api-Username' : 'System'
-            }
-        }).then(res => res.json())
-            .then(data => {  this.subcategories_with_positions = data?.category_list?.categories; this.categories_fetched=true;})
-                .catch(e => { this.categories_fetched=false;});
+        
+
+        if(this.args.outletArgs?.category){
+            console.log("category from constructor");
+            fetch('/categories.json?include_subcategories=true', {
+                headers : {
+                    'Api-Key' : 'c8a73fd76bd70c08ee2b9184f6ed89a8e0daa3a4c9a867a75545d232272ed997',
+                    'Api-Username' : 'System'
+                }
+            }).then(res => res.json())
+                .then(data => {  this.subcategories_with_positions = data?.category_list?.categories; this.categories_fetched=true;})
+                    .catch(e => { this.categories_fetched=false;});
+        }
       }
 
     
