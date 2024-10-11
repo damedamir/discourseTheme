@@ -13,7 +13,11 @@ en:
               description: URL for the Banner Image
             decorative_banner_location:
               label: Decorative Banner Location
-              description: Determines if a banner is placed before or after Community categories (defaults to Above Categories)
+              description: >
+               Determines if a banner is placed before or after Community categories.
+                        ac = Above Categories 
+                        bc = Below Categories
+              Defaults to Above Categories when not selected 
             url:
               label: Banner URL
               description: Where the banner redirects (product URL for paywalled categories, landing page URLs for decorative banners)

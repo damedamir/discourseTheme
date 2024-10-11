@@ -27,10 +27,10 @@ category_banners:
         type: string
       decorative_banner_location: 
         type: enum
-        default: "Above Categories"
+       
         choices:
-          - "Above Categories"
-          - "Below Categories"
+          - "ac"
+          - "bc"
         
       banner_replaces_subcategory:
         type: boolean
