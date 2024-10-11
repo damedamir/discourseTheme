@@ -27,10 +27,11 @@ if(user) {
   {{log decorativeBannersAbove}}
   {{log "below Banners"}}
   {{log decorativeBannersBelow}}
+  <div class="n-category-banner-container">
   {{#if decorativeBannersAbove}}
 
   
-    <div class="n-category-banner-container">
+    
       {{#each decorativeBannersAbove as |banner| }}
       <div class="n-category-banner-wrapper" id="decorative-banners">
         <a href={{banner.url}} >
@@ -46,10 +47,10 @@ if(user) {
         </a>
       </div>
       {{/each}}
-    </div>
+
   {{/if }}
    <!-- END Decorative Banners -->
-  <div class="n-category-banner-container" >
+
     {{#if categories_fetched}}
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
@@ -83,7 +84,8 @@ if(user) {
         </div>
       {{/each}}
     {{/if}}
-  </div>
+  
   {{/if}}
+</div>
  
 </script>
