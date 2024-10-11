@@ -5,7 +5,20 @@ en:
         description: "Set up Decorative and Paywall Community Category Banners"
         schema:
           properties:
+            group:
+              label: Category
+              description: The category where the banner will be displayed (max 1 category)
+            image_url: 
+              label: Image URL
+              description: URL for the Banner Image
             decorative_banner_location:
               label: Decorative Banner Location
-              description: The description for the property
+              description: Determines if a banner is placed before or after Community categories
+            url:
+              label: Banner URL
+              description: Where the banner redirects (product URL for paywalled categories, landing page URLs for decorative banners)
+            use_overlay:
+              label: Uses Overlay?
+              description: Determines if a banner is being overlayed with a text and/or optional CTA button
+            
             
