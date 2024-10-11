@@ -30,6 +30,7 @@ category_banners:
         choices:
           - "Above Categories"
           - "Below Categories"
+        description: "Determines if a decirative banner goes above or below Community Categories list"
          
         
       banner_replaces_subcategory:
