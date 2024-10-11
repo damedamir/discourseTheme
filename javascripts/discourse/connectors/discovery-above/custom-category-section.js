@@ -14,6 +14,7 @@ export default class CustomBannersComponent extends Component {
 
     constructor() {
         super(...arguments);
+        console.log("category from constructor");
         console.log(this.args.outletArgs?.category);
         fetch('/categories.json?include_subcategories=true', {
             headers : {
