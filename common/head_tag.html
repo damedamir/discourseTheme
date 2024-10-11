@@ -21,8 +21,10 @@ if(user) {
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section"> 
+ 
   {{#if @outletArgs.category }}
   {{#if decorativeBanners}}
+  {{log decorativeBanners}}
     <div class="n-category-banner-container">
       {{#each decorativeBanners as |banner| }}
       <div class="n-category-banner-wrapper" id="decorative-banners">
