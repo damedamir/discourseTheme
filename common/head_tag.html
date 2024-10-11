@@ -49,7 +49,7 @@ if(user) {
     </div>
   {{/if }}
    <!-- END Decorative Banners -->
-  <div class="n-category-banner-container" >
+
     {{#if categories_fetched}}
       {{#each orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
@@ -82,6 +82,25 @@ if(user) {
           </a>
         </div>
       {{/each}}
+    {{/if}}
+    {{#if decorativeBannersBelow}}
+    {{#each decorativeBannersBelow as |banner| }}
+    <div class="n-category-banner-wrapper" id="decorative-banners">
+      <a href={{banner.url}} >
+        {{#if banner.use_overlay}}
+          <div class="n-category-banner-overlay">
+            <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+            {{#if banner.overlay_button_text}}
+              <a class="n-overlay-button btn btn-default" href={{banner.url}}>{{ banner.overlay_button_text }}</a>
+            {{/if }}
+          </div>
+        {{/if}}
+        <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
+      </a>
+    </div>
+    {{/each}}
+  </div>
+{{/if }}
     {{/if}}
   </div>
   {{/if}}
