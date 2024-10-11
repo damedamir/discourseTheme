@@ -40,11 +40,12 @@ export default class CustomBannersComponent extends Component {
 
     get decorativeBannersAbove(){
         const category = this.getCategory;
-        return this.allCustomBanners.filter(banner =>  
+        const banners = this.allCustomBanners.filter(banner =>  
             banner.group.includes(category?.id) 
             && !banner.banner_replaces_subcategory
             && (!banner.hasOwnProperty('decorative_banner_location') || banner.decorative_banner_location === 'ac' )
             );
+        return banners.map(banner => this.isAllAccessMember ? banner.has_access = true : banner.has_access = false);
     }
 
     get decorativeBannersBelow(){
