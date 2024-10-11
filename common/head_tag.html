@@ -39,19 +39,19 @@ if(user) {
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
         </svg>
         {{/if}}
-
-        <a href={{banner.url}} >
-          {{#if banner.use_overlay}}
-            <div class="n-category-banner-overlay">
-              <p class="n-overlay-text" >{{banner.overlay_text}}</p>
-              {{#if banner.overlay_button_text}}
-                <a class="n-overlay-button btn btn-default" href={{banner.url}}>{{ banner.overlay_button_text }}</a>
-              {{/if }}
-            </div>
+          {{if isAllAccessMember}}
+          <a href={{banner.url}} >
+            {{#if banner.use_overlay}}
+              <div class="n-category-banner-overlay">
+                <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+                {{#if banner.overlay_button_text}}
+                  <a class="n-overlay-button btn btn-default" href={{banner.url}}>{{ banner.overlay_button_text }}</a>
+                {{/if }}
+              </div>
+            {{/if}}
+            <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
+          </a>
           {{/if}}
-          <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
-        </a>
-
       </div>
       {{/each}}
     {{/if }}
