@@ -30,7 +30,7 @@ if(user) {
   {{log "below Banners"}}
   {{log decorativeBannersBelow}}
     <div class="n-category-banner-container">
-      {{#each decorativeBanners as |banner| }}
+      {{#each decorativeBannersAbove as |banner| }}
       <div class="n-category-banner-wrapper" id="decorative-banners">
         <a href={{banner.url}} >
           {{#if banner.use_overlay}}
