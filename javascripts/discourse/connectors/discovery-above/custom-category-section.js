@@ -45,7 +45,10 @@ export default class CustomBannersComponent extends Component {
             && !banner.banner_replaces_subcategory
             && (!banner.hasOwnProperty('decorative_banner_location') || banner.decorative_banner_location === 'ac' )
             );
-        return banners.map(banner => this.isAllAccessMember ? banner.has_access = true : banner.has_access = false);
+        return banners.map(banner => {
+            this.isAllAccessMember ? banner.has_access = true : banner.has_access = false;
+            return banner;
+        } );
     }
 
     get decorativeBannersBelow(){
