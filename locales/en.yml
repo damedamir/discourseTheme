@@ -13,8 +13,8 @@ en:
               description: URL for the Banner Image
             decorative_banner_location:
               label: Decorative Banner Location
-              description: >
-               Determines if a banner is placed before or after Community categories.
+              description: |
+                Determines if a banner is placed before or after Community categories.
                         ac = Above Categories 
                         bc = Below Categories
                 Defaults to Above Categories when not selected 
