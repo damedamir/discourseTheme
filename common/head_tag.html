@@ -23,12 +23,13 @@ if(user) {
 <script type="text/x-handlebars" data-template-name="/connectors/discovery-above/custom-category-section"> 
  
   {{#if @outletArgs.category }}
-  {{#if decorativeBanners}}
-
   {{log "Above Banners"}}
   {{log decorativeBannersAbove}}
   {{log "below Banners"}}
   {{log decorativeBannersBelow}}
+  {{#if decorativeBanners}}
+
+  
     <div class="n-category-banner-container">
       {{#each decorativeBannersAbove as |banner| }}
       <div class="n-category-banner-wrapper" id="decorative-banners">
