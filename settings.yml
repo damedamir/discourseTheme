@@ -3,7 +3,7 @@ category_banners:
   default: []
   schema:
     name: banner
-    identifier: group
+    identifier: group 
     properties:
       group:
         type: categories
@@ -25,6 +25,11 @@ category_banners:
         type: string
       overlay_button_text:
         type: string
+      decorative_banner_location: 
+        type: enum
+          choices:
+            - "Above Categories"
+            - "Below Categories"
       banner_replaces_subcategory:
         type: boolean
       subcategory_to_replace: 
