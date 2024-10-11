@@ -1,0 +1,11 @@
+en:
+  theme_metadata:
+    settings:
+      category_banners:
+        description: "Set up Decorative and Paywall Community Category Banners"
+        schema:
+          properties:
+            decorative_banner_location:
+              label: Decorative Banner Location
+              description: The description for the property
+            
