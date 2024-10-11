@@ -43,7 +43,7 @@ export default class CustomBannersComponent extends Component {
         return this.allCustomBanners.filter(banner =>  
             banner.group.includes(category?.id) 
             && !banner.banner_replaces_subcategory
-            && ( banner.decorative_banner_location === 'bc' )
+            &&  banner.decorative_banner_location === 'bc' 
             );
     }
 
