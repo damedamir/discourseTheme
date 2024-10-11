@@ -35,7 +35,7 @@ export default class CustomBannersComponent extends Component {
     }
 
     get isAllAccessMember(){
-        return this.currentUser?.groups.any(i => i.name === "VIP003-members");
+        return this.currentUser?.groups.any(i => ["VIP003-members", 'admins'].includes(i.name));
     }
 
     get decorativeBannersAbove(){
