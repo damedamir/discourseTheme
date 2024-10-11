@@ -29,9 +29,6 @@ if(user) {
   {{log decorativeBannersBelow}}
 <div class="n-category-banner-container">
   {{#if decorativeBannersAbove}}
-
-  
-    
       {{#each decorativeBannersAbove as |banner| }}
       <div class="n-category-banner-wrapper" id="decorative-banners">
         <a href={{banner.url}} >
@@ -47,7 +44,6 @@ if(user) {
         </a>
       </div>
       {{/each}}
-
     {{/if }}
    <!-- END Decorative Banners -->
 
@@ -84,6 +80,23 @@ if(user) {
         </div>
       {{/each}}
     {{/if}}
+    {{#if decorativeBannersAbove}}
+    {{#each decorativeBannersBelow as |banner| }}
+    <div class="n-category-banner-wrapper" id="decorative-banners">
+      <a href={{banner.url}} >
+        {{#if banner.use_overlay}}
+          <div class="n-category-banner-overlay">
+            <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+            {{#if banner.overlay_button_text}}
+              <a class="n-overlay-button btn btn-default" href={{banner.url}}>{{ banner.overlay_button_text }}</a>
+            {{/if }}
+          </div>
+        {{/if}}
+        <img style="width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
+      </a>
+    </div>
+    {{/each}}
+  {{/if }}
   </div>
   {{/if}}
 
