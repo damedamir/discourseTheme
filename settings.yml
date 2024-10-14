@@ -3,7 +3,7 @@ category_banners:
   default: []
   schema:
     name: banner
-    identifier: group subcategory_to_replace
+    identifier: group
     properties:
       group:
         type: categories
