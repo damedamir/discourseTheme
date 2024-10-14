@@ -57,12 +57,15 @@
           </svg>
           
           {{/if}}
+
           <a href={{banner.url}} >
-            <div class="n-category-banner-overlay" >
+            
+          <!--  <div class="n-category-banner-overlay" >
               <p class="n-overlay-text">{{banner.full_name}}</p>
             </div>
+        -->
             {{#if banner.has_access}}
-            <p></p>
+            
             {{else}}
                 {{#if banner.use_overlay}}
                     <div class="n-category-banner-overlay" >
