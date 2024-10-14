@@ -61,7 +61,8 @@
             <div class="n-category-banner-overlay" >
               <p class="n-overlay-text">{{banner.full_name}}</p>
             </div>
-            {{#unless banner.has_access}}
+            {{#if banner.has_access}}
+            {{else}}
                 {{#if banner.use_overlay}}
                     <div class="n-category-banner-overlay" >
                         <p class="n-overlay-text" >{{banner.overlay_text}}</p>
@@ -70,7 +71,7 @@
                             {{/if }}
                     </div>
                 {{/if}}
-            {{/unless}}
+            {{/if}}
 
             <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="{{banner.overlay_text}}" height="200" width="600"> 
           </a>
