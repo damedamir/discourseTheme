@@ -1487,7 +1487,8 @@ body.category-value-prop .d-header{
 
 li[data-list-item-name="all-categories"], 
 div[data-section-name="chat-channels"],
-.category.category-all-access .footer-message{
+.category.category-all-access .footer-message,
+.category.category-all-access .topic-list{
     display: none;
 }
 
