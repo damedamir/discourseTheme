@@ -1485,6 +1485,9 @@ body.category-value-prop .d-header{
 
 /* Template Overrides (hiding elements based on steakholder requests */
 
-li[data-list-item-name="all-categories"], div[data-section-name="chat-channels"]{
+li[data-list-item-name="all-categories"], 
+div[data-section-name="chat-channels"],
+.category.category-all-access .footer-message{
     display: none;
 }
+
