@@ -1482,3 +1482,9 @@ body.category-value-prop .d-header{
     max-width: 100vw !important;
 }
 */
+
+/* Template Overrides (hiding elements based on steakholder requests */
+
+li[data-list-item-name="all-categories"]{
+    display: none;
+}
