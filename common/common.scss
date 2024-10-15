@@ -1493,6 +1493,6 @@ div[data-section-name="chat-channels"],
 .category.category-all-access .nav-item_latest,
 .category.category-all-access .nav-item_top,
 .category.category-all-access .cooked .discourse-post-event{
-    display: none;
+    display: none !important;
 }
 
