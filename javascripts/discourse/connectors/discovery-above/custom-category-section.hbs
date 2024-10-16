@@ -18,7 +18,11 @@
           {{/if}}
 
           {{#if isAllAccessMember}}
-            <a href={{banner.url}}  {{#if banner.new_tab }} target="_blank" {{/if}} >
+            {{#if banner.new_tab }}
+          <a  href="{{banner.url}}" target="_blank" >
+        {{else}} 
+            <a  href=href="https://www.hiveologie.com/resh/a/en/post/details/324/vip-all-access"  >
+          {{/if}}
               {{#if banner.use_overlay}}
               
               {{/if}}
