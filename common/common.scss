@@ -1492,7 +1492,8 @@ div[data-section-name="chat-channels"],
 .category.category-all-access #create-topic,
 .category.category-all-access .nav-item_latest,
 .category.category-all-access .nav-item_top,
-.cooked .discourse-post-event{
+.cooked .discourse-post-event,
+.category.category-all-access-workshop-replays{
     display: none !important;
 }
 
