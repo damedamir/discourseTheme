@@ -1493,7 +1493,10 @@ div[data-section-name="chat-channels"],
 .category.category-all-access .nav-item_latest,
 .category.category-all-access .nav-item_top,
 .cooked .discourse-post-event,
-.category.category-all-access-workshop-replays  #create-topic{
+.category.category-all-access-workshop-replays  #create-topic,
+.category.category-all-access-workshop-replays  .nav-item_latest,
+.category.category-all-access-workshop-replays  .nav-item_top,
+.category.category-all-access-workshop-replays  .topic-list{
     display: none !important;
 }
 
