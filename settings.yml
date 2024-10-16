@@ -19,6 +19,9 @@ category_banners:
         type: string
         validators:
           url: true
+      new_tab:
+        type: boolean 
+        
       use_overlay: 
         type: boolean
       overlay_text:
