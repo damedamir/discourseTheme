@@ -18,6 +18,10 @@ en:
                 ac = Above Categories 
                 bc = Below Categories
                 Defaults to Above Categories when not selected 
+            new_tab:
+              label: Banner Opent In a New Tab
+              description:
+                Determines if a decorative banner opens in a new tab
             url:
               label: Banner URL
               description: Where the banner redirects (product URL for paywalled categories, landing page URLs for decorative banners)
