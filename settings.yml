@@ -21,7 +21,8 @@ category_banners:
           url: true
       new_tab:
         type: boolean 
-        
+        detault: false
+
       use_overlay: 
         type: boolean
       overlay_text:
