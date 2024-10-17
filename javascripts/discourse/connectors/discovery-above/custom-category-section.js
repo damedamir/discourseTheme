@@ -38,6 +38,11 @@ export default class CustomBannersComponent extends Component {
         return this.currentUser?.groups.any(i => ["VIP003-members", 'admins'].includes(i.name));
     }
 
+    get isOpenCategory(){
+        return [47].includes(this?.getCategory?.id); 
+    }
+
+
     get decorativeBannersAbove(){
         const category = this.getCategory;
         const banners = this.allCustomBanners.filter(banner =>  
@@ -46,7 +51,7 @@ export default class CustomBannersComponent extends Component {
             && (!banner.hasOwnProperty('decorative_banner_location') || banner.decorative_banner_location === 'ac' )
             );
         return banners.map(banner => {
-            this.isAllAccessMember ? banner.has_access = true : banner.has_access = false;
+            this.isAllAccessMember  ? banner.has_access = true : banner.has_access = false;
             return banner;
         } );
     }

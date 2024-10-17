@@ -19,15 +19,42 @@
 
           {{#if isAllAccessMember}}
         
-            <a  href="https://www.hiveologie.com/resh/a/en/post/details/324/vip-all-access"  >
+            <a  href="{{banner.url}}"  >
 
               {{#if banner.use_overlay}}
               
               {{/if}}
-              <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="">
+              <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="" height="200" width="600" fetchpriority="high">
             </a>
           {{else}}
           
+            {{#if isOpenCategory}}
+                {{#if banner.new_tab}}
+                      <a  href="{{banner.url}}"  target="_blank">
+                        {{#if banner.use_overlay}}
+                        <div class="n-category-banner-overlay">
+                            <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+                            {{#if banner.overlay_button_text}}
+                          
+                            {{/if }}
+                        </div>
+                        {{/if}}
+                        <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="{{banner.overlay_text}}" height="200" width="600" fetchpriority="high">
+                    </a>
+                {{else}}
+                 <a  href="{{banner.url}}" >
+                        {{#if banner.use_overlay}}
+                        <div class="n-category-banner-overlay">
+                            <p class="n-overlay-text" >{{banner.overlay_text}}</p>
+                            {{#if banner.overlay_button_text}}
+                          
+                            {{/if }}
+                        </div>
+                        {{/if}}
+                        <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="{{banner.overlay_text}}" height="200" width="600" fetchpriority="high">
+                    </a>
+                {{/if}}
+            {{else}}
             <a  href="https://www.hiveologie.com/resh/a/en/post/details/324/vip-all-access"  >
 
             {{#if banner.use_overlay}}
@@ -40,6 +67,7 @@
             {{/if}}
             <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="{{banner.overlay_text}}" height="200" width="600" fetchpriority="high">
           </a>
+            {{/if}}
           {{/if}}
         </div>
       {{/each}}
@@ -86,7 +114,7 @@
         </div>
       {{/each}}
     
-    {{#if decorativeBannersAbove}}
+    {{#if decorativeBannersBelow}}
     {{#each decorativeBannersBelow as |banner| }}
     <div class="n-category-banner-wrapper" id="decorative-banners">
       {{#if banner.has_access}}
