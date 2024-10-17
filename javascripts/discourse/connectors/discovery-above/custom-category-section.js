@@ -59,7 +59,7 @@ export default class CustomBannersComponent extends Component {
             &&  banner.decorative_banner_location === 'bc' 
             );
         return banners.map(banner => {
-            this.isAllAccessMember ? banner.has_access = true : banner.has_access = false;
+            this.isAllAccessMember || banner.new_tab ? banner.has_access = true : banner.has_access = false;
             return banner;
         } );
     }
