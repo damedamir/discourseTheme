@@ -32,12 +32,12 @@
             {{else}}
                     <a href="{{banner.url}}" >
                             {{#if banner.use_overlay}}
-                            <div class="n-category-banner-overlay">
+                          <!--  <div class="n-category-banner-overlay">
                                 <p class="n-overlay-text" >{{banner.overlay_text}}</p>
                                 {{#if banner.overlay_button_text}}
                             
                                 {{/if }}
-                            </div>
+                            </div> -->
                             {{/if}}
                             <img style="max-width:100%; height:auto; border-radius: 30px;" src={{banner.image_url}} alt="{{banner.overlay_text}}" height="200" width="600" fetchpriority="high">
                         </a>
@@ -132,15 +132,13 @@
     {{#each decorativeBannersBelow as |banner| }}
     <div class="n-category-banner-wrapper" id="decorative-banners">
       {{#if banner.has_access}}
-      <svg class="lock-icon granted" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14v3m4-6V7a3 3 0 1 1 6 0v4M5 11h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
-      </svg>
-      
+        <svg class="lock-icon granted" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14v3m4-6V7a3 3 0 1 1 6 0v4M5 11h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
+        </svg>
       {{else}}
-     
-      <svg class="lock-icon denied" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
-      </svg>
+        <svg class="lock-icon denied" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
+        </svg>
       {{/if}}
       {{#if isAllAccessMember}}
             <a href={{banner.url}} >
