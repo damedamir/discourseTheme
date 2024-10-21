@@ -1505,4 +1505,18 @@ div[data-section-name="chat-channels"],
 }
 
 
+@mixin sidebarColors($scheme) {
+       
+    @if $scheme == 'dark' {
+        color: white !important;
+    }@else{
+        color: black !important;
+    }
+
+}
+
+.sidebar-section-wrapper .sidebar-section-header {
+    @include sidebarColors(var(--scheme-type));
+}
+
 
