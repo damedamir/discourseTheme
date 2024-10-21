@@ -1,0 +1,9 @@
+$scheme : var(--scheme-type);
+
+:root{
+    @if $scheme == dark {
+        --d-sidebar-link-color : white;
+        --d-sidebar-link-icon-color : white;
+        --d-sidebar-link-badge-color: white;
+    }
+}
