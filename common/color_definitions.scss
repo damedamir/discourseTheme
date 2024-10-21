@@ -1,9 +1,11 @@
-$scheme : var(--scheme-type);
+
+$dark-theme-ins: #ffffff;
+$light-theme-ins: #000000;
+
+$ins: dark-light-choose($light-theme-ins, $dark-theme-ins);
 
 :root{
-    @if $scheme == dark {
-        --d-sidebar-link-color : white;
-        --d-sidebar-link-icon-color : white;
-        --d-sidebar-link-badge-color: white;
-    }
+        --d-sidebar-link-color : #{$ins};
+        --d-sidebar-link-icon-color : #{$ins};
+        --d-sidebar-link-badge-color: #{$ins};
 }
