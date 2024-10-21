@@ -1511,7 +1511,7 @@ div[data-section-name="chat-channels"],
     @if $scheme == dark {
         color: white !important;
     }@else {
-        color: var(--scheme-type);
+        color: var(--scheme-type) !important;
     }
 
 }
