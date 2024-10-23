@@ -1408,6 +1408,7 @@ body.category-value-prop .d-header{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .n-overlay-button{
@@ -1505,6 +1506,40 @@ div[data-section-name="chat-channels"],
 }
 
 
+#back-to-aa-button{
+    top: -13px;
+    left: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: absolute;
+    column-gap: 10px;
+    display: inline-flex;
+    line-height: 10px;
+    align-items: center;
+    border: 1px solid;
+    transition: all .1s ease-in-out;
+    fill: var(--tertiary);
+
+}
+
+.container{
+    position: relative;
+}
+
+#back-to-aa-button:hover
+{
+    color: white;
+    
+}
+#back-arrow{
+    transition: all .1s ease-in-out;
+}
+#back-to-aa-button:hover #back-arrow{
+  transform: translateX(-3px);
+  fill: white;
+  
+}
+
 @mixin sidebarColors($scheme) {
     @debug "scheme: #{$scheme}";
 
@@ -1519,5 +1554,7 @@ div[data-section-name="chat-channels"],
 .sidebar-section-wrapper .sidebar-section-header {
     @include sidebarColors(var(--scheme-type));
 }
+
+
 
 
