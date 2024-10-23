@@ -1530,7 +1530,7 @@ div[data-section-name="chat-channels"],
 
 #back-to-aa-button:hover
 {
-    color: white;
+    color: var(--primary);
     
 }
 #back-arrow{
@@ -1538,7 +1538,7 @@ div[data-section-name="chat-channels"],
 }
 #back-to-aa-button:hover #back-arrow{
   transform: translateX(-3px);
-  fill: white;
+  fill: var(--primary);
   
 }
 
