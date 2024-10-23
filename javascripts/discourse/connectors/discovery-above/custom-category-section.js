@@ -42,6 +42,10 @@ export default class CustomBannersComponent extends Component {
         return [47].includes(this?.getCategory?.id); 
     }
 
+    get isAllAccessCetgory(){
+        return this?.getCategory?.id === 15;
+    }
+
 
     get decorativeBannersAbove(){
         const category = this.getCategory;
