@@ -43,7 +43,7 @@ export default class CustomBannersComponent extends Component {
     }
 
     get isAllAccessCetgory(){
-        return this?.getCategory?.id === 15;
+        return this?.getCategory?.parentCategory.id == 15;
     }
 
 
