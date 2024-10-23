@@ -1511,7 +1511,7 @@ div[data-section-name="chat-channels"],
     left: 0;
     padding: 10px 20px;
     border-radius: 50px;
-    position: absolute;
+    
     column-gap: 10px;
     display: inline-flex;
     line-height: 10px;
@@ -1519,11 +1519,13 @@ div[data-section-name="chat-channels"],
     border: 1px solid;
     transition: all .1s ease-in-out;
     fill: var(--tertiary);
+    
 
 }
 
-.container{
+.back-to-aa-container{
     position: relative;
+    margin-bottom: 10px;
 }
 
 #back-to-aa-button:hover
