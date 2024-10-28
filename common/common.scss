@@ -1648,4 +1648,5 @@ $prim: dark-light-choose($light-theme-ins,$dark-theme-ins);
 :root{
     --override-primary: #{$prim};
     --primary: #{$prim};
+    --primary-medium: #{$prim};
 }
