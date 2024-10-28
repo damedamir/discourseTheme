@@ -1546,7 +1546,7 @@ div[data-section-name="chat-channels"],
 .category.category-all-access .nav-item_latest,
 .category.category-all-access .nav-item_top,
 .cooked .discourse-post-event,
-.category.category-live-workshops  #create-topic,
+body:not(.staff).category.category-live-workshops  #create-topic,
 .category.category-live-workshops  .nav-item_latest,
 .category.category-live-workshops  .nav-item_top,
 .category.category-live-workshops  .nav-item_new,
@@ -1574,8 +1574,7 @@ div[data-section-name="chat-channels"],
 .categories-list    .nav-item_latest,
 .categories-list     .nav-item_top,
 .categories-list      .nav-item_new,
-.categories-list   .nav-item_unread,
-
+.categories-list   .nav-item_unread
 {
     display: none !important;
 }
