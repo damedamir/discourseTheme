@@ -1588,7 +1588,7 @@ div[data-section-name="chat-channels"],
     align-items: center;
     border: 1px solid;
     transition: all .1s ease-in-out;
-    fill: var(--tertiary);
+    fill: var(--primary);
     
 
 }
@@ -1598,11 +1598,6 @@ div[data-section-name="chat-channels"],
     margin-bottom: 10px;
 }
 
-#back-to-aa-button:hover
-{
-    color: var(--primary);
-    
-}
 #back-arrow{
     transition: all .1s ease-in-out;
 }
