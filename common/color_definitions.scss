@@ -4,9 +4,13 @@ $light-theme-ins: #000000;
 
 $ins: dark-light-choose($light-theme-ins, $dark-theme-ins);
 
+$prim: dark-light-choose($dark-theme-ins, $light-theme-ins);
+
+
 :root{
         --d-sidebar-link-color : #{$ins} !important;
         --d-sidebar-link-icon-color : #{$ins} !important;
         --d-sidebar-link-badge-color: #{$ins} !important;
         --d-sidebar-header-icon-color : #{$ins} !important;
+        --pirmary: #{$prim};
 }
