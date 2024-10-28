@@ -2,10 +2,8 @@
 {{#if categories_fetched}}
 
 <div class="n-category-banner-container">
-  {{log getCategory}}
   {{log relevantCategoryBanners}}
-  {{log @outletArgs.category}}
-  
+
   {{#if decorativeBannersAbove}}
       {{#each decorativeBannersAbove as |banner| }}
         <div class="n-category-banner-wrapper" id="decorative-banners">
