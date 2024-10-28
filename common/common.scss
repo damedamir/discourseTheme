@@ -1636,6 +1636,11 @@ div[data-section-name="chat-channels"],
     color: var(--override-primary) !important;
 }
 
+
+body:not(.staff) .navigation-controls #create-topic {
+    display: none;
+}
+
 $dark-theme-ins: #ffffff;
 $light-theme-ins: #000000;
 
