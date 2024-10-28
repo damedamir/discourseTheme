@@ -140,7 +140,7 @@ export default class CustomBannersComponent extends Component {
 
             return {
                 use_overlay: true,
-                has_access: true,
+                has_access: subCat.id == 46 ? false : true,
                 url: subCat.path,
                 full_name: subCat.name,
                 overlay_text : subCat.name,
@@ -242,7 +242,7 @@ export default class CustomBannersComponent extends Component {
             }else{
                 banner.has_access = true;
             }
-            return banner;
+            return banner
         });
 
 
