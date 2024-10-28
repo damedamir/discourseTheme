@@ -197,6 +197,7 @@ export default class CustomBannersComponent extends Component {
             banner["full_name"] = this.getSubcategories?.find(subcat => banner?.subcategory_to_replace[0] === subcat.id)?.name;
             banner.has_access = false;
 
+
             return {
                 use_overlay: banner.use_overlay,
                 has_access: banner.has_access,
@@ -233,7 +234,13 @@ export default class CustomBannersComponent extends Component {
             banner => (banner.group.includes(category.id) && !banner.banner_replaces_subcategory)
             );
 
-        return relevantBanners;
+        return relevantBanners.map(banner => {
+            if(banner.group.id == 46){
+                banner.has_access = false;
+            }else{
+                banner.has_access = true;
+            }
+        });
 
 
     }
