@@ -13,12 +13,12 @@
   },
   "color_schemes": {
     "Dark": {
-      "primary": "dddddd",
+      "primary": "ffffff",
       "secondary": "222222",
       "tertiary": "099dd7",
       "quaternary": "c14924",
       "header_background": "111111",
-      "header_primary": "dddddd",
+      "header_primary": "ffffff",
       "highlight": "a87137",
       "selected": "2c2c2c",
       "hover": "313131",
