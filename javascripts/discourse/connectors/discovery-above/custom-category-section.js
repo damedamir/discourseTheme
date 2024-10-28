@@ -234,6 +234,8 @@ export default class CustomBannersComponent extends Component {
             banner => (banner.group.includes(category.id) && !banner.banner_replaces_subcategory)
             );
 
+            console.log(relevantBanners);
+
         return relevantBanners.map(banner => {
             if(banner.group.id == 46){
                 banner.has_access = false;
