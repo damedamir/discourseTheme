@@ -1569,7 +1569,12 @@ div[data-section-name="chat-channels"],
 .category.category-all-access-monday-accountability-call    .nav-item_new,
 .category.category-all-access-monday-accountability-call    .nav-item_unread,
 .category.category-all-access-monday-accountability-call   .footer-message ,
-.category.category-all-access-monday-accountability-call   .more-topics__container
+.category.category-all-access-monday-accountability-call   .more-topics__container,
+
+.categories-list    .nav-item_latest,
+.categories-list     .nav-item_top,
+.categories-list      .nav-item_new,
+.categories-list   .nav-item_unread,
 
 {
     display: none !important;
@@ -1640,6 +1645,9 @@ div[data-section-name="chat-channels"],
 body:not(.staff) .navigation-controls #create-topic {
     display: none;
 }
+
+
+
 
 $dark-theme-ins: #ffffff;
 $light-theme-ins: #000000;
