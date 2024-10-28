@@ -139,7 +139,7 @@ export default class CustomBannersComponent extends Component {
             }
 
             return {
-                use_overlay: subCat.id == 46 ? true : false,
+                use_overlay: subCat.id == 46 ? false : true,
                 has_access: subCat.id == 46 ? false : true,
                 url: subCat.path,
                 full_name: subCat.name,
