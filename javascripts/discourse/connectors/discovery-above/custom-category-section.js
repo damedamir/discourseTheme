@@ -242,6 +242,7 @@ export default class CustomBannersComponent extends Component {
             }else{
                 banner.has_access = true;
             }
+            return banner;
         });
 
 
