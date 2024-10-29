@@ -1645,6 +1645,10 @@ body:not(.staff) .navigation-controls #create-topic {
     display: none;
 }
 
+li.nav-item.resources-button {
+    border : 1px solid var(--primary);
+}
+
 
 
 
