@@ -1604,6 +1604,7 @@ body:not(.staff).category.category-live-workshops  #create-topic,
 
 #back-arrow{
     transition: all .1s ease-in-out;
+    fill: var(--primary) !important;
 }
 #back-to-aa-button:hover #back-arrow{
   transform: translateX(-3px);
