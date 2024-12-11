@@ -31,7 +31,7 @@ export default class CustomBannersComponent extends Component {
   
 
             <span class="sidebar-section-link-content-text">
-              Peak Performance
+              Replays <> Resources
               <!---->
             </span>
 
