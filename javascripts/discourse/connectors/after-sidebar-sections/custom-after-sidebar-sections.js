@@ -15,6 +15,9 @@ export default class CustomBannersComponent extends Component {
 
         console.log("logging from after sidebar");
         console.log(this.currentUser);
+        if(this.currentUser.groups.find(g => g.name == "VIP003-members")){
+            console.log(document.getElementById('sidebar-section-content-categories'));
+        }
       }
 
                         
