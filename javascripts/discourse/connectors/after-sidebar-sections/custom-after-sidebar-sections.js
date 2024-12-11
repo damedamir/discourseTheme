@@ -26,7 +26,7 @@ export default class CustomBannersComponent extends Component {
       <span style="color: #31a300" class="sidebar-section-link-prefix span">
           <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
         
-          <svg class="fa d-icon d-icon-lock svg-icon prefix-badge svg-string" xmlns="http://www.w3.org/2000/svg"><use href="#lock"></use></svg>
+         
       </span>
   
 
