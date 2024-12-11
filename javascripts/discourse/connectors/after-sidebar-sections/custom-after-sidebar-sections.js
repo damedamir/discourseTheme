@@ -39,8 +39,8 @@ export default class CustomBannersComponent extends Component {
 <!---->
 <!---->          </a>
       </li>
-                `)
-                categoriesContainer.appendChild()
+                `);
+                console.log(newResourcesNode);
             }
         }
       }
