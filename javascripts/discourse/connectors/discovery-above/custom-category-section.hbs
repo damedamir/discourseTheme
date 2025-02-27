@@ -1,11 +1,11 @@
-{{#if @outletArgs.category }}
-{{#if categories_fetched}}
+{{#if this.isCustomBannerPage }}
+{{#if this.categories_fetched}}
 
 <div class="n-category-banner-container">
   {{log @outletArgs.category }}
 
-  {{#if decorativeBannersAbove}}
-      {{#each decorativeBannersAbove as |banner| }}
+  {{#if this.decorativeBannersAbove}}
+      {{#each this.decorativeBannersAbove as |banner| }}
         <div class="n-category-banner-wrapper" id="decorative-banners">
           {{#if banner.has_access}}
             <svg class="lock-icon granted" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">

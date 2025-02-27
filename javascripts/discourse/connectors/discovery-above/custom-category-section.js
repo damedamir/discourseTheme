@@ -42,8 +42,12 @@ export default class CustomBannersComponent extends Component {
         return [47].includes(this?.getCategory?.id); 
     }
 
-    get isAllAccessCetegory(){
+    get isAllAccessCategory(){
         return this?.getCategory?.parentCategory?.id == 15;
+    }
+
+    get isCustomBannerPage(){
+        return this?.getCategory?.id == 15;
     }
 
 
