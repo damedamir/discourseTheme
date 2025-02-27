@@ -2,8 +2,6 @@
 {{#if this.categories_fetched}}
 
 <div class="n-category-banner-container">
-  {{log @outletArgs.category }}
-
   {{#if this.decorativeBannersAbove}}
       {{#each this.decorativeBannersAbove as |banner| }}
         <div class="n-category-banner-wrapper" id="decorative-banners">
@@ -17,7 +15,7 @@
             </svg>
           {{/if}}
 
-        {{#if isAllAccessMember}}
+        {{#if this.isAllAccessMember}}
             {{#if banner.new_tab}}
                     <a href="{{banner.url}}"  target="_blank">
                         {{#if banner.use_overlay}}
@@ -44,7 +42,7 @@
                         </a>
                     {{/if}}
         {{else}}
-            {{#if isOpenCategory}}
+            {{#if this.isOpenCategory}}
                 {{#if banner.new_tab}}
                       <a  href="{{banner.url}}"  target="_blank">
                         {{#if banner.use_overlay}}
@@ -90,7 +88,7 @@
    <!-- END Decorative Banners -->
 
  
-      {{#each orderedSubcategoryBanners as |banner|}}
+      {{#each this.orderedSubcategoryBanners as |banner|}}
         <div class="n-category-banner-wrapper">
           {{#if banner.has_access}}
           <svg class="lock-icon granted" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
@@ -129,8 +127,8 @@
         </div>
       {{/each}}
     
-    {{#if decorativeBannersBelow}}
-    {{#each decorativeBannersBelow as |banner| }}
+    {{#if this.decorativeBannersBelow}}
+    {{#each this.decorativeBannersBelow as |banner| }}
     <div class="n-category-banner-wrapper" id="decorative-banners">
       {{#if banner.has_access}}
         <svg class="lock-icon granted" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none" viewBox="0 0 24 24">
@@ -141,7 +139,7 @@
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14v3m-3-6V7a3 3 0 1 1 6 0v4m-8 0h10a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-7a1 1 0 0 1 1-1Z"/>
         </svg>
       {{/if}}
-      {{#if isAllAccessMember}}
+      {{#if this.isAllAccessMember}}
             <a href={{banner.url}} >
               {{#if banner.use_overlay}}
               
