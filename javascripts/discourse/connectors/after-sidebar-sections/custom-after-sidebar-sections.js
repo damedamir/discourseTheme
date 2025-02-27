@@ -36,7 +36,6 @@ export default class CustomBannersComponent extends Component {
 <!---->          </a>
       </li>
                 `, 'text/html');
-                console.log(newResourcesNode.body.firstChild);
                 categoriesContainer.appendChild(newResourcesNode.body.firstChild);
             }
         }
