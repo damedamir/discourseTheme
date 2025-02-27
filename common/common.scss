@@ -1675,7 +1675,9 @@ li.nav-item.resource-button{
 
 // Part #1 Allows text to be displayed to the right of a button.
 [data-wrap="button"] {
-    display: inline-block;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 // Part #2 Allows text to be displayed to the right of a button.
