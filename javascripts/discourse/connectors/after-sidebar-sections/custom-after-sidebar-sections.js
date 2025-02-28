@@ -20,8 +20,8 @@ export default class CustomBannersComponent extends Component {
                 <li class="sidebar-section-link-wrapper" >
           <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/category/post/287">
             
-      <span style="color: #31a300" class="sidebar-section-link-prefix span">
-          <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
+      <span style="color: #4690df" class="sidebar-section-link-prefix span">
+          <span style="background: linear-gradient(90deg, #4690df 50%, #4690df 50%)" class="prefix-span"></span>
         
          
       </span>
