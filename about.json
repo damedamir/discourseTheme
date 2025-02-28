@@ -25,7 +25,20 @@
       "danger": "e45735",
       "success": "1ca551",
       "love": "fa6c8d"
+    },
+    "Light": {
+      "primary": "242526",
+      "secondary": "ffffff",
+      "tertiary": "147efb",
+      "quaternary": "147efb",
+      "header_background": "ffffff",
+      "header_primary": "242526",
+      "highlight": "147efb",
+      "danger": "f8745c",
+      "success": "42b72a",
+      "love": "fa6c8d"
     }
+
   },
   "modifiers": {
   },
