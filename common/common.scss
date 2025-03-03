@@ -1565,14 +1565,8 @@ body:not(.staff).category.category-live-workshops  #create-topic,
 .category.category-all-access-pass-brokers-playbook-podcast .footer-message ,
 .category.category-all-access-pass-brokers-playbook-podcast .more-topics__container,
 
-.category.category-all-access-pass-weekly-featured-resources  #create-topic,
-.category.category-all-access-pass-weekly-featured-resources  .nav-item_latest,
-.category.category-all-access-pass-weekly-featured-resources  .nav-item_top,
-.category.category-all-access-pass-weekly-featured-resources  .nav-item_new,
-.category.category-all-access-pass-weekly-featured-resources  .nav-item_unread,
-.category.category-all-access-pass-weekly-featured-resources  .topic-list,
-.category.category-all-access-pass-weekly-featured-resources .footer-message ,
-.category.category-all-access-pass-weekly-featured-resources .more-topics__container,
+.category:not(.staff).category-all-access-pass-weekly-featured-resources  #create-topic,
+
 
 
 .category.category-all-access-pass-monday-accountability-call    .nav-item_latest,
