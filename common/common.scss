@@ -1745,7 +1745,6 @@ $light-theme-ins: #1e1d1d;
 
 $prim: dark-light-choose($dark-theme-ins, $light-theme-ins);
 :root{
-    --override-primary: #{$prim};
     --primary: #{$prim};
     --primary-medium: #{$prim};
     --primary-high: #{$prim};
