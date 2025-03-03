@@ -1737,6 +1737,8 @@ li.nav-item.resource-button{
 $dark-theme-ins: #ffffff;
 $light-theme-ins: #1e1d1d;
 
+/*
+
 $prim: dark-light-choose($dark-theme-ins, $light-theme-ins);
 :root{
     --override-primary: #{$prim};
@@ -1744,3 +1746,4 @@ $prim: dark-light-choose($dark-theme-ins, $light-theme-ins);
     --primary-medium: #{$prim};
     --primary-high: #{$prim};
 }
+*/
