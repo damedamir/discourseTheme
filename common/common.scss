@@ -1305,7 +1305,7 @@ body.category-value-prop .d-header{
 /* START Badge override for every closed group */
 @media (prefers-color-scheme: dark) {
     .badge-category__wrapper .badge-category__name {
-        color: white;
+        color: var(--primary);
     }
 }
 
