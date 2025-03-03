@@ -12,5 +12,5 @@ $prim: dark-light-choose($light-theme-ins,$dark-theme-ins);
         --d-sidebar-link-icon-color : #{$ins} !important;
         --d-sidebar-link-badge-color: #{$ins} !important;
         --d-sidebar-header-icon-color : #{$ins} !important;
-        --override-primary: #{$prim} !important;
+      /*  --override-primary: #{$prim} !important; */
 }
