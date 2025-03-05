@@ -1741,6 +1741,9 @@ li.nav-item.resource-button{
 
 
 
-li[data-list-item-name="upcoming-events"]{
+li[data-list-item-name="upcoming-events"],
+li[data-list-item-name="about"],
+li[data-list-item-name="groups"],
+li[data-list-item-name="badges"]{
     display: none;
 }
