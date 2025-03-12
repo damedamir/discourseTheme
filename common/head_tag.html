@@ -14,29 +14,33 @@ api.onPageChange(() => {
 
   const categoriesContainer = document.getElementById('sidebar-section-content-categories');
 
-  const newResourcesNode = parser.parseFromString(`
-                <li class="sidebar-section-link-wrapper" >
-          <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
-            
-      <span style="color: #31a300" class="sidebar-section-link-prefix span">
-          <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
-        
-         
-      </span>
+  if(categoriesContainer){
+    const parser = new DomParser();
+    const newResourcesNode = parser.parseFromString(`
+                  <li class="sidebar-section-link-wrapper" >
+            <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
+              
+        <span style="color: #31a300" class="sidebar-section-link-prefix span">
+            <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
+          
+           
+        </span>
+    
   
-
-            <span class="sidebar-section-link-content-text">
-              Replays <> Resources
-              <!---->
-            </span>
-
-<!---->
-<!---->
-<!---->          </a>
-      </li>
-                `, 'text/html');
-                categoriesContainer?.appendChild(newResourcesNode.body.firstChild);
-
+              <span class="sidebar-section-link-content-text">
+                Replays <> Resources
+                <!---->
+              </span>
+  
+  <!---->
+  <!---->
+  <!---->          </a>
+        </li>
+                  `, 'text/html');
+                  categoriesContainer?.appendChild(newResourcesNode.body.firstChild);
+  
+  }
+ 
 })
 
 </script>
