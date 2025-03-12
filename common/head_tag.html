@@ -15,7 +15,7 @@ api.onPageChange(() => {
   const categoriesContainer = document.getElementById('sidebar-section-content-categories');
 
   if(categoriesContainer){
-    const parser = new DomParser();
+    const parser = new DOMParser();
     const newResourcesNode = parser.parseFromString(`
                   <li class="sidebar-section-link-wrapper" >
             <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
