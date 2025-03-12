@@ -14,7 +14,7 @@ api.onPageChange(() => {
   if(user.groups.find(g => g.name == "VIP003-members")){
     const categoriesContainer = document.getElementById('sidebar-section-content-categories');
     const existingButton = document.getElementById('replays-resources-button');
-  if(categoriesContainer and !existingButton){
+  if(categoriesContainer && !existingButton){
     const parser = new DOMParser();
     const newResourcesNode = parser.parseFromString(`
                   <li class="sidebar-section-link-wrapper" >
