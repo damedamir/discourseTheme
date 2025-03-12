@@ -5,16 +5,37 @@ if(user) {
 }
 
 api.onPageChange(() => {
-  console.log("Setting Target blank for doc categories")
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
-  if(!allCategoryDocLinks){
-    console.log('Not a category Link page.');
-    return;
-  }
+  
 
-  allCategoryDocLinks.forEach((docLink) => {
+  allCategoryDocLinks?.forEach((docLink) => {
     docLink.setAttribute("target", "_blank");
-  })
+  });
+
+  const categoriesContainer = document.getElementById('sidebar-section-content-categories');
+
+  const newResourcesNode = parser.parseFromString(`
+                <li class="sidebar-section-link-wrapper" >
+          <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
+            
+      <span style="color: #31a300" class="sidebar-section-link-prefix span">
+          <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
+        
+         
+      </span>
+  
+
+            <span class="sidebar-section-link-content-text">
+              Replays <> Resources
+              <!---->
+            </span>
+
+<!---->
+<!---->
+<!---->          </a>
+      </li>
+                `, 'text/html');
+                categoriesContainer?.appendChild(newResourcesNode.body.firstChild);
 
 })
 
