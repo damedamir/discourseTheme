@@ -1,5 +1,6 @@
 en:
   back_to_main_dashboard : 'Back to Main Dashboard'
+  banners_configuration: "Banners Configuration"
   theme_metadata:
     settings:
       category_banners:

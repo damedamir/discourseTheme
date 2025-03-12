@@ -1,4 +1,10 @@
 <li title="Configure Banners and CTA texts/buttons" id=""  class="navigation-item banners">
+ <DButton
+                @action={{action "navigateToBannerConfiguration"}}
+                @icon=""
+                @label={{ theme-prefix "banners_configuration" }}
+                class="ember-view navigation-link"
+              />
     <a class="ember-view navigation-link" href="/admin/customize/themes/10/schema/category_banners">Banners Configuration</a>
 </li>
 <li title="Configure thumbnail layouts for topics" id=""  class="navigation-item topic-thumbnails">
