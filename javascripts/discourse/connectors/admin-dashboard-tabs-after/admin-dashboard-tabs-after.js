@@ -23,6 +23,15 @@ export default class AdminExtraTabLinks extends Component {
     navigateToBannerConfiguration(){
       this.router.transitionTo("/admin/customize/themes/10/schema/category_banners");
     }
+    @action
+    navigateToTopicThumbnails(){
+      this.router.transitionTo("/admin/customize/components/18");
+    }
+
+    @action
+    navigateToUserActivityExport(){
+      this.router.transitionTo("/admin/plugins/explorer/queries/3");
+    }
 
     
    
