@@ -1,4 +1,5 @@
 en:
+  back_to_main_dashboard : 'Back to Main Dashboard'
   theme_metadata:
     settings:
       category_banners:
@@ -28,7 +29,5 @@ en:
             use_overlay:
               label: Uses Overlay?
               description: Determines if a banner is being overlayed with a text and/or optional CTA button
-  buttons:
-    back_to_main_dashboard : 'Back to Main Dashboard'
             
             
