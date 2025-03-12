@@ -11,7 +11,7 @@ api.onPageChange(() => {
   allCategoryDocLinks?.forEach((docLink) => {
     docLink.setAttribute("target", "_blank");
   });
-
+  if(this.getCUrrentUser.groups.find(g => g.name == "VIP003-members")){
   const categoriesContainer = document.getElementById('sidebar-section-content-categories');
 
   if(categoriesContainer){
@@ -40,8 +40,9 @@ api.onPageChange(() => {
                   categoriesContainer?.appendChild(newResourcesNode.body.firstChild);
   
   }
+}
  
-})
+});
 
 </script>
 

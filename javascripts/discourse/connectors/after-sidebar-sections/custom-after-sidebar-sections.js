@@ -60,7 +60,7 @@ export default class CustomBannersComponent extends Component {
       </li>
                 `, 'text/html');
               /*  categoriesContainer.appendChild(newMicroTacticsNode.body.firstChild); */
-                categoriesContainer.appendChild(newResourcesNode.body.firstChild);
+               /* categoriesContainer.appendChild(newResourcesNode.body.firstChild); */
             }
         }
       }
