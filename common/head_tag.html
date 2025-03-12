@@ -11,8 +11,8 @@ api.onPageChange(() => {
   allCategoryDocLinks?.forEach((docLink) => {
     docLink.setAttribute("target", "_blank");
   });
-  if(this.getCUrrentUser.groups.find(g => g.name == "VIP003-members")){
-  const categoriesContainer = document.getElementById('sidebar-section-content-categories');
+  if(this.getCurrentUser.groups.find(g => g.name == "VIP003-members")){
+    const categoriesContainer = document.getElementById('sidebar-section-content-categories');
 
   if(categoriesContainer){
     const parser = new DOMParser();
