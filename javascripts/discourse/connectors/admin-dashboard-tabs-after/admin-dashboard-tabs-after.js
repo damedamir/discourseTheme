@@ -8,6 +8,7 @@ import {ajax} from "discourse/lib/ajax";
 export default class AdminExtraTabLinks extends Component {
     @service currentUser;
     @service siteSettings;
+    @service router;
 
 
     @tracked subcategories_with_positions = null;
