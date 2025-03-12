@@ -5,9 +5,10 @@ import { action } from "@ember/object";
 
 import {ajax} from "discourse/lib/ajax";
 
-export default class CustomBannersComponent extends Component {
+export default class AdminExtraTabLinks extends Component {
     @service currentUser;
     @service siteSettings;
+
 
     @tracked subcategories_with_positions = null;
     @tracked categories_fetched = false;
@@ -16,6 +17,11 @@ export default class CustomBannersComponent extends Component {
         super(...arguments);   
         
       }
+    
+    @action
+    navigateToBannerConfiguration(){
+      this.router.transitionTo("/admin/customize/themes/10/schema/category_banners");
+    }
 
     
    
