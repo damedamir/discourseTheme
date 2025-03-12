@@ -1,5 +1,5 @@
  {{#if this.isAdminPage}}
-        <a id="" class="ember-view admin-sidebar-nav-link" data-link-name="back_to_main_dashboard" href="/admin">
+        <a id="" class="ember-view admin-sidebar-nav-link" data-link-name="back_to_main_dashboard"  {{on "click" this.navigateToDashboard}} >
             
       <span class="sidebar-section-link-prefix icon">
           <svg class="fa d-icon d-icon-house svg-icon prefix-icon svg-string" xmlns="http://www.w3.org/2000/svg"><use href="#house"></use></svg>
