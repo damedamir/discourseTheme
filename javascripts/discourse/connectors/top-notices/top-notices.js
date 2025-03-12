@@ -17,6 +17,9 @@ export default class AdminTopNoticesExtension extends Component {
         console.log(this.args.outletArgs);
       }
 
-    
+   get isAdminPage(){
+        console.log(this.args.outletArgs.currentPath.split('.'));
+        return this.args.outletArgs.currentPath.split('.')[0] === 'admin';
+   } 
    
 }
