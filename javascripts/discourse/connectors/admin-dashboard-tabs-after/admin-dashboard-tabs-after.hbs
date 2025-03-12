@@ -7,8 +7,18 @@
     />
 </li>
 <li title="Configure thumbnail layouts for topics" id=""  class="navigation-item topic-thumbnails">
-    <a class="ember-view navigation-link" href="/admin/customize/components/18">Topic Thumbnails</a>
+     <DButton
+        @action={{action "navigateToBannerConfiguration"}}
+        @icon=""
+        @label={{ theme-prefix "topic_thumbnails" }}
+        class="ember-view navigation-link"
+    />
 </li>
 <li title="Run a User Activity Export" id=""  class="navigation-item user-activity-export">
-    <a class="ember-view navigation-link" href="/admin/plugins/explorer/queries/3">User Activity Export</a>
+     <DButton
+        @action={{action "navigateToUserActivityExport"}}
+        @icon=""
+        @label={{ theme-prefix "user_activity_export" }}
+        class="ember-view navigation-link"
+    />
 </li>
