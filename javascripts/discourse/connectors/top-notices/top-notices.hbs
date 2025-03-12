@@ -1,4 +1,11 @@
  {{#if this.isAdminPage}}
+
+         <DButton
+                @action={{action "navigateToDashboard"}}
+                @icon="house"
+                class="ember-view admin-sidebar-nav-link"
+              />
+
         <a id="" class="ember-view admin-sidebar-nav-link" data-link-name="back_to_main_dashboard"  {{on "click" this.navigateToDashboard}} >
             
       <span class="sidebar-section-link-prefix icon">
