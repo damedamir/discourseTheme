@@ -4,10 +4,10 @@ if(user) {
     
 }
 
-api.onPageChange(() => {
+api.onPageChange((e) => {
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
-  
-  console.log(this)
+  console.log("logging event")
+  console.log(e);
 
   allCategoryDocLinks?.forEach((docLink) => {
     docLink.setAttribute("target", "_blank");
