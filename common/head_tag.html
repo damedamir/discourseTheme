@@ -13,7 +13,7 @@ api.onPageChange(() => {
   const user = api.getCurrentUser();
   if(user.groups.find(g => g.name == "VIP003-members")){
     const categoriesContainer = document.getElementById('sidebar-section-content-categories');
-    const existingButton = documentGetElementById('replays-resources-button');
+    const existingButton = document.getElementById('replays-resources-button');
   if(categoriesContainer and !existingButton){
     const parser = new DOMParser();
     const newResourcesNode = parser.parseFromString(`
