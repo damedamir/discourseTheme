@@ -13,12 +13,12 @@ api.onPageChange(() => {
   const user = api.getCurrentUser();
   if(user.groups.find(g => g.name == "VIP003-members")){
     const categoriesContainer = document.getElementById('sidebar-section-content-categories');
-
-  if(categoriesContainer){
+    const existingButton = documentGetElementById('replays-resources-button');
+  if(categoriesContainer and !existingButton){
     const parser = new DOMParser();
     const newResourcesNode = parser.parseFromString(`
                   <li class="sidebar-section-link-wrapper" >
-            <a  class="ember-view sidebar-section-link sidebar-row" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
+            <a  class="ember-view sidebar-section-link sidebar-row" id="replays-resources-button" target="_blank" href="https://www.hiveologie.com/resh/a/en/subscription/resources/4849/all-access-pass">
               
         <span style="color: #31a300" class="sidebar-section-link-prefix span">
             <span style="background: linear-gradient(90deg, #31a300 50%, #31a300 50%)" class="prefix-span"></span>
