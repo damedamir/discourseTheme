@@ -10,24 +10,16 @@ export default class AdminTopNoticesExtension extends Component {
     @service siteSettings;
     @service router;
 
-    @tracked subcategories_with_positions = null;
-    @tracked categories_fetched = false;
-
     constructor() {
         super(...arguments);   
-        console.log(this.args.outletArgs);
       }
 
    get isAdminPage(){
-        console.log(this.args.outletArgs.currentPath.split('.'));
-        return this.args.outletArgs.currentPath.split('.')[0] === 'admin';
+        return this.args.outletArgs.currentPath.split('.')[0] === 'admin' && this.args.outletArgs.currentPath.split('.')[1] === 'dashboard';
    } 
 
    @action
    navigateToDashboard(){
     this.router.transitionTo("admin.dashboard.general");
    }
-
-
-   
 }
