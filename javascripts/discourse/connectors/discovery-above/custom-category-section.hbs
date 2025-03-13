@@ -42,7 +42,7 @@
                         </a>
                     {{/if}}
         {{else}}
-            {{#if this.isOpenCategory}}
+            {{#if banner.has_access}}
                 {{#if banner.new_tab}}
                       <a  href="{{banner.url}}"  target="_blank">
                         {{#if banner.use_overlay}}
