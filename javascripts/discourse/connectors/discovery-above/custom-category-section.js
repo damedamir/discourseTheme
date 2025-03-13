@@ -59,7 +59,7 @@ export default class CustomBannersComponent extends Component {
             && (!banner.hasOwnProperty('decorative_banner_location') || banner.decorative_banner_location === 'ac' )
             );
         return banners.map(banner => {
-            (this.isAllAccessMember || this.isOpenCategory)  ? banner.has_access = true : banner.has_access = false;
+            ((this.isAllAccessMember || this.isOpenCategory) || banner.url.contains('/c/micro-tactics/50') )  ? banner.has_access = true : banner.has_access = false;
             return banner;
         } );
     }
