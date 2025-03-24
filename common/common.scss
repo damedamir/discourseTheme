@@ -1602,7 +1602,7 @@ body:not(.group-VIP003-members) [data-name="aa-premium"]{
     display: none !important;
 }
 
-body:not(.group-VIP003-members) .tag-box:has([data-name="aa-premium"]){
+body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
     display: none !important;
 }
 
