@@ -1598,6 +1598,12 @@ body:not(.group-VIP003-members) [data-tag-name="aa-premium"]{
     display: none;
 }
 
+body:not(.group-VIP003-members) [data-name="aa-premium"]{
+    display: none;
+}
+
+
+
 
 #back-to-aa-button{
     top: -13px;
