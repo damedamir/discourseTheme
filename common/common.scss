@@ -1594,6 +1594,11 @@ body:not(.group-VIP001-members).category-micro-tactics .tag-row[data-value="aa-p
 }
 
 
+body:not(.group-VIP001-members) [data-teg-name="aa-premium"]{
+    display: none;
+}
+
+
 #back-to-aa-button{
     top: -13px;
     left: 0;
