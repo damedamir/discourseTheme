@@ -1595,11 +1595,11 @@ body:not(.group-VIP003-members).category-micro-tactics .tag-row[data-value="aa-p
 
 
 body:not(.group-VIP003-members) [data-tag-name="aa-premium"]{
-    display: none;
+    display: none !important;
 }
 
 body:not(.group-VIP003-members) [data-name="aa-premium"]{
-    display: none;
+    display: none !important;
 }
 
 
