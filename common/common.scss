@@ -1585,6 +1585,11 @@ body:not(.staff).category.category-live-workshops  #create-topic,
 }
 
 
+body:not(.group-VIP001-members).category-micro-tactics .topic-list tr.topic-list-item.aa-premium {
+    display: none;
+}
+
+
 #back-to-aa-button{
     top: -13px;
     left: 0;
