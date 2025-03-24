@@ -1585,16 +1585,16 @@ body:not(.staff).category.category-live-workshops  #create-topic,
 }
 
 
-body:not(.group-VIP001-members).category-micro-tactics .topic-list tr.topic-list-item.tag-aa-premium {
+body:not(.group-VIP003-members).category-micro-tactics .topic-list tr.topic-list-item.tag-aa-premium {
     display: none !important;
 }
 
-body:not(.group-VIP001-members).category-micro-tactics .tag-row[data-value="aa-premium"]{
+body:not(.group-VIP003-members).category-micro-tactics .tag-row[data-value="aa-premium"]{
     display: none !important;
 }
 
 
-body:not(.group-VIP001-members) [data-tag-name="aa-premium"]{
+body:not(.group-VIP003-members) [data-tag-name="aa-premium"]{
     display: none;
 }
 
