@@ -1611,7 +1611,10 @@ body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
 .category.category-box.category-box-quiz,
 [aria-controls="sidebar-section-content-discourse-docs-sidebar__e-books"],
 [aria-controls="sidebar-section-content-discourse-docs-sidebar__quizzes"],
-[aria-controls="sidebar-section-content-discourse-docs-sidebar__blockchain-crypto"]
+[aria-controls="sidebar-section-content-discourse-docs-sidebar__blockchain-crypto"],
+[data-section-name="discourse-docs-sidebar__e-books"],
+[data-section-name="discourse-docs-sidebar__blockchain-crypto"],
+[data-section-name="discourse-docs-sidebar__quizzes"]
 {
     display: none !important;
 }
