@@ -7,9 +7,9 @@ if(user) {
 api.onPageChange(() => {
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
 
-  allCategoryDocLinks?.forEach((docLink) => {
+ /* allCategoryDocLinks?.forEach((docLink) => {
     docLink.setAttribute("target", "_blank");
-  });
+  }); */
   const user = api.getCurrentUser();
   if(user.groups.find(g => g.name == "VIP003-members")){
     const categoriesContainer = document.getElementById('sidebar-section-content-categories');
