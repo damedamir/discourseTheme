@@ -1614,7 +1614,8 @@ body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
 [aria-controls="sidebar-section-content-discourse-docs-sidebar__blockchain-crypto"],
 [data-section-name="discourse-docs-sidebar__e-books"],
 [data-section-name="discourse-docs-sidebar__blockchain-crypto"],
-[data-section-name="discourse-docs-sidebar__quizzes"]
+[data-section-name="discourse-docs-sidebar__quizzes"],
+.discourse-docs-sidebar-panel .sidebar-filter
 {
     display: none !important;
 }
