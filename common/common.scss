@@ -1606,7 +1606,13 @@ body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
     display: none !important;
 }
 
-
+.category.category-box.category-box-blockchain-crypto,
+.category.category-box.category-box-e-books,
+.category.category-box.category-box-quiz
+{
+    display: none !important;
+}
+        
 
 
 #back-to-aa-button{
