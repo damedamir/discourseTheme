@@ -67,4 +67,14 @@ all_resources_access:
           min: 4
         required: true
 
-      
+micro_tactic_restristions:
+  type: objects
+  default: []
+  schema:
+    name: restriction
+    identifier: group
+    properties:
+      group:
+        type: groups
+      tags: 
+        type: tags
