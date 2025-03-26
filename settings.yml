@@ -72,9 +72,15 @@ micro_tactic_restristions:
   default: []
   schema:
     name: restriction
-    identifier: group
+    identifier: groups
     properties:
-      group:
+      groups:
         type: groups
+        required: true
+        validations:
+          min: 1
       tags: 
         type: tags
+        required: true
+        validations: 
+          min: 1
