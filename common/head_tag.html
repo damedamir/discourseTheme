@@ -12,6 +12,7 @@ api.onPageChange((e) => {
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     console.log(value);
     console.log(context);
+    return ['custom-class-on-every-topic'];
   });
 
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
