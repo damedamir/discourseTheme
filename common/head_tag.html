@@ -4,7 +4,11 @@ if(user) {
     
 }
 
-api.onPageChange(() => {
+api.onPageChange((e) => {
+
+  console.log(e);
+
+
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
 
  /* allCategoryDocLinks?.forEach((docLink) => {
