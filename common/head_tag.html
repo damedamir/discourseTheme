@@ -6,8 +6,8 @@ if(user) {
 
 api.onPageChange((e) => {
 
-  console.log(e);
-
+  const router = api.container.lookup('service:router');
+  console.log(router.currentRoute)
 
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
 
