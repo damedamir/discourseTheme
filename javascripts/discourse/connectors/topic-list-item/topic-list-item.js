@@ -13,6 +13,7 @@ export default class HiddenMicroTactic extends Component {
     constructor() {
         super(...arguments);   
         console.log(this.args.outletArgs);
+        console.log(settings.micro_tactic_restristions);
       }
 
    get isAdminPage(){
