@@ -12,7 +12,7 @@ api.onPageChange((e) => {
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     console.log(value);
     console.log(context);
-    return value.push('applied-to-every-topic');
+    return 'applied-to-every-topic' ;
   });
 
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
