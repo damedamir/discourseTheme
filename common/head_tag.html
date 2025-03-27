@@ -10,7 +10,6 @@ api.onPageChange((e) => {
   console.log(router.currentRoute);
 
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
-    const site = api.lookup("service:site");
     console.log(value);
     console.log(context);
   });
