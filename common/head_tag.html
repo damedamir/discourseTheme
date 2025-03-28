@@ -9,7 +9,7 @@ api.onPageChange((e) => {
   const router = api.container.lookup('service:router');
   console.log(router.currentRoute);
   const services = api.container.lookup('service:theme-settings');
-  console.log(services);
+  console.log(settings);
 
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     console.log(value);
