@@ -10,7 +10,7 @@ api.onPageChange((e) => {
   console.log(router.currentRoute);
   const services = api.container.lookup('service:theme-settings');
 
-  api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
+  api.registerValueTransformer("topic-list-item-class", ({ value, {topic, index} }) => {
     const currentUser = api.getCurrentUser();
     console.log("Getting Settings");
     console.log(settings);
@@ -18,7 +18,7 @@ api.onPageChange((e) => {
     console.log(currentUser);
    
     console.log('Getting Topic context');
-    console.log(context);
+    console.log(topic);
 
   });
 
