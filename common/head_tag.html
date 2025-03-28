@@ -22,7 +22,9 @@ api.onPageChange((e) => {
       return value;
     }
 
-
+    if(topic.tags.includes("aa-premium")){
+      return 'hidden-by-restriction';
+    }
 
 
     console.log("Getting Settings");

@@ -1619,7 +1619,11 @@ body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
 {
     display: none !important;
 }
-        
+
+
+.hidden-by-restriction{
+    display: none !important;
+}
 
 
 #back-to-aa-button{
