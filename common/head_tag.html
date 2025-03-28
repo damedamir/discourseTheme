@@ -8,11 +8,14 @@ api.onPageChange((e) => {
 
   const router = api.container.lookup('service:router');
   console.log(router.currentRoute);
+  const services = api.container.lookup('service:settings');
+  console.log(services);
 
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     console.log(value);
     console.log(context);
     return 'applied-to-every-topic' ;
+
   });
 
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
