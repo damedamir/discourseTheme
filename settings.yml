@@ -74,7 +74,8 @@ micro_tactic_restristions:
     name: restriction
     identifier: name
     properties:
-      name: string
+      name: 
+        type: string
       groups:
         type: groups
         required: true
