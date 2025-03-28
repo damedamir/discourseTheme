@@ -13,10 +13,19 @@ api.onPageChange((e) => {
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     const currentUser = api.getCurrentUser();
     const topic = context.topic;
+
+    const userGroups = currentUser.groups.map(group => group.id);
+
+    if(topic.category_id !== 50){
+      return value;
+    }
+
+
+
     console.log("Getting Settings");
     console.log(settings);
-    console.log("Getting User");
-    console.log(currentUser);
+    console.log("Getting User groups");
+    console.log(userGroups);
    
     console.log('Getting Topic context');
     console.log(topic);
