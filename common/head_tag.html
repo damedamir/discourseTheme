@@ -12,8 +12,6 @@ api.onPageChange((e) => {
   console.log(settings);
 
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
-    console.log(value);
-    console.log(context);
     const currentUser = api.getCurrentUser();
     console.log("Getting Settings");
     console.log(settings);
