@@ -14,6 +14,11 @@ api.onPageChange((e) => {
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     console.log(value);
     console.log(context);
+    const currentUser = api.getCurrentUser();
+    console.log("Getting Settings");
+    console.log(settings);
+    console.log("Getting User");
+    console.log(currentUser);
     return 'applied-to-every-topic' ;
 
   });
