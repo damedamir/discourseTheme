@@ -14,6 +14,8 @@ api.onPageChange((e) => {
     const currentUser = api.getCurrentUser();
     const topic = context.topic;
 
+    const { micro_tactic_restristions } = settings;
+
     const userGroups = currentUser.groups.map(group => group.id);
 
     if(topic.category_id !== 50){
@@ -22,8 +24,9 @@ api.onPageChange((e) => {
 
 
 
+
     console.log("Getting Settings");
-    console.log(settings);
+    console.log(micro_tactic_restristions);
     console.log("Getting User groups");
     console.log(userGroups);
    
