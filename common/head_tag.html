@@ -24,10 +24,10 @@ api.onPageChange((e) => {
   console.log("Setting Restricted Styles");
   console.log(restrictedStyles);
 
-  if(restrictedStyles.length){
+  if(restrictedStyles.length > 0){
     restrictedStyles.forEach( restrictedStyle => {
 
-      document.querySelectorAll(`[data-name="${restrictedStyle}"]`)?.forEach(el => { el.style.display = 'none';  })
+      document.querySelectorAll(`[data-name="${restrictedStyle}"]`).forEach(el => { el.style.display = 'none';  })
     })
   }
 
