@@ -22,6 +22,18 @@ api.onPageChange((e) => {
       return value;
     }
 
+    let passesTest = false;
+    
+    micro_tactic_restristions.forEach(restriction => {
+      if(userGroups.includes(restriction.groups[0])){
+        restriction.tags.forEach( tag => { 
+            if(topic.tags.includes(tag)){
+                passesTest = true;
+            }
+         });
+      }
+    })
+
     if(topic.tags.includes("aa-premium")){
       return 'hidden-by-restriction';
     }
