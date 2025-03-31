@@ -27,16 +27,23 @@ api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
   var passesTest = true;
 
   var restrictedTags = [];
+  var allowedTags = []
   
   micro_tactic_restristions.forEach(restriction => {
     if(!userGroups.includes(restriction.groups[0])){
       restriction.tags.forEach(tag => {
         restrictedTags.push(tag);
       });
+    }else{
+      restriction.tags.forEach(tag => {
+        allowedTags.push(tag);
+      });
     }
   });
 
-  if(topic.tags.any(tag => restrictedTags.includes(tag))){
+  difference = allowedTags.filter(x => !restrictedTags.includes(x));
+
+  if(topic.tags.any(tag => difference.includes(tag))){
     return 'hidden-by-restriction';
   }
 
