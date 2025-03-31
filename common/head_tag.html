@@ -4,6 +4,57 @@ if(user) {
     
 }
 
+
+api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
+  const currentUser = api.getCurrentUser();
+  const topic = context.topic;
+
+  const { micro_tactic_restristions } = settings;
+
+  console.log("Getting Settings");
+  console.log(micro_tactic_restristions);
+
+  const userGroups = currentUser.groups.map(group => group.id);
+
+  if(topic.category_id !== 50){
+    return value;
+  }
+
+  if(topic.tags.length == 0){
+    return value;
+  }
+
+  var passesTest = true;
+
+  var restrictedTags = [];
+  
+  micro_tactic_restristions.forEach(restriction => {
+    if(!userGroups.includes(restriction.groups[0])){
+      restriction.tags.forEach(tag => {
+        restrictedTags.push(tag);
+      });
+    }
+  });
+
+  if(topic.tags.any(tag => restrictedTags.includes(tag))){
+    return 'hidden-by-restriction';
+  }
+
+  return value;
+
+  console.log("Getting Settings");
+  console.log(micro_tactic_restristions);
+  console.log("Getting User groups");
+  console.log(userGroups);
+ 
+  console.log('Getting Topic context');
+  console.log(topic);
+
+
+ 
+
+});
+
 api.onPageChange((e) => {
 
   const router = api.container.lookup('service:router');
@@ -33,55 +84,7 @@ api.onPageChange((e) => {
 
   
 
-  api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
-    const currentUser = api.getCurrentUser();
-    const topic = context.topic;
-
-    const { micro_tactic_restristions } = settings;
-
-    console.log("Getting Settings");
-    console.log(micro_tactic_restristions);
-
-    const userGroups = currentUser.groups.map(group => group.id);
-
-    if(topic.category_id !== 50){
-      return value;
-    }
-
-    if(topic.tags.length == 0){
-      return value;
-    }
-
-    var passesTest = true;
-
-    var restrictedTags = [];
-    
-    micro_tactic_restristions.forEach(restriction => {
-      if(!userGroups.includes(restriction.groups[0])){
-        restriction.tags.forEach(tag => {
-          restrictedTags.push(tag);
-        });
-      }
-    });
-
-    if(topic.tags.any(tag => restrictedTags.includes(tag))){
-      return 'hidden-by-restriction';
-    }
-
-    return value;
-
-    console.log("Getting Settings");
-    console.log(micro_tactic_restristions);
-    console.log("Getting User groups");
-    console.log(userGroups);
-   
-    console.log('Getting Topic context');
-    console.log(topic);
-
-
-   
-
-  });
+ 
 
   const allCategoryDocLinks = document.querySelectorAll('a.docs-sidebar-nav-link');
 
