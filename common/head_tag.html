@@ -35,7 +35,7 @@ api.onPageChange((e) => {
     
     micro_tactic_restristions.forEach(restriction => {
       if(!userGroups.includes(restriction.groups[0])){
-        restriction.tag.forEach(tag => {
+        restriction.tags.forEach(tag => {
           restrictedTags.push(tag);
         });
       }
