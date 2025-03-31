@@ -27,7 +27,7 @@ api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
   var passesTest = true;
 
   var restrictedTags = [];
-  var allowedTags = []
+  var allowedTags = [];
   
   micro_tactic_restristions.forEach(restriction => {
     if(!userGroups.includes(restriction.groups[0])){
