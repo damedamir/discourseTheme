@@ -41,7 +41,7 @@ api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     }
   });
 
-  difference = allowedTags.filter(x => !restrictedTags.includes(x));
+  let difference = allowedTags.filter(x => !restrictedTags.includes(x));
 
   if(topic.tags.any(tag => difference.includes(tag))){
     return 'hidden-by-restriction';
