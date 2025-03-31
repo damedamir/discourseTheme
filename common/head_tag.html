@@ -10,6 +10,7 @@ api.onPageChange((e) => {
   console.log(router.currentRoute);
   const services = api.container.lookup('service:theme-settings');
   const currentUser = api.getCurrentUser();
+  const { micro_tactic_restristions } = settings;
   const restrictedStyles = []
   if(!currentUser.is_admin){
     micro_tactic_restristions.forEach(restriction => {
