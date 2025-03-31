@@ -13,7 +13,7 @@ api.onPageChange((e) => {
   const { micro_tactic_restristions } = settings;
   const restrictedStyles = [];
   console.log(currentUser);
-  if(!currentUser.is_admin){
+  if(!currentUser.admin){
     micro_tactic_restristions.forEach(restriction => {
         restriction.tags.forEach(tag => {
           restrictedStyles.push(tag);
