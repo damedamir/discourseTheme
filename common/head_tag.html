@@ -28,7 +28,7 @@ api.onPageChange((e) => {
       if(userGroups.includes(restriction.groups[0])){
         restriction.tags.forEach( tag => { 
             if(!topic.tags.includes(tag)){
-                passesTest = false;
+               /* passesTest = false;*/
             }
          });
       }
