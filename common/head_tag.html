@@ -22,7 +22,7 @@ api.onPageChange((e) => {
 
   if(restrictedStyles.length){
     restrictedStyles.forEach( restrictedStyle => {
-      document.querySelectorAll(`["data-name="${restrictedStyle}"]`)?.forEach(el => { el.style.display = 'none';  })
+      document.querySelectorAll(`[data-name="${restrictedStyle}"]`)?.forEach(el => { el.style.display = 'none';  })
     })
   }
 
