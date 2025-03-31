@@ -9,6 +9,23 @@ api.onPageChange((e) => {
   const router = api.container.lookup('service:router');
   console.log(router.currentRoute);
   const services = api.container.lookup('service:theme-settings');
+  const currentUser = api.getCurrentUser();
+  const restrictedStyles = []
+  if(!currentUser.is_admin){
+    micro_tactic_restristions.forEach(restriction => {
+        restriction.tags.forEach(tag => {
+          restrictedStyles.push(tag);
+        });
+    });
+  }
+
+  if(restrictedStyles.length){
+    restrictedStyles.forEach( restrictedStyle => {
+      document.querySelectorAll(`["data-name="${restrictedStyle}"]`)?.forEach(el => { el.style.display = 'none';  })
+    })
+  }
+
+  
 
   api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
     const currentUser = api.getCurrentUser();
