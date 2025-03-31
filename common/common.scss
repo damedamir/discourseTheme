@@ -1616,7 +1616,7 @@ body:not(.group-VIP003-members) .tag-box:has(a[data-tag-name="aa-premium"]){
 [data-section-name="discourse-docs-sidebar__blockchain-crypto"],
 [data-section-name="discourse-docs-sidebar__quizzes"],
 .discourse-docs-sidebar-panel .sidebar-filter,
-.sidebar-section-wrapper[data-section-name="tags"]
+body:not(.staff) .sidebar-section-wrapper[data-section-name="tags"]
 {
     display: none !important;
 }
