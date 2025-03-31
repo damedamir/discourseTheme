@@ -11,7 +11,8 @@ api.onPageChange((e) => {
   const services = api.container.lookup('service:theme-settings');
   const currentUser = api.getCurrentUser();
   const { micro_tactic_restristions } = settings;
-  const restrictedStyles = []
+  const restrictedStyles = [];
+  console.log(currentUser);
   if(!currentUser.is_admin){
     micro_tactic_restristions.forEach(restriction => {
         restriction.tags.forEach(tag => {
@@ -22,6 +23,7 @@ api.onPageChange((e) => {
 
   if(restrictedStyles.length){
     restrictedStyles.forEach( restrictedStyle => {
+
       document.querySelectorAll(`[data-name="${restrictedStyle}"]`)?.forEach(el => { el.style.display = 'none';  })
     })
   }
