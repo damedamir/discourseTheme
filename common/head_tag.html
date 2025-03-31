@@ -16,6 +16,9 @@ api.onPageChange((e) => {
 
     const { micro_tactic_restristions } = settings;
 
+    console.log("Getting Settings");
+    console.log(micro_tactic_restristions);
+
     const userGroups = currentUser.groups.map(group => group.id);
 
     if(topic.category_id !== 50){
