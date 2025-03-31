@@ -22,18 +22,28 @@ api.onPageChange((e) => {
       return value;
     }
 
+    if(topic.tags.length == 0){
+      return value;
+    }
+
     var passesTest = true;
+
+    var restrictedTags = [];
     
     micro_tactic_restristions.forEach(restriction => {
-      if(userGroups.includes(restriction.groups[0])){
-        restriction.tags.forEach( tag => { 
-            if(!topic.tags.includes(tag)){
-               /* passesTest = false;*/
-            }
-         });
+      if(!userGroups.includes(restriction.groups[0])){
+        restriction.tag.forEach(tag => {
+          restrictedTags.push(tag);
+        });
       }
     });
-    
+
+    if(topic.tags.any(tag => restrictedTags.includes(tag))){
+      return 'hidden-by-restriction';
+    }
+
+    return value;
+
     console.log("Getting Settings");
     console.log(micro_tactic_restristions);
     console.log("Getting User groups");
@@ -43,12 +53,7 @@ api.onPageChange((e) => {
     console.log(topic);
 
 
-    if(!passesTest){
-      return 'hidden-by-restriction';
-    }
-
-   return value;
-
+   
 
   });
 
