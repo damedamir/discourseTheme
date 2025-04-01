@@ -32,5 +32,18 @@ en:
             use_overlay:
               label: Uses Overlay?
               description: Determines if a banner is being overlayed with a text and/or optional CTA button
+      micro_tactic_restristions:
+        description: "Set up Micro tactic restrictions by group and tag"
+        schema:
+          properties:
+            name:
+              label: Name
+              description: A descriptive name for this restriction (Group name)
+            groups:
+              label: Group
+              descrption: A group that the restriction will be applied for 
+            tags: 
+              label: Tags
+              description: A set of tags that will be visible to the group
             
             
