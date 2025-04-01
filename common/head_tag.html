@@ -42,31 +42,17 @@ api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
   });
 
   let difference = restrictedTags.filter(x => !allowedTags.includes(x));
-  console.log('difference');
-  console.log(difference);
   if(topic.tags.any(tag => difference.includes(tag))){
     return 'hidden-by-restriction';
   }
 
   return value;
 
-  console.log("Getting Settings");
-  console.log(micro_tactic_restristions);
-  console.log("Getting User groups");
-  console.log(userGroups);
- 
-  console.log('Getting Topic context');
-  console.log(topic);
-
-
- 
-
 });
 
 api.onPageChange((e) => {
 
   const router = api.container.lookup('service:router');
-  console.log(router.currentRoute);
   const services = api.container.lookup('service:theme-settings');
   const currentUser = api.getCurrentUser();
   const { micro_tactic_restristions } = settings;
