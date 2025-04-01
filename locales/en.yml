@@ -42,7 +42,7 @@ en:
               description: A descriptive name for this restriction (Group name)
             groups:
               label: Group
-              descrption: A group that the restriction will be applied for 
+              description: A group that the restriction will be applied for 
             tags: 
               label: Tags
               description: A set of tags that will be visible to the group
