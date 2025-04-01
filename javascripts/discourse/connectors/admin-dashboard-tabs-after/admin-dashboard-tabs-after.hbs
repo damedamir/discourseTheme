@@ -8,6 +8,14 @@
 </li>
 <li title="Configure thumbnail layouts for topics" id=""  class="navigation-item topic-thumbnails">
      <DButton
+        @action={{action "navigateToUserMTRestrictions"}}
+        @icon=""
+        label="MT Restrictions"
+        class="ember-view navigation-link"
+    />
+</li>
+<li title="Configure thumbnail layouts for topics" id=""  class="navigation-item topic-thumbnails">
+     <DButton
         @action={{action "navigateToBannerConfiguration"}}
         @icon=""
         @label={{ theme-prefix "topic_thumbnails" }}

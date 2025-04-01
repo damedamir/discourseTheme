@@ -33,6 +33,11 @@ export default class AdminExtraTabLinks extends Component {
       this.router.transitionTo("/admin/plugins/explorer/queries/3");
     }
 
+    @action
+    navigateToUserMTRestrictions(){
+      this.router.transitionTo("/admin/customize/themes/10/schema/micro_tactic_restristions");
+    }
+
     
    
 }
