@@ -2,6 +2,7 @@ en:
   back_to_main_dashboard : 'Back to Main Dashboard'
   banners_configuration: "Banners Configuration"
   topic_thumbnails: "Topic Thumbnails"
+  mt_restrictions: "MT Restrictions"
   user_activity_export: "User Activity Export"
   theme_metadata:
     settings:
