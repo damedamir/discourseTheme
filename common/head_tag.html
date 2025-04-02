@@ -54,6 +54,7 @@ api.onPageChange((e) => {
 
   const router = api.container.lookup('service:router');
   const services = api.container.lookup('service:theme-settings');
+  console.log(router);
   const currentUser = api.getCurrentUser();
   const { micro_tactic_restristions } = settings;
   const restrictedStyles = [];
