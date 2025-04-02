@@ -40,15 +40,12 @@ export default class DirectLinRestriction extends Component {
         
           let difference = restrictedTags.filter(x => !allowedTags.includes(x));
           if(this.args.outletArgs.model.tags.any(tag => difference.includes(tag))){
-            return 'hidden-by-restriction';
+            this.router.transitionTo("/admin/customize/components/18");
           }
+
         /*console.log(settings.micro_tactic_restristions);*/
       }
 
-   get isAdminPage(){
-        console.log(this.args.outletArgs.currentPath);
-        return this.args.outletArgs.currentPath.split('.')[0] === 'admin' && !(this.args.outletArgs.currentPath.split('.')[1] === 'dashboard') ;
-   } 
 
    @action
    navigateToDashboard(){
