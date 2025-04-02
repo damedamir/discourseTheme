@@ -14,6 +14,10 @@ export default class DirectLinRestriction extends Component {
         super(...arguments);   
         console.log("Above post stream Outlet Args");
         console.log(this.args.outletArgs);
+        
+        console.log("router instance from component");
+        console.log(this.router);
+
         /*console.log(settings.micro_tactic_restristions);*/
       }
 
