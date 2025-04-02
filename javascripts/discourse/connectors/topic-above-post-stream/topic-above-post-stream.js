@@ -40,7 +40,7 @@ export default class DirectLinRestriction extends Component {
         
           let difference = restrictedTags.filter(x => !allowedTags.includes(x));
           if(this.args.outletArgs.model.tags.any(tag => difference.includes(tag))){
-            this.router.transitionTo("/admin/customize/components/18");
+            this.router.transitionTo(`/c/${this.args.outletArgs.model.category.slug}/${this.args.outletArgs.model.category.slug}`);
           }
 
         /*console.log(settings.micro_tactic_restristions);*/
