@@ -39,7 +39,7 @@ export default class DirectLinRestriction extends Component {
           });
         
           let difference = restrictedTags.filter(x => !allowedTags.includes(x));
-          if(topic.tags.any(tag => difference.includes(tag))){
+          if(this.args.outletArgs.model.tags.any(tag => difference.includes(tag))){
             return 'hidden-by-restriction';
           }
         /*console.log(settings.micro_tactic_restristions);*/
