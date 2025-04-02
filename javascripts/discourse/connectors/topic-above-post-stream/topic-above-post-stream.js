@@ -18,6 +18,29 @@ export default class DirectLinRestriction extends Component {
         console.log("router instance from component");
         console.log(this.router);
 
+        
+
+        const { micro_tactic_restristions } = settings;
+        console.log("restriction setting from component");
+        console.log(micro_tactic_restristions);
+        const restrictedTags = [];
+        const allowedTags = [];
+        micro_tactic_restristions.forEach(restriction => {
+            if(!userGroups.includes(restriction.groups[0])){
+              restriction.tags.forEach(tag => {
+                restrictedTags.push(tag);
+              });
+            }else{
+              restriction.tags.forEach(tag => {
+                allowedTags.push(tag);
+              });
+            }
+          });
+        
+          let difference = restrictedTags.filter(x => !allowedTags.includes(x));
+          if(topic.tags.any(tag => difference.includes(tag))){
+            return 'hidden-by-restriction';
+          }
         /*console.log(settings.micro_tactic_restristions);*/
       }
 

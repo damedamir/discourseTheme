@@ -11,9 +11,6 @@ api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
 
   const { micro_tactic_restristions } = settings;
 
-  console.log("Getting Settings");
-  console.log(micro_tactic_restristions);
-
   const userGroups = currentUser.groups.map(group => group.id);
 
   if(topic.category_id !== 50){
@@ -54,11 +51,9 @@ api.onPageChange((e) => {
 
   const router = api.container.lookup('service:router');
   const services = api.container.lookup('service:theme-settings');
-  console.log(router);
   const currentUser = api.getCurrentUser();
   const { micro_tactic_restristions } = settings;
   const restrictedStyles = [];
-  console.log(currentUser);
   if(!currentUser.staff){
     micro_tactic_restristions.forEach(restriction => {
         restriction.tags.forEach(tag => {
@@ -67,8 +62,6 @@ api.onPageChange((e) => {
     });
   }
 
-  console.log("Setting Restricted Styles");
-  console.log(restrictedStyles);
 
   if(restrictedStyles.length > 0){
     restrictedStyles.forEach( restrictedStyle => {
