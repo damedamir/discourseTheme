@@ -25,7 +25,7 @@ export default class DirectLinRestriction extends Component {
         console.log(micro_tactic_restristions);
         const restrictedTags = [];
         const allowedTags = [];
-        const userGroups = this.currentUser.map.groups.map(group => group.id);
+        const userGroups = this.currentUser.groups.map(group => group.id);
         micro_tactic_restristions.forEach(restriction => {
             if(!userGroups.includes(restriction.groups[0])){
               restriction.tags.forEach(tag => {
