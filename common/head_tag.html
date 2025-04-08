@@ -5,6 +5,9 @@ if(user) {
 }
 
 
+api.renderInOutlet( "topic-list-before-link", <template>Hello World</template>);
+
+
 api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
   const currentUser = api.getCurrentUser();
   const topic = context.topic;
@@ -114,10 +117,6 @@ api.onPageChange((e) => {
 });
 
 </script>
-
-
-<script defer src="
-https://player.vimeo.com/api/player.js"></script>
 
 
 <script type="text/x-handlebars" data-template-name="/connectors/extra-nav-item/custom-nav-item">
