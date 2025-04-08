@@ -164,4 +164,3 @@ export default class HiveTopicListThumbnail extends Component {
     {{/if}}
   </template>
 }
-}
