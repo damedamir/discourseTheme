@@ -3,6 +3,7 @@ import HiveTopicListThumbnail from "../components/hive-topic-thumbnail";
 
 export default apiInitializer((api) => {
     const ttService = api.container.lookup("service:topic-thumbnails");
+    console.log("Logging from initializer")
     api.renderInOutlet(
         "topic-list-before-link",
         <template>
