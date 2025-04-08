@@ -5,6 +5,25 @@ if(user) {
 }
 
 
+api.registerValueTransformer("topic-list-columns", ({ value, context }) => {
+  const currentUser = api.getCurrentUser();
+  const topic = context.topic;
+
+  const { micro_tactic_restristions } = settings;
+
+  const userGroups = currentUser.groups.map(group => group.id);
+
+  console.log("from  topic-list-columns");
+  console.log(value);
+  console.log(context);
+
+
+  
+
+});
+
+
+
 api.registerValueTransformer("topic-list-item-class", ({ value, context }) => {
   const currentUser = api.getCurrentUser();
   const topic = context.topic;
