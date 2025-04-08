@@ -20,6 +20,7 @@ export default class HiveTopicListThumbnail extends Component {
   }
 
   get topic() {
+    console.log("getting the topic from custom conponent");
     return this.args.topic;
   }
 
