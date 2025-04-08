@@ -88,7 +88,7 @@ export default class HiveTopicListThumbnail extends Component {
   <template>
     <div
       class={{concatClass
-        "topic-list-thumbnail hive-override"
+        "topic-list-thumbnail" "hive-override"
         (if this.hasThumbnail "has-thumbnail" "no-thumbnail")
       }}
     >
