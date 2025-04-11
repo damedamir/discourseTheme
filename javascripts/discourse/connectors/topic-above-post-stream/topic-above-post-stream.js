@@ -44,6 +44,7 @@ export default class DirectLinRestriction extends Component {
           }
 
         /*console.log(settings.micro_tactic_restristions);*/
+        console.log(this.currentUser);
       }
 
 
