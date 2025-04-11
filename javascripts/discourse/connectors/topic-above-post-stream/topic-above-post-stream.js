@@ -68,7 +68,7 @@ export default class DirectLinRestriction extends Component {
    }
    <template>
 
-  <div {{did-insert this.handlePDFButtonClicks}} ></div>
+  <div {{did-render this.handlePDFButtonClicks}} ></div>
 </template>
 }
 
