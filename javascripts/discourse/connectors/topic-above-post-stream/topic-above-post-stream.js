@@ -47,14 +47,10 @@ export default class DirectLinRestriction extends Component {
        
       }
     
-   didRender(){
-    this._super(...arguments);
-    
-   }   
 
    @action
    handlePDFButtonClicks(){
-    const downloadButon = document.querySelector('.attachment.pdf-attachment');
+    const downloadButon = document.querySelectorAll('.pdf-attachment');
     console.log('Button Element on load');
     console.log(downloadButon);
     downloadButon?.addEventListener('click', function(e){
