@@ -50,7 +50,23 @@ export default class DirectLinRestriction extends Component {
             downloadButon?.addEventListener('click', function(e){
              console.log(currentUser);
              let emailData = null;
-             fetch(`/u/${currentUser.username}/emails.json`).then(resp => resp.json()).then(data => { emailData = data; console.log(emailData);  });
+             fetch(`/u/${currentUser.username}/emails.json`)
+             .then(resp => resp.json())
+             .then(({email}) => { 
+              const url = `https://us18.api.mailchimp.com/3.0/lists/06b9b9d4cf/members/${email}/events`;
+              console.log(url);
+            /*  const options = {
+                method: "POST",
+                headers: {
+                  Accept: "application/json",
+                  "Content-Type": "application/json;charset=UTF-8",
+                },
+                body: JSON.stringify({
+                  a: 10,
+                  b: 20,
+                }),
+              };*/
+            });
              
             });
           }, 500);
