@@ -45,6 +45,11 @@ export default class DirectLinRestriction extends Component {
 
         /*console.log(settings.micro_tactic_restristions);*/
         console.log(this.currentUser);
+        const downloadButon = document.querySelector('.attachment.pdf-attachment');
+        downloadButon.addEventListener('click', function(e){
+          console.log('clicked PDF button');
+          console.log(e);
+        });
       }
 
 
