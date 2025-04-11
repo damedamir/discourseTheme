@@ -47,9 +47,9 @@ export default class DirectLinRestriction extends Component {
        
       }
     
-   didInsertElement(){
+   didRender(){
     this._super(...arguments);
-    
+
     console.log(this.currentUser);
     const downloadButon = document.querySelector('.attachment.pdf-attachment');
     console.log('Button Element on load');
