@@ -50,8 +50,8 @@ export default class DirectLinRestriction extends Component {
             downloadButon?.addEventListener('click', function(e){
              console.log(currentUser);
              let emailData = null;
-             fetch(`/u/${currentUser.username}/emails.json`).then(resp => resp.json()).then(data => { emailData = data; });
-             console.log(emailData);
+             fetch(`/u/${currentUser.username}/emails.json`).then(resp => resp.json()).then(data => { emailData = data; console.log(emailData);  });
+             
             });
           }, 500);
 
