@@ -43,14 +43,12 @@ export default class DirectLinRestriction extends Component {
             this.router.transitionTo(`/c/${this.args.outletArgs.model.category.slug}/${this.args.outletArgs.model.category.id}`);
           }
           const inputArguments = this.args.outletArgs;
+          const currentUser = this.currentUser;
           setTimeout(function(){
             const downloadButon = document.querySelector('.pdf-attachment');
-            console.log('Button Element on load');
-            console.log(inputArguments);
-            console.log(downloadButon);
+            
             downloadButon?.addEventListener('click', function(e){
-              console.log('clicked PDF button');
-              console.log(e);
+             console.log(currentUser);
             });
           }, 500);
 
