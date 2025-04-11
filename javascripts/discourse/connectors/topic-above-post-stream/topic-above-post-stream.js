@@ -44,15 +44,21 @@ export default class DirectLinRestriction extends Component {
           }
 
         /*console.log(settings.micro_tactic_restristions);*/
-        console.log(this.currentUser);
-        const downloadButon = document.querySelector('.attachment.pdf-attachment');
-        console.log('Button Element on load');
-        console.log(downloadButon);
-        downloadButon?.addEventListener('click', function(e){
-          console.log('clicked PDF button');
-          console.log(e);
-        });
+       
       }
+    
+   didInsertElement(){
+    this._super(...arguments);
+    
+    console.log(this.currentUser);
+    const downloadButon = document.querySelector('.attachment.pdf-attachment');
+    console.log('Button Element on load');
+    console.log(downloadButon);
+    downloadButon?.addEventListener('click', function(e){
+      console.log('clicked PDF button');
+      console.log(e);
+    });
+   }   
 
 
    @action
