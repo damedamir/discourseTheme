@@ -12,11 +12,11 @@ export default class DirectLinRestriction extends Component {
 
     constructor() {
         super(...arguments);   
-        console.log("Above post stream Outlet Args");
+       /* console.log("Above post stream Outlet Args");
         console.log(this.args.outletArgs);
         
         console.log("router instance from component");
-        console.log(this.router);
+        console.log(this.router); */
 
         
 
@@ -46,6 +46,7 @@ export default class DirectLinRestriction extends Component {
           setTimeout(function(){
             const downloadButon = document.querySelector('.pdf-attachment');
             console.log('Button Element on load');
+            console.log(this.args.outletArgs);
             console.log(downloadButon);
             downloadButon?.addEventListener('click', function(e){
               console.log('clicked PDF button');
@@ -53,7 +54,7 @@ export default class DirectLinRestriction extends Component {
             });
           }, 500);
 
-        /*console.log(settings.micro_tactic_restristions);*/
+       
        
       }
     
