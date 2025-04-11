@@ -66,9 +66,9 @@ export default class DirectLinRestriction extends Component {
    navigateToDashboard(){
     this.router.transitionTo("admin.dashboard.general");
    }
-}
-
-<template>
+   <template>
 
   <div {{did-insert this.handlePDFButtonClicks}} ></div>
 </template>
+}
+
