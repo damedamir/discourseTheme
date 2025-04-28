@@ -58,8 +58,9 @@ export default class DirectLinRestriction extends Component {
               const options = {
                 method: "POST",
                 headers: {
-                  Accept: "application/json",
+                  "Accept": "application/json",
                   "Content-Type": "application/json;charset=UTF-8",
+                  "bypass-tunnel-reminder" : "yes"
                 },
                 body: JSON.stringify(
                   {
