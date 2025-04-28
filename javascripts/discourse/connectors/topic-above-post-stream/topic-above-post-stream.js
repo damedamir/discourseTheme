@@ -53,19 +53,25 @@ export default class DirectLinRestriction extends Component {
              fetch(`/u/${currentUser.username}/emails.json`)
              .then(resp => resp.json())
              .then(({email}) => { 
-              const url = `https://us18.api.mailchimp.com/3.0/lists/06b9b9d4cf/members/${email}/events`;
+              const url = `https://poor-banks-fix.loca.lt/community-events/`;
               console.log(url);
-            /*  const options = {
+              const options = {
                 method: "POST",
                 headers: {
                   Accept: "application/json",
                   "Content-Type": "application/json;charset=UTF-8",
                 },
-                body: JSON.stringify({
-                  a: 10,
-                  b: 20,
-                }),
-              };*/
+                body: JSON.stringify(
+                  {
+                    user_email : "nikola@hiveologie.com",
+                    event_type: "mt_visited",
+                    topic_slug : "/t/short-term-rental-specialist-workbook/30733",
+                    topic_title : "Short term rental specialist Workbook",
+                    topic_id : "371"
+                
+                })
+              };
+              fetch(url, options).then(resp => resp.json()).then(data => { console.log(data) });
             });
              
             });
