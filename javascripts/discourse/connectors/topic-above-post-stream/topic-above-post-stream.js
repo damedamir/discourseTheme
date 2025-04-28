@@ -71,7 +71,7 @@ export default class DirectLinRestriction extends Component {
                 
                 })
               };
-              fetch(url, options).then(resp => resp.json()).then(data => { console.log(data) });
+              fetch(url, options).then(resp => resp.json()).then(data => { console.log(data) }).catch(error => {console.log(error)});
             });
              
             });
