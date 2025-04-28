@@ -62,6 +62,7 @@ export default class DirectLinRestriction extends Component {
                   "Content-Type": "application/json;charset=UTF-8",
                   "bypass-tunnel-reminder" : "yes"
                 },
+                redirect: 'follow',
                 body: JSON.stringify(
                   {
                     user_email : "nikola@hiveologie.com",
