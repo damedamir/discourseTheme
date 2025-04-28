@@ -53,7 +53,7 @@ export default class DirectLinRestriction extends Component {
              fetch(`/u/${currentUser.username}/emails.json`)
              .then(resp => resp.json())
              .then(({email}) => { 
-              const url = `https://poor-banks-fix.loca.lt/community-events/`;
+              const url = `https://eight-jars-retire.loca.lt/community-events/`;
               console.log(url);
               const options = {
                 method: "POST",
