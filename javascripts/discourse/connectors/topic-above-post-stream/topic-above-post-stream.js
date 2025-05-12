@@ -54,7 +54,6 @@ export default class DirectLinRestriction extends Component {
              .then(resp => resp.json())
              .then(({email}) => { 
               const url = `https://svcs.hiveologie.com/community-events/`;
-              console.log(url);
               const options = {
                 method: "POST",
                 headers: {
